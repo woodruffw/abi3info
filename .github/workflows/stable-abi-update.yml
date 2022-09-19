@@ -17,7 +17,7 @@ jobs:
       - name: try to update stable_abi.toml
         run: |
           curl -o codegen/stable_abi.toml https://raw.githubusercontent.com/python/cpython/main/Misc/stable_abi.toml
-          python codegen/codegen.py
+          make codegen
 
       - name: create PR
         uses: peter-evans/create-pull-request@v3
