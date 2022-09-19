@@ -36,6 +36,9 @@ a data model describing the kind of item (e.g. `FeatureMacro` or `Function`).
 [See the generated documentation]() for more details, including comprehensive
 type hints and explanations of each data model.
 
+[See also the `stable_abi.toml` file](./codegen/stable_abi.toml), taken from
+the CPython sources, which describes each model and their semantics.
+
 ### Examples:
 
 Get information about a particular function:
