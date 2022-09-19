@@ -65,6 +65,17 @@ _OUT = _INTERNAL.open(mode="w")
 # The way we actually do the codegen is a little cheeky: rather than
 # building up things like instantiations manually, we reuse each model's `repr()`.
 
+print(
+    """
+'''
+Generated definitions and data structures for abi3info.
+
+This module should not be used directly; it is not a public API.
+'''
+""",
+    file=_OUT,
+)
+
 print("from typing import Dict, Final", file=_OUT)
 print(file=_OUT)
 print(
