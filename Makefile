@@ -39,6 +39,10 @@ env/pyvenv.cfg: pyproject.toml
 	./env/bin/python -m pip install --upgrade pip
 	./env/bin/python -m pip install -e .[$(ABI3INFO_EXTRA)]
 
+.PHONY: codegen
+codegen: env/pyvenv.cfg
+	./env/bin/python codegen/codegen.py
+
 .PHONY: lint
 lint: env/pyvenv.cfg
 	. env/bin/activate && \
