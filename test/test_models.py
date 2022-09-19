@@ -53,3 +53,16 @@ class TestPyVersion:
         assert older_major == older_major
         assert older_major >= older_major
         assert older_major <= older_major
+
+    def test_parse(self):
+        assert PyVersion.parse("3.2") == PyVersion(3, 2)
+        assert PyVersion.parse("4.0") == PyVersion(4, 0)
+
+        with pytest.raises(ValueError):
+            PyVersion.parse("3")
+
+        with pytest.raises(ValueError):
+            PyVersion.parse("3.2.1")
+
+        with pytest.raises(ValueError):
+            PyVersion.parse("3.")
