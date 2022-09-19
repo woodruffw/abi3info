@@ -41,7 +41,9 @@ env/pyvenv.cfg: pyproject.toml
 
 .PHONY: codegen
 codegen: env/pyvenv.cfg
-	./env/bin/python codegen/codegen.py
+	# NOTE: Activate the venv explicitly so that the codegen script
+	# can see `black` on the PATH.
+	. ./env/bin/activate && ./env/bin/python codegen/codegen.py
 
 .PHONY: lint
 lint: env/pyvenv.cfg
