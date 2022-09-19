@@ -1,4 +1,4 @@
-from typing import Dict, Final, List
+from typing import Dict, Final
 
 from abi3info.models import (
     Data,

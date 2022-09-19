@@ -4,7 +4,6 @@
 
 import shutil
 import subprocess
-import time
 from pathlib import Path
 
 import toml
@@ -47,10 +46,11 @@ for key in ("struct", "function", "data"):
 # The way we actually do the codegen is a little cheeky: rather than
 # building up things like instantiations manually, we reuse each model's `repr()`.
 
-print("from typing import Dict, Final, List", file=_OUT)
+print("from typing import Dict, Final", file=_OUT)
 print(file=_OUT)
 print(
-    "from abi3info.models import Data, FeatureMacro, FullStruct, Function, Macro, OpaqueStruct, PartialStruct, PyVersion, Struct, Symbol, Typedef",
+    "from abi3info.models import Data, FeatureMacro, FullStruct, Function, "
+    "Macro, OpaqueStruct, PartialStruct, PyVersion, Struct, Symbol, Typedef",
     file=_OUT,
 )
 
