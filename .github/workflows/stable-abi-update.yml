@@ -1,0 +1,34 @@
+name: check for updates to stable_abi.toml
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 12 * * *'
+
+jobs:
+  check-stable-abi:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: try to update stable_abi.toml
+        run: |
+          curl -o codegen/stable_abi.toml https://raw.githubusercontent.com/python/cpython/main/Misc/stable_abi.toml
+          python codegen/codegen.py
+
+      - name: create PR
+        uses: peter-evans/create-pull-request@v3
+        with:
+          commit-message: "[BOT] update stable_abi.toml"
+          branch: update-stable-abi
+          branch-suffix: timestamp
+          title: "[BOT] update stable_abi.toml"
+          body: |
+            This is an automated pull request, updating `stable_abi.toml` after a detected change.
+
+            Please review manually before merging.
+          assignees: "woodruffw"
+          reviewers: "woodruffw"
