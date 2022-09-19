@@ -57,7 +57,7 @@ known_first_party = "abi3info"
 include_trailing_comma = true
 
 [tool.interrogate]
-exclude = ["env", "test"]
+exclude = ["env", "test", "codegen"]
 ignore-semiprivate = true
 fail-under = 100
 
