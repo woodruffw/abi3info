@@ -2,8 +2,11 @@
 
 # codegen.py: codegen for abi3info
 
+import os
 import shutil
 import subprocess
+import sys
+from hashlib import sha256
 from pathlib import Path
 
 import toml
@@ -29,17 +32,33 @@ _HERE = Path(__file__).resolve().parent
 _ABI3INFO = _HERE.parent / "abi3info"
 assert _ABI3INFO.is_dir(), "missing abi3info module"
 
-_INTERNAL = _ABI3INFO / "_internal.py"
-_OUT = _INTERNAL.open(mode="w")
-
 _STABLE_ABI_FILE = _HERE / "stable_abi.toml"
 assert _STABLE_ABI_FILE.is_file(), "missing stable ABI data"
 
-_STABLE_ABI_DATA = toml.loads(_STABLE_ABI_FILE.read_text())
+stable_abi_data = _STABLE_ABI_FILE.read_text()
+new_checksum = sha256(stable_abi_data.encode()).hexdigest()
+
+_STABLE_ABI_CHECKSUM_FILE = _STABLE_ABI_FILE.with_suffix(".sha256")
+old_checksum = None
+if _STABLE_ABI_CHECKSUM_FILE.is_file():
+    old_checksum = _STABLE_ABI_CHECKSUM_FILE.read_text().rstrip()
+
+if old_checksum == new_checksum and not os.getenv("FORCE_CODEGEN", False):
+    print("codegen: exiting early because input has not changed")
+    sys.exit(0)
+
+_STABLE_ABI_CHECKSUM_FILE.write_text(new_checksum)
+
+# TODO: Check here to see if _STABLE_ABI_FILE has changed or if we're forcing a run anyways.
+
+_STABLE_ABI_DATA = toml.loads(stable_abi_data)
 for key in ("struct", "function", "data"):
     assert key in _STABLE_ABI_DATA, "stable ABI data doesn't look right (format changed?)"
     val = _STABLE_ABI_DATA[key]
     assert isinstance(val, dict), "stable ABI data doesn't look right (format changed?)"
+
+_INTERNAL = _ABI3INFO / "_internal.py"
+_OUT = _INTERNAL.open(mode="w")
 
 # All generated code goes into `abi3info/_internal.py`.
 #
