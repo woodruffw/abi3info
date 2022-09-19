@@ -1,8 +1,10 @@
+from __future__ import annotations
+
 from dataclasses import dataclass
 from typing import List, Literal, Optional
 
 
-@dataclass(frozen=True, slots=True, eq=False)
+@dataclass(frozen=True, slots=True, eq=False, unsafe_hash=True)
 class Symbol:
     """
     Represents a linker symbol, which may or may not point to some kind of object
@@ -49,6 +51,11 @@ class PyVersion:
 
     major: int
     minor: int
+
+    @classmethod
+    def parse(cls, val: str) -> PyVersion:
+        major, minor = val.split(".", 1)
+        return cls(major=int(major), minor=int(minor))
 
 
 @dataclass(frozen=True, slots=True)
