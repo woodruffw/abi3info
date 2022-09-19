@@ -1,6 +1,8 @@
 abi3info
 ========
 
+[![CI](https://github.com/woodruffw/abi3info/actions/workflows/ci.yml/badge.svg)](https://github.com/woodruffw/abi3info/actions/workflows/ci.yml)
+
 abi3info exposes information about CPython's "limited API" (including the
 stable ABI, called `abi3`) as a Python library.
 
