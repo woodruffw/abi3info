@@ -100,14 +100,14 @@ print(
 
 print("# this file was generated; do not modify it by hand!", file=_OUT)
 
-print("[+] codgen: feature macros", file=sys.stderr)
+print("[+] codegen: feature macros", file=sys.stderr)
 feature_macros = {
     name: FeatureMacro(name, body["doc"], body.get("windows", False))
     for name, body in _STABLE_ABI_DATA["feature_macro"].items()
 }
 print(f"_FEATURE_MACROS: Final[dict[str, FeatureMacro]] = {feature_macros}", file=_OUT)
 
-print("[+] codgen: structs", file=sys.stderr)
+print("[+] codegen: structs", file=sys.stderr)
 structs = {}
 for name, body in _STABLE_ABI_DATA["struct"].items():
     match body["struct_abi_kind"]:
@@ -123,7 +123,7 @@ for name, body in _STABLE_ABI_DATA["struct"].items():
     structs[struct.name] = struct
 print(f"_STRUCTS: Final[dict[str, Struct]] = {structs}", file=_OUT)
 
-print("[+] codgen: functions", file=sys.stderr)
+print("[+] codegen: functions", file=sys.stderr)
 functions = {
     Symbol(name): Function(
         Symbol(name),
@@ -135,13 +135,13 @@ functions = {
 }
 print(f"_FUNCTIONS: Final[dict[Symbol, Function]] = {functions}", file=_OUT)
 
-print("[+] codgen: macros", file=sys.stderr)
+print("[+] codegen: macros", file=sys.stderr)
 macros = {}
 for name, body in {**_STABLE_ABI_DATA["const"], **_STABLE_ABI_DATA["macro"]}.items():
     macros[name] = Macro(name, PyVersion.parse(body["added"]))
 print(f"_MACROS: Final[dict[str, Macro]] = {macros}", file=_OUT)
 
-print("[+] codgen: data objects", file=sys.stderr)
+print("[+] codegen: data objects", file=sys.stderr)
 datas = {
     Symbol(name): Data(
         Symbol(name),
@@ -153,7 +153,7 @@ datas = {
 }
 print(f"_DATAS: Final[dict[Symbol, Data]] = {datas}", file=_OUT)
 
-print("[+] codgen: typedefs", file=sys.stderr)
+print("[+] codegen: typedefs", file=sys.stderr)
 typedefs = {
     name: Typedef(name, PyVersion.parse(body["added"]))
     for name, body in _STABLE_ABI_DATA["typedef"].items()
@@ -162,7 +162,7 @@ print(f"_TYPEDEFS: Final[dict[str, Typedef]] = {typedefs}", file=_OUT)
 
 _OUT.close()
 
-print("[+] codgen: reformatting", file=sys.stderr)
+print("[+] codegen: reformatting", file=sys.stderr)
 subprocess.run(["black", _INTERNAL], check=True)
 
 print("[+] codegen: all done!", file=sys.stderr)
