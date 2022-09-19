@@ -1,2 +1,7 @@
 # generated docs
 html/
+
+# virtual environment and build artifacts
+dist/
+env/
+__pycache__
