@@ -1,3 +1,7 @@
+"""
+Data models for the CPython limited API and stable ABI.
+"""
+
 from __future__ import annotations
 
 from dataclasses import dataclass
@@ -16,6 +20,10 @@ class Symbol:
     """
 
     name: str
+    """
+    The symbol's underlying name. This may not correspond to an actual symbol
+    in a binary without platform-specific normalization.
+    """
 
     @property
     def macos(self) -> str:
@@ -35,6 +43,9 @@ class Symbol:
     # the automatic __eq__ implementation from dataclasses allows comparison
     # against flexible types as long as they match the inner fields.
     def __eq__(self, other: object) -> bool:
+        """
+        Checks the equality of this `Symbol` against another.
+        """
         if not isinstance(other, Symbol):
             raise TypeError("Symbol instances can only be compared against other Symbol instances")
 
@@ -50,10 +61,23 @@ class PyVersion:
     """
 
     major: int
+    """
+    The major version.
+    """
+
     minor: int
+    """
+    The minor version.
+    """
 
     @classmethod
     def parse(cls, val: str) -> PyVersion:
+        """
+        Attempts to parse a `PyVersion` version from the given string.
+
+        The string is expected to be in `major.minor` format. Other
+        formats are not supported.
+        """
         major, minor = val.split(".", 1)
         return cls(major=int(major), minor=int(minor))
 
@@ -71,7 +95,14 @@ class Macro:
     """
 
     name: str
+    """
+    The macro's name.
+    """
+
     added: PyVersion
+    """
+    When this macro was added to the limited API.
+    """
 
 
 @dataclass(frozen=True, slots=True)
@@ -83,7 +114,14 @@ class OpaqueStruct:
     """
 
     name: str
+    """
+    The struct's name.
+    """
+
     added: PyVersion
+    """
+    When this struct was added to the limited API.
+    """
 
 
 @dataclass(frozen=True, slots=True)
@@ -122,8 +160,22 @@ class FeatureMacro:
     """
 
     name: str
+    """
+    The feature macro's name.
+    """
+
     doc: str
+    """
+    A human-readable documentation string, explaining the feature macro's purpose.
+    """
+
     windows: bool | Literal["maybe"]
+    """
+    The feature macro's applicability on Windows.
+
+    The `"maybe"` literal indicates that the macro *can* be defined on Windows
+    builds but is not necessarily defined, unlike `True`.
+    """
 
 
 @dataclass(frozen=True, slots=True)
@@ -142,9 +194,26 @@ class Function:
     """
 
     symbol: Symbol
+    """
+    The function's symbol.
+    """
+
     added: PyVersion
+    """
+    When this function was added to the limited API and stable ABI.
+    """
+
     ifdef: Optional[FeatureMacro]
+    """
+    The feature macro that controls this function's presence.
+
+    If `None`, this function is always present.
+    """
+
     abi_only: bool
+    """
+    Whether this function is present only in the stable ABI and **not** the limited API.
+    """
 
 
 @dataclass(frozen=True, slots=True)
@@ -158,12 +227,40 @@ class Data:
     """
 
     symbol: Symbol
+    """
+    The data object's symbol.
+    """
+
     added: PyVersion
+    """
+    When this data object was added to the limited API and stable ABI.
+    """
+
     ifdef: Optional[FeatureMacro]
+    """
+    The feature macro that controls this data object's presence.
+
+    If `None`, this data object is always present.
+    """
+
     abi_only: bool
+    """
+    Whether this data object is present only in the stable ABI and **not** the limited API.
+    """
 
 
 @dataclass(frozen=True, slots=True)
 class Typedef:
+    """
+    Represents a `typedef`'d type in the limited API.
+    """
+
     name: str
+    """
+    The name of this typedef.
+    """
+
     added: PyVersion
+    """
+    When this typedef was added to the limited API.
+    """

@@ -1,3 +1,9 @@
+"""
+Generated definitions and data structures for abi3info.
+
+This module should not be used directly; it is not a public API.
+"""
+
 from typing import Dict, Final
 
 from abi3info.models import (
