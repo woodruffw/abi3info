@@ -40,7 +40,7 @@ model.
 [See also the `stable_abi.toml` file](./codegen/stable_abi.toml), taken from
 the CPython sources, which describes each model and their semantics.
 
-### Examples:
+### Examples
 
 Get information about a particular function:
 
