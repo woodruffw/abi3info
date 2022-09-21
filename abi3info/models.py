@@ -71,7 +71,7 @@ class PyVersion:
     """
 
     @classmethod
-    def parse(cls, val: str) -> PyVersion:
+    def parse_dotted(cls, val: str) -> PyVersion:
         """
         Attempts to parse a `PyVersion` version from the given string.
 
@@ -79,6 +79,28 @@ class PyVersion:
         formats are not supported.
         """
         major, minor = val.split(".", 1)
+        return cls(major=int(major), minor=int(minor))
+
+    @classmethod
+    def parse_python_tag(cls, val: str) -> PyVersion:
+        """
+        Attempts to parse a `PyVersion` from a PEP 425-style "Python tag".
+
+        This function only handles a subset of parsing cases allowed by
+        PEP 425, namely:
+
+        * Only CPython tags (e.g. `cp310`) are supported
+        * Underscores are not handled, because CPython tags don't use them
+        * "Major-version-only" tags (e.g. `cp3`) are not supported
+        """
+        if not val.startswith("cp"):
+            raise ValueError("expected CPython tag")
+
+        body = val[2:]
+        if "_" in body:
+            raise ValueError("unexpected _ in Python tag; not implemented")
+
+        major, minor = body[0], body[1:]
         return cls(major=int(major), minor=int(minor))
 
 

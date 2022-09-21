@@ -54,15 +54,29 @@ class TestPyVersion:
         assert older_major >= older_major
         assert older_major <= older_major
 
-    def test_parse(self):
-        assert PyVersion.parse("3.2") == PyVersion(3, 2)
-        assert PyVersion.parse("4.0") == PyVersion(4, 0)
+    def test_parse_dotted(self):
+        assert PyVersion.parse_dotted("3.2") == PyVersion(3, 2)
+        assert PyVersion.parse_dotted("4.0") == PyVersion(4, 0)
 
         with pytest.raises(ValueError):
-            PyVersion.parse("3")
+            PyVersion.parse_dotted("3")
 
         with pytest.raises(ValueError):
-            PyVersion.parse("3.2.1")
+            PyVersion.parse_dotted("3.2.1")
 
         with pytest.raises(ValueError):
-            PyVersion.parse("3.")
+            PyVersion.parse_dotted("3.")
+
+    def test_parse_python_tag(self):
+        assert PyVersion.parse_python_tag("cp32") == PyVersion(3, 2)
+        assert PyVersion.parse_python_tag("cp310") == PyVersion(3, 10)
+        assert PyVersion.parse_python_tag("cp40") == PyVersion(4, 0)
+
+        with pytest.raises(ValueError):
+            PyVersion.parse_python_tag("py27")
+
+        with pytest.raises(ValueError):
+            PyVersion.parse_python_tag("cp3")
+
+        with pytest.raises(ValueError):
+            PyVersion.parse_python_tag("cp10_11")

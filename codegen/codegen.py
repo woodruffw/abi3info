@@ -112,11 +112,11 @@ structs = {}
 for name, body in _STABLE_ABI_DATA["struct"].items():
     match body["struct_abi_kind"]:
         case "opaque":
-            struct = OpaqueStruct(name, PyVersion.parse(body["added"]))
+            struct = OpaqueStruct(name, PyVersion.parse_dotted(body["added"]))
         case "full-abi":
-            struct = FullStruct(name, PyVersion.parse(body["added"]))
+            struct = FullStruct(name, PyVersion.parse_dotted(body["added"]))
         case "members":
-            struct = PartialStruct(name, PyVersion.parse(body["added"]), body["members"])
+            struct = PartialStruct(name, PyVersion.parse_dotted(body["added"]), body["members"])
         case other:
             assert False, f"unexpected struct_abi_kind={other}"
 
@@ -127,7 +127,7 @@ print("[+] codegen: functions", file=sys.stderr)
 functions = {
     Symbol(name): Function(
         Symbol(name),
-        PyVersion.parse(body["added"]),
+        PyVersion.parse_dotted(body["added"]),
         feature_macros.get(body.get("ifdef")),
         body.get("abi_only", False),
     )
@@ -138,14 +138,14 @@ print(f"_FUNCTIONS: Final[dict[Symbol, Function]] = {functions}", file=_OUT)
 print("[+] codegen: macros", file=sys.stderr)
 macros = {}
 for name, body in {**_STABLE_ABI_DATA["const"], **_STABLE_ABI_DATA["macro"]}.items():
-    macros[name] = Macro(name, PyVersion.parse(body["added"]))
+    macros[name] = Macro(name, PyVersion.parse_dotted(body["added"]))
 print(f"_MACROS: Final[dict[str, Macro]] = {macros}", file=_OUT)
 
 print("[+] codegen: data objects", file=sys.stderr)
 datas = {
     Symbol(name): Data(
         Symbol(name),
-        PyVersion.parse(body["added"]),
+        PyVersion.parse_dotted(body["added"]),
         feature_macros.get(body.get("ifdef")),
         body.get("abi_only", False),
     )
@@ -155,7 +155,7 @@ print(f"_DATAS: Final[dict[Symbol, Data]] = {datas}", file=_OUT)
 
 print("[+] codegen: typedefs", file=sys.stderr)
 typedefs = {
-    name: Typedef(name, PyVersion.parse(body["added"]))
+    name: Typedef(name, PyVersion.parse_dotted(body["added"]))
     for name, body in _STABLE_ABI_DATA["typedef"].items()
 }
 print(f"_TYPEDEFS: Final[dict[str, Typedef]] = {typedefs}", file=_OUT)
