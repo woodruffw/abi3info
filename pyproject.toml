@@ -28,6 +28,7 @@ requires-python = ">=3.10"
 Homepage = "https://pypi.org/project/abi3info/"
 Issues = "https://github.com/woodruffw/abi3info/issues"
 Source = "https://github.com/woodruffw/abi3info"
+Documentation = "https://woodruffw.github.io/abi3info/"
 
 [project.optional-dependencies]
 test = [
