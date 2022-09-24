@@ -71,6 +71,20 @@ class PyVersion:
     """
 
     @classmethod
+    def decode_version(cls, val: int) -> PyVersion:
+        """
+        Attempts to decode a `PyVersion` from the given integer, which
+        is assumed to be formatted like CPython's `PY_VERSION_HEX`.
+
+        The patch ("micro"), release, and serial versions are not decoded.
+
+        See: <https://docs.python.org/3/c-api/apiabiversion.html#c.PY_VERSION_HEX>
+        """
+        major = val >> 24
+        minor = (val >> 16) & 0x00FF
+        return cls(major=major, minor=minor)
+
+    @classmethod
     def parse_dotted(cls, val: str) -> PyVersion:
         """
         Attempts to parse a `PyVersion` version from the given string.

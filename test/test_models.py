@@ -54,6 +54,16 @@ class TestPyVersion:
         assert older_major >= older_major
         assert older_major <= older_major
 
+    def test_decode_version(self):
+        assert PyVersion.decode_version(0x030401A2) == PyVersion(3, 4)
+        assert PyVersion.decode_version(0x0304FFFF) == PyVersion(3, 4)
+        assert PyVersion.decode_version(0x0207FFFF) == PyVersion(2, 7)
+        assert PyVersion.decode_version(0x030AFFFF) == PyVersion(3, 10)
+
+        v3_12_0_a0 = (3 << 24) | (12 << 16)
+        assert v3_12_0_a0 == 0x030C0000
+        assert PyVersion.decode_version(v3_12_0_a0) == PyVersion(3, 12)
+
     def test_parse_dotted(self):
         assert PyVersion.parse_dotted("3.2") == PyVersion(3, 2)
         assert PyVersion.parse_dotted("4.0") == PyVersion(4, 0)
