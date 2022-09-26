@@ -117,6 +117,12 @@ class PyVersion:
         major, minor = body[0], body[1:]
         return cls(major=int(major), minor=int(minor))
 
+    def __str__(self) -> str:
+        """
+        Returns a `major.minor` string representation of this `PyVersion`.
+        """
+        return f"{self.major}.{self.minor}"
+
 
 @dataclass(frozen=True, slots=True)
 class Macro:
