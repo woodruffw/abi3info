@@ -4,6 +4,9 @@ from abi3info.models import PyVersion, Symbol
 
 
 class TestSymbol:
+    def test_homoiconic(self):
+        assert eval(repr(Symbol("foo"))) == Symbol("foo")
+
     def test_symbol_properties(self):
         sym = Symbol("foo")
 
@@ -90,3 +93,10 @@ class TestPyVersion:
 
         with pytest.raises(ValueError):
             PyVersion.parse_python_tag("cp10_11")
+
+    def test_version_to_str(self):
+        assert str(PyVersion(3, 2)) == "3.2"
+        assert f"{PyVersion(3, 2)}" == "3.2"
+
+    def test_homoiconic(self):
+        assert eval(repr(PyVersion(3, 10))) == PyVersion(3, 10)
