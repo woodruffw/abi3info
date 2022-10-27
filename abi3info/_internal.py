@@ -4381,6 +4381,18 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         ifdef=None,
         abi_only=False,
     ),
+    Symbol(name="PyObject_Vectorcall"): Function(
+        symbol=Symbol(name="PyObject_Vectorcall"),
+        added=PyVersion(major=3, minor=12),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyObject_VectorcallMethod"): Function(
+        symbol=Symbol(name="PyObject_VectorcallMethod"),
+        added=PyVersion(major=3, minor=12),
+        ifdef=None,
+        abi_only=False,
+    ),
 }
 _MACROS: Final[dict[str, Macro]] = {
     "Py_tp_dealloc": Macro(name="Py_tp_dealloc", added=PyVersion(major=3, minor=2)),
@@ -4497,6 +4509,9 @@ _MACROS: Final[dict[str, Macro]] = {
     "Py_BLOCK_THREADS": Macro(name="Py_BLOCK_THREADS", added=PyVersion(major=3, minor=2)),
     "Py_UNBLOCK_THREADS": Macro(name="Py_UNBLOCK_THREADS", added=PyVersion(major=3, minor=2)),
     "Py_END_ALLOW_THREADS": Macro(name="Py_END_ALLOW_THREADS", added=PyVersion(major=3, minor=2)),
+    "PY_VECTORCALL_ARGUMENTS_OFFSET": Macro(
+        name="PY_VECTORCALL_ARGUMENTS_OFFSET", added=PyVersion(major=3, minor=12)
+    ),
 }
 _DATAS: Final[dict[Symbol, Data]] = {
     Symbol(name="PyBaseObject_Type"): Data(
