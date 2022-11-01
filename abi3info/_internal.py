@@ -5420,4 +5420,6 @@ _TYPEDEFS: Final[dict[str, Typedef]] = {
     "PyGILState_STATE": Typedef(name="PyGILState_STATE", added=PyVersion(major=3, minor=2)),
     "Py_UCS4": Typedef(name="Py_UCS4", added=PyVersion(major=3, minor=2)),
     "vectorcallfunc": Typedef(name="vectorcallfunc", added=PyVersion(major=3, minor=12)),
+    "getbufferproc": Typedef(name="getbufferproc", added=PyVersion(major=3, minor=12)),
+    "releasebufferproc": Typedef(name="releasebufferproc", added=PyVersion(major=3, minor=12)),
 }
