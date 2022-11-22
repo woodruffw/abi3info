@@ -3402,13 +3402,13 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         symbol=Symbol(name="PyMember_GetOne"),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=True,
+        abi_only=False,
     ),
     Symbol(name="PyMember_SetOne"): Function(
         symbol=Symbol(name="PyMember_SetOne"),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=True,
+        abi_only=False,
     ),
     Symbol(name="PyThread_ReInitTLS"): Function(
         symbol=Symbol(name="PyThread_ReInitTLS"),
@@ -4503,6 +4503,26 @@ _MACROS: Final[dict[str, Macro]] = {
     "Py_TPFLAGS_HAVE_VECTORCALL": Macro(
         name="Py_TPFLAGS_HAVE_VECTORCALL", added=PyVersion(major=3, minor=12)
     ),
+    "Py_T_BYTE": Macro(name="Py_T_BYTE", added=PyVersion(major=3, minor=12)),
+    "Py_T_SHORT": Macro(name="Py_T_SHORT", added=PyVersion(major=3, minor=12)),
+    "Py_T_INT": Macro(name="Py_T_INT", added=PyVersion(major=3, minor=12)),
+    "Py_T_LONG": Macro(name="Py_T_LONG", added=PyVersion(major=3, minor=12)),
+    "Py_T_LONGLONG": Macro(name="Py_T_LONGLONG", added=PyVersion(major=3, minor=12)),
+    "Py_T_UBYTE": Macro(name="Py_T_UBYTE", added=PyVersion(major=3, minor=12)),
+    "Py_T_UINT": Macro(name="Py_T_UINT", added=PyVersion(major=3, minor=12)),
+    "Py_T_USHORT": Macro(name="Py_T_USHORT", added=PyVersion(major=3, minor=12)),
+    "Py_T_ULONG": Macro(name="Py_T_ULONG", added=PyVersion(major=3, minor=12)),
+    "Py_T_ULONGLONG": Macro(name="Py_T_ULONGLONG", added=PyVersion(major=3, minor=12)),
+    "Py_T_PYSSIZET": Macro(name="Py_T_PYSSIZET", added=PyVersion(major=3, minor=12)),
+    "Py_T_FLOAT": Macro(name="Py_T_FLOAT", added=PyVersion(major=3, minor=12)),
+    "Py_T_DOUBLE": Macro(name="Py_T_DOUBLE", added=PyVersion(major=3, minor=12)),
+    "Py_T_BOOL": Macro(name="Py_T_BOOL", added=PyVersion(major=3, minor=12)),
+    "Py_T_STRING": Macro(name="Py_T_STRING", added=PyVersion(major=3, minor=12)),
+    "Py_T_STRING_INPLACE": Macro(name="Py_T_STRING_INPLACE", added=PyVersion(major=3, minor=12)),
+    "Py_T_CHAR": Macro(name="Py_T_CHAR", added=PyVersion(major=3, minor=12)),
+    "Py_T_OBJECT_EX": Macro(name="Py_T_OBJECT_EX", added=PyVersion(major=3, minor=12)),
+    "Py_READONLY": Macro(name="Py_READONLY", added=PyVersion(major=3, minor=12)),
+    "Py_AUDIT_READ": Macro(name="Py_AUDIT_READ", added=PyVersion(major=3, minor=12)),
     "Py_BEGIN_ALLOW_THREADS": Macro(
         name="Py_BEGIN_ALLOW_THREADS", added=PyVersion(major=3, minor=2)
     ),
