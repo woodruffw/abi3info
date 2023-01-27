@@ -5,10 +5,10 @@ Data models for the CPython limited API and stable ABI.
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import List, Literal, Optional
+from typing import List, Literal, Optional, Union
 
 
-@dataclass(frozen=True, slots=True, eq=False, unsafe_hash=True)
+@dataclass(frozen=True, eq=False, unsafe_hash=True)
 class Symbol:
     """
     Represents a linker symbol, which may or may not point to some kind of object
@@ -52,7 +52,7 @@ class Symbol:
         return self.name == other.name
 
 
-@dataclass(frozen=True, slots=True, order=True)
+@dataclass(frozen=True, order=True)
 class PyVersion:
     """
     Represents a (major, minor) version of Python.
@@ -124,7 +124,7 @@ class PyVersion:
         return f"{self.major}.{self.minor}"
 
 
-@dataclass(frozen=True, slots=True)
+@dataclass(frozen=True)
 class Macro:
     """
     Represents a C/C++ macro in the context of the limited API.
@@ -147,7 +147,7 @@ class Macro:
     """
 
 
-@dataclass(frozen=True, slots=True)
+@dataclass(frozen=True)
 class OpaqueStruct:
     """
     Represents a struct defined by the limited API but considered "opaque"
@@ -166,7 +166,7 @@ class OpaqueStruct:
     """
 
 
-@dataclass(frozen=True, slots=True)
+@dataclass(frozen=True)
 class PartialStruct:
     """
     Represents a struct defined by the limited API but considered "partial"
@@ -179,7 +179,7 @@ class PartialStruct:
     members: List[str]
 
 
-@dataclass(frozen=True, slots=True)
+@dataclass(frozen=True)
 class FullStruct:
     """
     Represents a struct defined by the limited API that is considered "full"
@@ -191,10 +191,10 @@ class FullStruct:
     added: PyVersion
 
 
-Struct = OpaqueStruct | PartialStruct | FullStruct
+Struct = Union[OpaqueStruct, PartialStruct, FullStruct]
 
 
-@dataclass(frozen=True, slots=True)
+@dataclass(frozen=True)
 class FeatureMacro:
     """
     Represents a C/C++ macro that controls the availability of other
@@ -220,7 +220,7 @@ class FeatureMacro:
     """
 
 
-@dataclass(frozen=True, slots=True)
+@dataclass(frozen=True)
 class Function:
     """
     Represents a function defined in the limited API and/or stable ABI.
@@ -258,7 +258,7 @@ class Function:
     """
 
 
-@dataclass(frozen=True, slots=True)
+@dataclass(frozen=True)
 class Data:
     """
     Represents an exported object in the limited API and/or stable ABI.
@@ -291,7 +291,7 @@ class Data:
     """
 
 
-@dataclass(frozen=True, slots=True)
+@dataclass(frozen=True)
 class Typedef:
     """
     Represents a `typedef`'d type in the limited API.
