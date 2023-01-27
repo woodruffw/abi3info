@@ -4,7 +4,9 @@ Generated definitions and data structures for abi3info.
 This module should not be used directly; it is not a public API.
 """
 
-from typing import Final, Dict
+from __future__ import annotations
+
+from typing import Final
 
 from abi3info.models import (
     Data,
@@ -21,7 +23,7 @@ from abi3info.models import (
 )
 
 # this file was generated; do not modify it by hand!
-_FEATURE_MACROS: Final[Dict[str, FeatureMacro]] = {
+_FEATURE_MACROS: Final[dict[str, FeatureMacro]] = {
     "MS_WINDOWS": FeatureMacro(name="MS_WINDOWS", doc="on Windows", windows=True),
     "HAVE_FORK": FeatureMacro(name="HAVE_FORK", doc="on platforms with fork()", windows=False),
     "USE_STACKCHECK": FeatureMacro(
@@ -36,7 +38,7 @@ _FEATURE_MACROS: Final[Dict[str, FeatureMacro]] = {
         windows="maybe",
     ),
 }
-_STRUCTS: Final[Dict[str, Struct]] = {
+_STRUCTS: Final[dict[str, Struct]] = {
     "PyObject": PartialStruct(
         name="PyObject", added=PyVersion(major=3, minor=2), members=["ob_refcnt", "ob_type"]
     ),
@@ -67,7 +69,7 @@ _STRUCTS: Final[Dict[str, Struct]] = {
     "PyTypeObject": OpaqueStruct(name="PyTypeObject", added=PyVersion(major=3, minor=2)),
     "Py_buffer": FullStruct(name="Py_buffer", added=PyVersion(major=3, minor=11)),
 }
-_FUNCTIONS: Final[Dict[Symbol, Function]] = {
+_FUNCTIONS: Final[dict[Symbol, Function]] = {
     Symbol(name="PyType_FromSpec"): Function(
         symbol=Symbol(name="PyType_FromSpec"),
         added=PyVersion(major=3, minor=2),
@@ -4394,7 +4396,7 @@ _FUNCTIONS: Final[Dict[Symbol, Function]] = {
         abi_only=False,
     ),
 }
-_MACROS: Final[Dict[str, Macro]] = {
+_MACROS: Final[dict[str, Macro]] = {
     "Py_tp_dealloc": Macro(name="Py_tp_dealloc", added=PyVersion(major=3, minor=2)),
     "Py_tp_getattr": Macro(name="Py_tp_getattr", added=PyVersion(major=3, minor=2)),
     "Py_tp_setattr": Macro(name="Py_tp_setattr", added=PyVersion(major=3, minor=2)),
@@ -4553,7 +4555,7 @@ _MACROS: Final[Dict[str, Macro]] = {
         name="PY_VECTORCALL_ARGUMENTS_OFFSET", added=PyVersion(major=3, minor=12)
     ),
 }
-_DATAS: Final[Dict[Symbol, Data]] = {
+_DATAS: Final[dict[Symbol, Data]] = {
     Symbol(name="PyBaseObject_Type"): Data(
         symbol=Symbol(name="PyBaseObject_Type"),
         added=PyVersion(major=3, minor=2),
@@ -5417,7 +5419,7 @@ _DATAS: Final[Dict[Symbol, Data]] = {
         abi_only=False,
     ),
 }
-_TYPEDEFS: Final[Dict[str, Typedef]] = {
+_TYPEDEFS: Final[dict[str, Typedef]] = {
     "Py_uintptr_t": Typedef(name="Py_uintptr_t", added=PyVersion(major=3, minor=2)),
     "Py_intptr_t": Typedef(name="Py_intptr_t", added=PyVersion(major=3, minor=2)),
     "Py_ssize_t": Typedef(name="Py_ssize_t", added=PyVersion(major=3, minor=2)),
