@@ -5,6 +5,7 @@ This module should not be used directly; it is not a public API.
 """
 
 from __future__ import annotations
+
 from typing import Final
 
 from abi3info.models import (

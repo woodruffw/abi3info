@@ -91,6 +91,7 @@ This module should not be used directly; it is not a public API.
 )
 
 print("from __future__ import annotations", file=_OUT)
+print(file=_OUT)
 print("from typing import Final", file=_OUT)
 print(file=_OUT)
 print(

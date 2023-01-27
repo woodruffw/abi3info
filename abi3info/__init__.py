@@ -2,7 +2,9 @@
 The abi3info APIs.
 """
 
-from typing import Final, Dict
+from __future__ import annotations
+
+from typing import Final
 
 from abi3info._internal import (
     _DATAS,
@@ -27,32 +29,32 @@ __version__ = "2022.12.06-2"
 The current version of abi3info.
 """
 
-DATAS: Final[Dict[Symbol, Data]] = _DATAS
+DATAS: Final[dict[Symbol, Data]] = _DATAS
 """
 Data object members of the limited API and stable ABI.
 """
 
-FEATURE_MACROS: Final[Dict[str, FeatureMacro]] = _FEATURE_MACROS
+FEATURE_MACROS: Final[dict[str, FeatureMacro]] = _FEATURE_MACROS
 """
 Feature macros that control the availability of limited API members.
 """
 
-FUNCTIONS: Final[Dict[Symbol, Function]] = _FUNCTIONS
+FUNCTIONS: Final[dict[Symbol, Function]] = _FUNCTIONS
 """
 Function members of the limited API and stable ABI.
 """
 
-MACROS: Final[Dict[str, Macro]] = _MACROS
+MACROS: Final[dict[str, Macro]] = _MACROS
 """
 Macro members of the limited API.
 """
 
-STRUCTS: Final[Dict[str, Struct]] = _STRUCTS
+STRUCTS: Final[dict[str, Struct]] = _STRUCTS
 """
 Struct members of the limited API.
 """
 
-TYPEDEFS: Final[Dict[str, Typedef]] = _TYPEDEFS
+TYPEDEFS: Final[dict[str, Typedef]] = _TYPEDEFS
 """
 Typedef members of the limited API.
 """
