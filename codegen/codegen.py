@@ -90,7 +90,8 @@ This module should not be used directly; it is not a public API.
     file=_OUT,
 )
 
-print("from typing import Final, Dict", file=_OUT)
+print("from __future__ import annotations", file=_OUT)
+print("from typing import Final", file=_OUT)
 print(file=_OUT)
 print(
     "from abi3info.models import Data, FeatureMacro, FullStruct, Function, "
@@ -105,7 +106,7 @@ feature_macros = {
     name: FeatureMacro(name, body["doc"], body.get("windows", False))
     for name, body in _STABLE_ABI_DATA["feature_macro"].items()
 }
-print(f"_FEATURE_MACROS: Final[Dict[str, FeatureMacro]] = {feature_macros}", file=_OUT)
+print(f"_FEATURE_MACROS: Final[dict[str, FeatureMacro]] = {feature_macros}", file=_OUT)
 
 print("[+] codegen: structs", file=sys.stderr)
 structs = {}
@@ -121,7 +122,7 @@ for name, body in _STABLE_ABI_DATA["struct"].items():
         assert False, f"unexpected struct_abi_kind={body_abi_kind}"
 
     structs[struct.name] = struct
-print(f"_STRUCTS: Final[Dict[str, Struct]] = {structs}", file=_OUT)
+print(f"_STRUCTS: Final[dict[str, Struct]] = {structs}", file=_OUT)
 
 print("[+] codegen: functions", file=sys.stderr)
 functions = {
@@ -133,13 +134,13 @@ functions = {
     )
     for name, body in _STABLE_ABI_DATA["function"].items()
 }
-print(f"_FUNCTIONS: Final[Dict[Symbol, Function]] = {functions}", file=_OUT)
+print(f"_FUNCTIONS: Final[dict[Symbol, Function]] = {functions}", file=_OUT)
 
 print("[+] codegen: macros", file=sys.stderr)
 macros = {}
 for name, body in {**_STABLE_ABI_DATA["const"], **_STABLE_ABI_DATA["macro"]}.items():
     macros[name] = Macro(name, PyVersion.parse_dotted(body["added"]))
-print(f"_MACROS: Final[Dict[str, Macro]] = {macros}", file=_OUT)
+print(f"_MACROS: Final[dict[str, Macro]] = {macros}", file=_OUT)
 
 print("[+] codegen: data objects", file=sys.stderr)
 datas = {
@@ -151,14 +152,14 @@ datas = {
     )
     for name, body in _STABLE_ABI_DATA["data"].items()
 }
-print(f"_DATAS: Final[Dict[Symbol, Data]] = {datas}", file=_OUT)
+print(f"_DATAS: Final[dict[Symbol, Data]] = {datas}", file=_OUT)
 
 print("[+] codegen: typedefs", file=sys.stderr)
 typedefs = {
     name: Typedef(name, PyVersion.parse_dotted(body["added"]))
     for name, body in _STABLE_ABI_DATA["typedef"].items()
 }
-print(f"_TYPEDEFS: Final[Dict[str, Typedef]] = {typedefs}", file=_OUT)
+print(f"_TYPEDEFS: Final[dict[str, Typedef]] = {typedefs}", file=_OUT)
 
 _OUT.close()
 
