@@ -4383,6 +4383,30 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         ifdef=None,
         abi_only=False,
     ),
+    Symbol(name="PyErr_GetRaisedException"): Function(
+        symbol=Symbol(name="PyErr_GetRaisedException"),
+        added=PyVersion(major=3, minor=12),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyErr_SetRaisedException"): Function(
+        symbol=Symbol(name="PyErr_SetRaisedException"),
+        added=PyVersion(major=3, minor=12),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyException_GetArgs"): Function(
+        symbol=Symbol(name="PyException_GetArgs"),
+        added=PyVersion(major=3, minor=12),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyException_SetArgs"): Function(
+        symbol=Symbol(name="PyException_SetArgs"),
+        added=PyVersion(major=3, minor=12),
+        ifdef=None,
+        abi_only=False,
+    ),
     Symbol(name="PyObject_Vectorcall"): Function(
         symbol=Symbol(name="PyObject_Vectorcall"),
         added=PyVersion(major=3, minor=12),
