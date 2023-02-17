@@ -3322,6 +3322,12 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         ifdef=None,
         abi_only=True,
     ),
+    Symbol(name="_PyState_AddModule"): Function(
+        symbol=Symbol(name="_PyState_AddModule"),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=True,
+    ),
     Symbol(name="_PyThreadState_Init"): Function(
         symbol=Symbol(name="_PyThreadState_Init"),
         added=PyVersion(major=3, minor=2),
