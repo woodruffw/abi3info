@@ -45,11 +45,13 @@ lint = [
   "interrogate",
   "mypy",
 ]
+doc = [
+  "pdoc",
+]
 dev = [
   "build",
-  "pdoc",
   "toml",
-  "abi3info[test,lint]",
+  "abi3info[test,lint,doc]",
 ]
 
 [tool.isort]
