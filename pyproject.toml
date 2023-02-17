@@ -47,7 +47,7 @@ lint = [
 ]
 dev = [
   "build",
-  "pdoc3",
+  "pdoc",
   "toml",
   "abi3info[test,lint]",
 ]

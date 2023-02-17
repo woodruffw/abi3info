@@ -69,8 +69,7 @@ test tests: env/pyvenv.cfg
 .PHONY: doc
 doc: env/pyvenv.cfg
 	. env/bin/activate && \
-		command -v pdoc3 && \
-		PYTHONWARNINGS='error::UserWarning' pdoc --force --html $(PY_MODULE)
+		pdoc $(PY_MODULE) -o html
 
 .PHONY: package
 package: env/pyvenv.cfg
