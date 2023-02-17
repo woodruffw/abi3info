@@ -1,0 +1,1137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>abi3info.models API documentation</title>
+<meta name="description" content="Data models for the CPython limited API and stable ABI." />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>abi3info.models</code></h1>
+</header>
+<section id="section-intro">
+<p>Data models for the CPython limited API and stable ABI.</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">&#34;&#34;&#34;
+Data models for the CPython limited API and stable ABI.
+&#34;&#34;&#34;
+
+from __future__ import annotations
+
+from dataclasses import dataclass
+from typing import List, Literal, Optional, Union
+
+
+@dataclass(frozen=True, eq=False, unsafe_hash=True)
+class Symbol:
+    &#34;&#34;&#34;
+    Represents a linker symbol, which may or may not point to some kind of object
+    (function, struct, constant, etc.).
+
+    The contained symbol is not &#34;normalized&#34; for any particular host;
+    users of this class must choose the correct property (e.g. `Symbol.macos`)
+    for their use case.
+    &#34;&#34;&#34;
+
+    name: str
+    &#34;&#34;&#34;
+    The symbol&#39;s underlying name. This may not correspond to an actual symbol
+    in a binary without platform-specific normalization.
+    &#34;&#34;&#34;
+
+    @property
+    def macos(self) -&gt; str:
+        &#34;&#34;&#34;
+        Returns a macOS-style symbol for the underlying symbol.
+        &#34;&#34;&#34;
+        return f&#34;_{self.name}&#34;
+
+    @property
+    def linux(self) -&gt; str:
+        &#34;&#34;&#34;
+        Returns a Linux-style symbol for the underlying symbol.
+        &#34;&#34;&#34;
+        return self.name
+
+    # NOTE: Manually defined to make the typing stronger here;
+    # the automatic __eq__ implementation from dataclasses allows comparison
+    # against flexible types as long as they match the inner fields.
+    def __eq__(self, other: object) -&gt; bool:
+        &#34;&#34;&#34;
+        Checks the equality of this `Symbol` against another.
+        &#34;&#34;&#34;
+        if not isinstance(other, Symbol):
+            raise TypeError(&#34;Symbol instances can only be compared against other Symbol instances&#34;)
+
+        return self.name == other.name
+
+
+@dataclass(frozen=True, order=True)
+class PyVersion:
+    &#34;&#34;&#34;
+    Represents a (major, minor) version of Python.
+
+    Patch and other version metadata is not included.
+    &#34;&#34;&#34;
+
+    major: int
+    &#34;&#34;&#34;
+    The major version.
+    &#34;&#34;&#34;
+
+    minor: int
+    &#34;&#34;&#34;
+    The minor version.
+    &#34;&#34;&#34;
+
+    @classmethod
+    def decode_version(cls, val: int) -&gt; PyVersion:
+        &#34;&#34;&#34;
+        Attempts to decode a `PyVersion` from the given integer, which
+        is assumed to be formatted like CPython&#39;s `PY_VERSION_HEX`.
+
+        The patch (&#34;micro&#34;), release, and serial versions are not decoded.
+
+        See: &lt;https://docs.python.org/3/c-api/apiabiversion.html#c.PY_VERSION_HEX&gt;
+        &#34;&#34;&#34;
+        major = val &gt;&gt; 24
+        minor = (val &gt;&gt; 16) &amp; 0x00FF
+        return cls(major=major, minor=minor)
+
+    @classmethod
+    def parse_dotted(cls, val: str) -&gt; PyVersion:
+        &#34;&#34;&#34;
+        Attempts to parse a `PyVersion` version from the given string.
+
+        The string is expected to be in `major.minor` format. Other
+        formats are not supported.
+        &#34;&#34;&#34;
+        major, minor = val.split(&#34;.&#34;, 1)
+        return cls(major=int(major), minor=int(minor))
+
+    @classmethod
+    def parse_python_tag(cls, val: str) -&gt; PyVersion:
+        &#34;&#34;&#34;
+        Attempts to parse a `PyVersion` from a PEP 425-style &#34;Python tag&#34;.
+
+        This function only handles a subset of parsing cases allowed by
+        PEP 425, namely:
+
+        * Only CPython tags (e.g. `cp310`) are supported
+        * Underscores are not handled, because CPython tags don&#39;t use them
+        * &#34;Major-version-only&#34; tags (e.g. `cp3`) are not supported
+        &#34;&#34;&#34;
+        if not val.startswith(&#34;cp&#34;):
+            raise ValueError(&#34;expected CPython tag&#34;)
+
+        body = val[2:]
+        if &#34;_&#34; in body:
+            raise ValueError(&#34;unexpected _ in Python tag; not implemented&#34;)
+
+        major, minor = body[0], body[1:]
+        return cls(major=int(major), minor=int(minor))
+
+    def __str__(self) -&gt; str:
+        &#34;&#34;&#34;
+        Returns a `major.minor` string representation of this `PyVersion`.
+        &#34;&#34;&#34;
+        return f&#34;{self.major}.{self.minor}&#34;
+
+
+@dataclass(frozen=True)
+class Macro:
+    &#34;&#34;&#34;
+    Represents a C/C++ macro in the context of the limited API.
+
+    The value of the macro is not given, as it is not guaranteed to be
+    stable.
+
+    This type corresponds to limited API features that are described as
+    &#34;const&#34; and &#34;macro&#34;.
+    &#34;&#34;&#34;
+
+    name: str
+    &#34;&#34;&#34;
+    The macro&#39;s name.
+    &#34;&#34;&#34;
+
+    added: PyVersion
+    &#34;&#34;&#34;
+    When this macro was added to the limited API.
+    &#34;&#34;&#34;
+
+
+@dataclass(frozen=True)
+class OpaqueStruct:
+    &#34;&#34;&#34;
+    Represents a struct defined by the limited API but considered &#34;opaque&#34;
+    in the stable ABI, meaning that it is only referenced via pointers
+    and not with respect to its members.
+    &#34;&#34;&#34;
+
+    name: str
+    &#34;&#34;&#34;
+    The struct&#39;s name.
+    &#34;&#34;&#34;
+
+    added: PyVersion
+    &#34;&#34;&#34;
+    When this struct was added to the limited API.
+    &#34;&#34;&#34;
+
+
+@dataclass(frozen=True)
+class PartialStruct:
+    &#34;&#34;&#34;
+    Represents a struct defined by the limited API but considered &#34;partial&#34;
+    in the stable ABI, meaning that only the members listed are guaranteed
+    not to change.
+    &#34;&#34;&#34;
+
+    name: str
+    added: PyVersion
+    members: List[str]
+
+
+@dataclass(frozen=True)
+class FullStruct:
+    &#34;&#34;&#34;
+    Represents a struct defined by the limited API that is considered &#34;full&#34;
+    in the stable ABI, meaning that its members and layout are guaranteed
+    not to change.
+    &#34;&#34;&#34;
+
+    name: str
+    added: PyVersion
+
+
+Struct = Union[OpaqueStruct, PartialStruct, FullStruct]
+
+
+@dataclass(frozen=True)
+class FeatureMacro:
+    &#34;&#34;&#34;
+    Represents a C/C++ macro that controls the availability of other
+    components of the limited API and/or stable ABI.
+    &#34;&#34;&#34;
+
+    name: str
+    &#34;&#34;&#34;
+    The feature macro&#39;s name.
+    &#34;&#34;&#34;
+
+    doc: str
+    &#34;&#34;&#34;
+    A human-readable documentation string, explaining the feature macro&#39;s purpose.
+    &#34;&#34;&#34;
+
+    windows: bool | Literal[&#34;maybe&#34;]
+    &#34;&#34;&#34;
+    The feature macro&#39;s applicability on Windows.
+
+    The `&#34;maybe&#34;` literal indicates that the macro *can* be defined on Windows
+    builds but is not necessarily defined, unlike `True`.
+    &#34;&#34;&#34;
+
+
+@dataclass(frozen=True)
+class Function:
+    &#34;&#34;&#34;
+    Represents a function defined in the limited API and/or stable ABI.
+
+    `ifdef` is an optional C/C++ macro that controls the function&#39;s availability
+    in a particular CPython build.
+
+    `abi_only` indicates that the function is only part of the stable ABI, and
+    **not** the limited API. This generally happens when the function is
+    private (i.e. starts with `_Py`) but is called via a public macro,
+    or was once part of the limited API but is now only part of the stable ABI
+    for compatibility purposes.
+    &#34;&#34;&#34;
+
+    symbol: Symbol
+    &#34;&#34;&#34;
+    The function&#39;s symbol.
+    &#34;&#34;&#34;
+
+    added: PyVersion
+    &#34;&#34;&#34;
+    When this function was added to the limited API and stable ABI.
+    &#34;&#34;&#34;
+
+    ifdef: Optional[FeatureMacro]
+    &#34;&#34;&#34;
+    The feature macro that controls this function&#39;s presence.
+
+    If `None`, this function is always present.
+    &#34;&#34;&#34;
+
+    abi_only: bool
+    &#34;&#34;&#34;
+    Whether this function is present only in the stable ABI and **not** the limited API.
+    &#34;&#34;&#34;
+
+
+@dataclass(frozen=True)
+class Data:
+    &#34;&#34;&#34;
+    Represents an exported object in the limited API and/or stable ABI.
+
+    This model is identical in behavior and semantics to `Function`, except
+    that the object described is some kind of addressable data instead
+    of a function.
+    &#34;&#34;&#34;
+
+    symbol: Symbol
+    &#34;&#34;&#34;
+    The data object&#39;s symbol.
+    &#34;&#34;&#34;
+
+    added: PyVersion
+    &#34;&#34;&#34;
+    When this data object was added to the limited API and stable ABI.
+    &#34;&#34;&#34;
+
+    ifdef: Optional[FeatureMacro]
+    &#34;&#34;&#34;
+    The feature macro that controls this data object&#39;s presence.
+
+    If `None`, this data object is always present.
+    &#34;&#34;&#34;
+
+    abi_only: bool
+    &#34;&#34;&#34;
+    Whether this data object is present only in the stable ABI and **not** the limited API.
+    &#34;&#34;&#34;
+
+
+@dataclass(frozen=True)
+class Typedef:
+    &#34;&#34;&#34;
+    Represents a `typedef`&#39;d type in the limited API.
+    &#34;&#34;&#34;
+
+    name: str
+    &#34;&#34;&#34;
+    The name of this typedef.
+    &#34;&#34;&#34;
+
+    added: PyVersion
+    &#34;&#34;&#34;
+    When this typedef was added to the limited API.
+    &#34;&#34;&#34;</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="abi3info.models.Data"><code class="flex name class">
+<span>class <span class="ident">Data</span></span>
+<span>(</span><span>symbol: <a title="abi3info.models.Symbol" href="#abi3info.models.Symbol">Symbol</a>, added: <a title="abi3info.models.PyVersion" href="#abi3info.models.PyVersion">PyVersion</a>, ifdef: Optional[<a title="abi3info.models.FeatureMacro" href="#abi3info.models.FeatureMacro">FeatureMacro</a>], abi_only: bool)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Represents an exported object in the limited API and/or stable ABI.</p>
+<p>This model is identical in behavior and semantics to <code><a title="abi3info.models.Function" href="#abi3info.models.Function">Function</a></code>, except
+that the object described is some kind of addressable data instead
+of a function.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@dataclass(frozen=True)
+class Data:
+    &#34;&#34;&#34;
+    Represents an exported object in the limited API and/or stable ABI.
+
+    This model is identical in behavior and semantics to `Function`, except
+    that the object described is some kind of addressable data instead
+    of a function.
+    &#34;&#34;&#34;
+
+    symbol: Symbol
+    &#34;&#34;&#34;
+    The data object&#39;s symbol.
+    &#34;&#34;&#34;
+
+    added: PyVersion
+    &#34;&#34;&#34;
+    When this data object was added to the limited API and stable ABI.
+    &#34;&#34;&#34;
+
+    ifdef: Optional[FeatureMacro]
+    &#34;&#34;&#34;
+    The feature macro that controls this data object&#39;s presence.
+
+    If `None`, this data object is always present.
+    &#34;&#34;&#34;
+
+    abi_only: bool
+    &#34;&#34;&#34;
+    Whether this data object is present only in the stable ABI and **not** the limited API.
+    &#34;&#34;&#34;</code></pre>
+</details>
+<h3>Class variables</h3>
+<dl>
+<dt id="abi3info.models.Data.abi_only"><code class="name">var <span class="ident">abi_only</span> : bool</code></dt>
+<dd>
+<div class="desc"><p>Whether this data object is present only in the stable ABI and <strong>not</strong> the limited API.</p></div>
+</dd>
+<dt id="abi3info.models.Data.added"><code class="name">var <span class="ident">added</span> : <a title="abi3info.models.PyVersion" href="#abi3info.models.PyVersion">PyVersion</a></code></dt>
+<dd>
+<div class="desc"><p>When this data object was added to the limited API and stable ABI.</p></div>
+</dd>
+<dt id="abi3info.models.Data.ifdef"><code class="name">var <span class="ident">ifdef</span> : Optional[<a title="abi3info.models.FeatureMacro" href="#abi3info.models.FeatureMacro">FeatureMacro</a>]</code></dt>
+<dd>
+<div class="desc"><p>The feature macro that controls this data object's presence.</p>
+<p>If <code>None</code>, this data object is always present.</p></div>
+</dd>
+<dt id="abi3info.models.Data.symbol"><code class="name">var <span class="ident">symbol</span> : <a title="abi3info.models.Symbol" href="#abi3info.models.Symbol">Symbol</a></code></dt>
+<dd>
+<div class="desc"><p>The data object's symbol.</p></div>
+</dd>
+</dl>
+</dd>
+<dt id="abi3info.models.FeatureMacro"><code class="flex name class">
+<span>class <span class="ident">FeatureMacro</span></span>
+<span>(</span><span>name: str, doc: str, windows: "bool | Literal['maybe']")</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Represents a C/C++ macro that controls the availability of other
+components of the limited API and/or stable ABI.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@dataclass(frozen=True)
+class FeatureMacro:
+    &#34;&#34;&#34;
+    Represents a C/C++ macro that controls the availability of other
+    components of the limited API and/or stable ABI.
+    &#34;&#34;&#34;
+
+    name: str
+    &#34;&#34;&#34;
+    The feature macro&#39;s name.
+    &#34;&#34;&#34;
+
+    doc: str
+    &#34;&#34;&#34;
+    A human-readable documentation string, explaining the feature macro&#39;s purpose.
+    &#34;&#34;&#34;
+
+    windows: bool | Literal[&#34;maybe&#34;]
+    &#34;&#34;&#34;
+    The feature macro&#39;s applicability on Windows.
+
+    The `&#34;maybe&#34;` literal indicates that the macro *can* be defined on Windows
+    builds but is not necessarily defined, unlike `True`.
+    &#34;&#34;&#34;</code></pre>
+</details>
+<h3>Class variables</h3>
+<dl>
+<dt id="abi3info.models.FeatureMacro.doc"><code class="name">var <span class="ident">doc</span> : str</code></dt>
+<dd>
+<div class="desc"><p>A human-readable documentation string, explaining the feature macro's purpose.</p></div>
+</dd>
+<dt id="abi3info.models.FeatureMacro.name"><code class="name">var <span class="ident">name</span> : str</code></dt>
+<dd>
+<div class="desc"><p>The feature macro's name.</p></div>
+</dd>
+<dt id="abi3info.models.FeatureMacro.windows"><code class="name">var <span class="ident">windows</span> : Union[bool, Literal['maybe']]</code></dt>
+<dd>
+<div class="desc"><p>The feature macro's applicability on Windows.</p>
+<p>The <code>"maybe"</code> literal indicates that the macro <em>can</em> be defined on Windows
+builds but is not necessarily defined, unlike <code>True</code>.</p></div>
+</dd>
+</dl>
+</dd>
+<dt id="abi3info.models.FullStruct"><code class="flex name class">
+<span>class <span class="ident">FullStruct</span></span>
+<span>(</span><span>name: str, added: <a title="abi3info.models.PyVersion" href="#abi3info.models.PyVersion">PyVersion</a>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Represents a struct defined by the limited API that is considered "full"
+in the stable ABI, meaning that its members and layout are guaranteed
+not to change.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@dataclass(frozen=True)
+class FullStruct:
+    &#34;&#34;&#34;
+    Represents a struct defined by the limited API that is considered &#34;full&#34;
+    in the stable ABI, meaning that its members and layout are guaranteed
+    not to change.
+    &#34;&#34;&#34;
+
+    name: str
+    added: PyVersion</code></pre>
+</details>
+<h3>Class variables</h3>
+<dl>
+<dt id="abi3info.models.FullStruct.added"><code class="name">var <span class="ident">added</span> : <a title="abi3info.models.PyVersion" href="#abi3info.models.PyVersion">PyVersion</a></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="abi3info.models.FullStruct.name"><code class="name">var <span class="ident">name</span> : str</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="abi3info.models.Function"><code class="flex name class">
+<span>class <span class="ident">Function</span></span>
+<span>(</span><span>symbol: <a title="abi3info.models.Symbol" href="#abi3info.models.Symbol">Symbol</a>, added: <a title="abi3info.models.PyVersion" href="#abi3info.models.PyVersion">PyVersion</a>, ifdef: Optional[<a title="abi3info.models.FeatureMacro" href="#abi3info.models.FeatureMacro">FeatureMacro</a>], abi_only: bool)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Represents a function defined in the limited API and/or stable ABI.</p>
+<p><code>ifdef</code> is an optional C/C++ macro that controls the function's availability
+in a particular CPython build.</p>
+<p><code>abi_only</code> indicates that the function is only part of the stable ABI, and
+<strong>not</strong> the limited API. This generally happens when the function is
+private (i.e. starts with <code>_Py</code>) but is called via a public macro,
+or was once part of the limited API but is now only part of the stable ABI
+for compatibility purposes.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@dataclass(frozen=True)
+class Function:
+    &#34;&#34;&#34;
+    Represents a function defined in the limited API and/or stable ABI.
+
+    `ifdef` is an optional C/C++ macro that controls the function&#39;s availability
+    in a particular CPython build.
+
+    `abi_only` indicates that the function is only part of the stable ABI, and
+    **not** the limited API. This generally happens when the function is
+    private (i.e. starts with `_Py`) but is called via a public macro,
+    or was once part of the limited API but is now only part of the stable ABI
+    for compatibility purposes.
+    &#34;&#34;&#34;
+
+    symbol: Symbol
+    &#34;&#34;&#34;
+    The function&#39;s symbol.
+    &#34;&#34;&#34;
+
+    added: PyVersion
+    &#34;&#34;&#34;
+    When this function was added to the limited API and stable ABI.
+    &#34;&#34;&#34;
+
+    ifdef: Optional[FeatureMacro]
+    &#34;&#34;&#34;
+    The feature macro that controls this function&#39;s presence.
+
+    If `None`, this function is always present.
+    &#34;&#34;&#34;
+
+    abi_only: bool
+    &#34;&#34;&#34;
+    Whether this function is present only in the stable ABI and **not** the limited API.
+    &#34;&#34;&#34;</code></pre>
+</details>
+<h3>Class variables</h3>
+<dl>
+<dt id="abi3info.models.Function.abi_only"><code class="name">var <span class="ident">abi_only</span> : bool</code></dt>
+<dd>
+<div class="desc"><p>Whether this function is present only in the stable ABI and <strong>not</strong> the limited API.</p></div>
+</dd>
+<dt id="abi3info.models.Function.added"><code class="name">var <span class="ident">added</span> : <a title="abi3info.models.PyVersion" href="#abi3info.models.PyVersion">PyVersion</a></code></dt>
+<dd>
+<div class="desc"><p>When this function was added to the limited API and stable ABI.</p></div>
+</dd>
+<dt id="abi3info.models.Function.ifdef"><code class="name">var <span class="ident">ifdef</span> : Optional[<a title="abi3info.models.FeatureMacro" href="#abi3info.models.FeatureMacro">FeatureMacro</a>]</code></dt>
+<dd>
+<div class="desc"><p>The feature macro that controls this function's presence.</p>
+<p>If <code>None</code>, this function is always present.</p></div>
+</dd>
+<dt id="abi3info.models.Function.symbol"><code class="name">var <span class="ident">symbol</span> : <a title="abi3info.models.Symbol" href="#abi3info.models.Symbol">Symbol</a></code></dt>
+<dd>
+<div class="desc"><p>The function's symbol.</p></div>
+</dd>
+</dl>
+</dd>
+<dt id="abi3info.models.Macro"><code class="flex name class">
+<span>class <span class="ident">Macro</span></span>
+<span>(</span><span>name: str, added: <a title="abi3info.models.PyVersion" href="#abi3info.models.PyVersion">PyVersion</a>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Represents a C/C++ macro in the context of the limited API.</p>
+<p>The value of the macro is not given, as it is not guaranteed to be
+stable.</p>
+<p>This type corresponds to limited API features that are described as
+"const" and "macro".</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@dataclass(frozen=True)
+class Macro:
+    &#34;&#34;&#34;
+    Represents a C/C++ macro in the context of the limited API.
+
+    The value of the macro is not given, as it is not guaranteed to be
+    stable.
+
+    This type corresponds to limited API features that are described as
+    &#34;const&#34; and &#34;macro&#34;.
+    &#34;&#34;&#34;
+
+    name: str
+    &#34;&#34;&#34;
+    The macro&#39;s name.
+    &#34;&#34;&#34;
+
+    added: PyVersion
+    &#34;&#34;&#34;
+    When this macro was added to the limited API.
+    &#34;&#34;&#34;</code></pre>
+</details>
+<h3>Class variables</h3>
+<dl>
+<dt id="abi3info.models.Macro.added"><code class="name">var <span class="ident">added</span> : <a title="abi3info.models.PyVersion" href="#abi3info.models.PyVersion">PyVersion</a></code></dt>
+<dd>
+<div class="desc"><p>When this macro was added to the limited API.</p></div>
+</dd>
+<dt id="abi3info.models.Macro.name"><code class="name">var <span class="ident">name</span> : str</code></dt>
+<dd>
+<div class="desc"><p>The macro's name.</p></div>
+</dd>
+</dl>
+</dd>
+<dt id="abi3info.models.OpaqueStruct"><code class="flex name class">
+<span>class <span class="ident">OpaqueStruct</span></span>
+<span>(</span><span>name: str, added: <a title="abi3info.models.PyVersion" href="#abi3info.models.PyVersion">PyVersion</a>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Represents a struct defined by the limited API but considered "opaque"
+in the stable ABI, meaning that it is only referenced via pointers
+and not with respect to its members.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@dataclass(frozen=True)
+class OpaqueStruct:
+    &#34;&#34;&#34;
+    Represents a struct defined by the limited API but considered &#34;opaque&#34;
+    in the stable ABI, meaning that it is only referenced via pointers
+    and not with respect to its members.
+    &#34;&#34;&#34;
+
+    name: str
+    &#34;&#34;&#34;
+    The struct&#39;s name.
+    &#34;&#34;&#34;
+
+    added: PyVersion
+    &#34;&#34;&#34;
+    When this struct was added to the limited API.
+    &#34;&#34;&#34;</code></pre>
+</details>
+<h3>Class variables</h3>
+<dl>
+<dt id="abi3info.models.OpaqueStruct.added"><code class="name">var <span class="ident">added</span> : <a title="abi3info.models.PyVersion" href="#abi3info.models.PyVersion">PyVersion</a></code></dt>
+<dd>
+<div class="desc"><p>When this struct was added to the limited API.</p></div>
+</dd>
+<dt id="abi3info.models.OpaqueStruct.name"><code class="name">var <span class="ident">name</span> : str</code></dt>
+<dd>
+<div class="desc"><p>The struct's name.</p></div>
+</dd>
+</dl>
+</dd>
+<dt id="abi3info.models.PartialStruct"><code class="flex name class">
+<span>class <span class="ident">PartialStruct</span></span>
+<span>(</span><span>name: str, added: <a title="abi3info.models.PyVersion" href="#abi3info.models.PyVersion">PyVersion</a>, members: List[str])</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Represents a struct defined by the limited API but considered "partial"
+in the stable ABI, meaning that only the members listed are guaranteed
+not to change.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@dataclass(frozen=True)
+class PartialStruct:
+    &#34;&#34;&#34;
+    Represents a struct defined by the limited API but considered &#34;partial&#34;
+    in the stable ABI, meaning that only the members listed are guaranteed
+    not to change.
+    &#34;&#34;&#34;
+
+    name: str
+    added: PyVersion
+    members: List[str]</code></pre>
+</details>
+<h3>Class variables</h3>
+<dl>
+<dt id="abi3info.models.PartialStruct.added"><code class="name">var <span class="ident">added</span> : <a title="abi3info.models.PyVersion" href="#abi3info.models.PyVersion">PyVersion</a></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="abi3info.models.PartialStruct.members"><code class="name">var <span class="ident">members</span> : List[str]</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="abi3info.models.PartialStruct.name"><code class="name">var <span class="ident">name</span> : str</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="abi3info.models.PyVersion"><code class="flex name class">
+<span>class <span class="ident">PyVersion</span></span>
+<span>(</span><span>major: int, minor: int)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Represents a (major, minor) version of Python.</p>
+<p>Patch and other version metadata is not included.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@dataclass(frozen=True, order=True)
+class PyVersion:
+    &#34;&#34;&#34;
+    Represents a (major, minor) version of Python.
+
+    Patch and other version metadata is not included.
+    &#34;&#34;&#34;
+
+    major: int
+    &#34;&#34;&#34;
+    The major version.
+    &#34;&#34;&#34;
+
+    minor: int
+    &#34;&#34;&#34;
+    The minor version.
+    &#34;&#34;&#34;
+
+    @classmethod
+    def decode_version(cls, val: int) -&gt; PyVersion:
+        &#34;&#34;&#34;
+        Attempts to decode a `PyVersion` from the given integer, which
+        is assumed to be formatted like CPython&#39;s `PY_VERSION_HEX`.
+
+        The patch (&#34;micro&#34;), release, and serial versions are not decoded.
+
+        See: &lt;https://docs.python.org/3/c-api/apiabiversion.html#c.PY_VERSION_HEX&gt;
+        &#34;&#34;&#34;
+        major = val &gt;&gt; 24
+        minor = (val &gt;&gt; 16) &amp; 0x00FF
+        return cls(major=major, minor=minor)
+
+    @classmethod
+    def parse_dotted(cls, val: str) -&gt; PyVersion:
+        &#34;&#34;&#34;
+        Attempts to parse a `PyVersion` version from the given string.
+
+        The string is expected to be in `major.minor` format. Other
+        formats are not supported.
+        &#34;&#34;&#34;
+        major, minor = val.split(&#34;.&#34;, 1)
+        return cls(major=int(major), minor=int(minor))
+
+    @classmethod
+    def parse_python_tag(cls, val: str) -&gt; PyVersion:
+        &#34;&#34;&#34;
+        Attempts to parse a `PyVersion` from a PEP 425-style &#34;Python tag&#34;.
+
+        This function only handles a subset of parsing cases allowed by
+        PEP 425, namely:
+
+        * Only CPython tags (e.g. `cp310`) are supported
+        * Underscores are not handled, because CPython tags don&#39;t use them
+        * &#34;Major-version-only&#34; tags (e.g. `cp3`) are not supported
+        &#34;&#34;&#34;
+        if not val.startswith(&#34;cp&#34;):
+            raise ValueError(&#34;expected CPython tag&#34;)
+
+        body = val[2:]
+        if &#34;_&#34; in body:
+            raise ValueError(&#34;unexpected _ in Python tag; not implemented&#34;)
+
+        major, minor = body[0], body[1:]
+        return cls(major=int(major), minor=int(minor))
+
+    def __str__(self) -&gt; str:
+        &#34;&#34;&#34;
+        Returns a `major.minor` string representation of this `PyVersion`.
+        &#34;&#34;&#34;
+        return f&#34;{self.major}.{self.minor}&#34;</code></pre>
+</details>
+<h3>Class variables</h3>
+<dl>
+<dt id="abi3info.models.PyVersion.major"><code class="name">var <span class="ident">major</span> : int</code></dt>
+<dd>
+<div class="desc"><p>The major version.</p></div>
+</dd>
+<dt id="abi3info.models.PyVersion.minor"><code class="name">var <span class="ident">minor</span> : int</code></dt>
+<dd>
+<div class="desc"><p>The minor version.</p></div>
+</dd>
+</dl>
+<h3>Static methods</h3>
+<dl>
+<dt id="abi3info.models.PyVersion.decode_version"><code class="name flex">
+<span>def <span class="ident">decode_version</span></span>(<span>val: int) ‑> <a title="abi3info.models.PyVersion" href="#abi3info.models.PyVersion">PyVersion</a></span>
+</code></dt>
+<dd>
+<div class="desc"><p>Attempts to decode a <code><a title="abi3info.models.PyVersion" href="#abi3info.models.PyVersion">PyVersion</a></code> from the given integer, which
+is assumed to be formatted like CPython's <code>PY_VERSION_HEX</code>.</p>
+<p>The patch ("micro"), release, and serial versions are not decoded.</p>
+<p>See: <a href="https://docs.python.org/3/c-api/apiabiversion.html#c.PY_VERSION_HEX">https://docs.python.org/3/c-api/apiabiversion.html#c.PY_VERSION_HEX</a></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@classmethod
+def decode_version(cls, val: int) -&gt; PyVersion:
+    &#34;&#34;&#34;
+    Attempts to decode a `PyVersion` from the given integer, which
+    is assumed to be formatted like CPython&#39;s `PY_VERSION_HEX`.
+
+    The patch (&#34;micro&#34;), release, and serial versions are not decoded.
+
+    See: &lt;https://docs.python.org/3/c-api/apiabiversion.html#c.PY_VERSION_HEX&gt;
+    &#34;&#34;&#34;
+    major = val &gt;&gt; 24
+    minor = (val &gt;&gt; 16) &amp; 0x00FF
+    return cls(major=major, minor=minor)</code></pre>
+</details>
+</dd>
+<dt id="abi3info.models.PyVersion.parse_dotted"><code class="name flex">
+<span>def <span class="ident">parse_dotted</span></span>(<span>val: str) ‑> <a title="abi3info.models.PyVersion" href="#abi3info.models.PyVersion">PyVersion</a></span>
+</code></dt>
+<dd>
+<div class="desc"><p>Attempts to parse a <code><a title="abi3info.models.PyVersion" href="#abi3info.models.PyVersion">PyVersion</a></code> version from the given string.</p>
+<p>The string is expected to be in <code>major.minor</code> format. Other
+formats are not supported.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@classmethod
+def parse_dotted(cls, val: str) -&gt; PyVersion:
+    &#34;&#34;&#34;
+    Attempts to parse a `PyVersion` version from the given string.
+
+    The string is expected to be in `major.minor` format. Other
+    formats are not supported.
+    &#34;&#34;&#34;
+    major, minor = val.split(&#34;.&#34;, 1)
+    return cls(major=int(major), minor=int(minor))</code></pre>
+</details>
+</dd>
+<dt id="abi3info.models.PyVersion.parse_python_tag"><code class="name flex">
+<span>def <span class="ident">parse_python_tag</span></span>(<span>val: str) ‑> <a title="abi3info.models.PyVersion" href="#abi3info.models.PyVersion">PyVersion</a></span>
+</code></dt>
+<dd>
+<div class="desc"><p>Attempts to parse a <code><a title="abi3info.models.PyVersion" href="#abi3info.models.PyVersion">PyVersion</a></code> from a PEP 425-style "Python tag".</p>
+<p>This function only handles a subset of parsing cases allowed by
+PEP 425, namely:</p>
+<ul>
+<li>Only CPython tags (e.g. <code>cp310</code>) are supported</li>
+<li>Underscores are not handled, because CPython tags don't use them</li>
+<li>"Major-version-only" tags (e.g. <code>cp3</code>) are not supported</li>
+</ul></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@classmethod
+def parse_python_tag(cls, val: str) -&gt; PyVersion:
+    &#34;&#34;&#34;
+    Attempts to parse a `PyVersion` from a PEP 425-style &#34;Python tag&#34;.
+
+    This function only handles a subset of parsing cases allowed by
+    PEP 425, namely:
+
+    * Only CPython tags (e.g. `cp310`) are supported
+    * Underscores are not handled, because CPython tags don&#39;t use them
+    * &#34;Major-version-only&#34; tags (e.g. `cp3`) are not supported
+    &#34;&#34;&#34;
+    if not val.startswith(&#34;cp&#34;):
+        raise ValueError(&#34;expected CPython tag&#34;)
+
+    body = val[2:]
+    if &#34;_&#34; in body:
+        raise ValueError(&#34;unexpected _ in Python tag; not implemented&#34;)
+
+    major, minor = body[0], body[1:]
+    return cls(major=int(major), minor=int(minor))</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="abi3info.models.Symbol"><code class="flex name class">
+<span>class <span class="ident">Symbol</span></span>
+<span>(</span><span>name: str)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Represents a linker symbol, which may or may not point to some kind of object
+(function, struct, constant, etc.).</p>
+<p>The contained symbol is not "normalized" for any particular host;
+users of this class must choose the correct property (e.g. <code><a title="abi3info.models.Symbol.macos" href="#abi3info.models.Symbol.macos">Symbol.macos</a></code>)
+for their use case.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@dataclass(frozen=True, eq=False, unsafe_hash=True)
+class Symbol:
+    &#34;&#34;&#34;
+    Represents a linker symbol, which may or may not point to some kind of object
+    (function, struct, constant, etc.).
+
+    The contained symbol is not &#34;normalized&#34; for any particular host;
+    users of this class must choose the correct property (e.g. `Symbol.macos`)
+    for their use case.
+    &#34;&#34;&#34;
+
+    name: str
+    &#34;&#34;&#34;
+    The symbol&#39;s underlying name. This may not correspond to an actual symbol
+    in a binary without platform-specific normalization.
+    &#34;&#34;&#34;
+
+    @property
+    def macos(self) -&gt; str:
+        &#34;&#34;&#34;
+        Returns a macOS-style symbol for the underlying symbol.
+        &#34;&#34;&#34;
+        return f&#34;_{self.name}&#34;
+
+    @property
+    def linux(self) -&gt; str:
+        &#34;&#34;&#34;
+        Returns a Linux-style symbol for the underlying symbol.
+        &#34;&#34;&#34;
+        return self.name
+
+    # NOTE: Manually defined to make the typing stronger here;
+    # the automatic __eq__ implementation from dataclasses allows comparison
+    # against flexible types as long as they match the inner fields.
+    def __eq__(self, other: object) -&gt; bool:
+        &#34;&#34;&#34;
+        Checks the equality of this `Symbol` against another.
+        &#34;&#34;&#34;
+        if not isinstance(other, Symbol):
+            raise TypeError(&#34;Symbol instances can only be compared against other Symbol instances&#34;)
+
+        return self.name == other.name</code></pre>
+</details>
+<h3>Class variables</h3>
+<dl>
+<dt id="abi3info.models.Symbol.name"><code class="name">var <span class="ident">name</span> : str</code></dt>
+<dd>
+<div class="desc"><p>The symbol's underlying name. This may not correspond to an actual symbol
+in a binary without platform-specific normalization.</p></div>
+</dd>
+</dl>
+<h3>Instance variables</h3>
+<dl>
+<dt id="abi3info.models.Symbol.linux"><code class="name">var <span class="ident">linux</span> : str</code></dt>
+<dd>
+<div class="desc"><p>Returns a Linux-style symbol for the underlying symbol.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@property
+def linux(self) -&gt; str:
+    &#34;&#34;&#34;
+    Returns a Linux-style symbol for the underlying symbol.
+    &#34;&#34;&#34;
+    return self.name</code></pre>
+</details>
+</dd>
+<dt id="abi3info.models.Symbol.macos"><code class="name">var <span class="ident">macos</span> : str</code></dt>
+<dd>
+<div class="desc"><p>Returns a macOS-style symbol for the underlying symbol.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@property
+def macos(self) -&gt; str:
+    &#34;&#34;&#34;
+    Returns a macOS-style symbol for the underlying symbol.
+    &#34;&#34;&#34;
+    return f&#34;_{self.name}&#34;</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="abi3info.models.Typedef"><code class="flex name class">
+<span>class <span class="ident">Typedef</span></span>
+<span>(</span><span>name: str, added: <a title="abi3info.models.PyVersion" href="#abi3info.models.PyVersion">PyVersion</a>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Represents a <code>typedef</code>'d type in the limited API.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@dataclass(frozen=True)
+class Typedef:
+    &#34;&#34;&#34;
+    Represents a `typedef`&#39;d type in the limited API.
+    &#34;&#34;&#34;
+
+    name: str
+    &#34;&#34;&#34;
+    The name of this typedef.
+    &#34;&#34;&#34;
+
+    added: PyVersion
+    &#34;&#34;&#34;
+    When this typedef was added to the limited API.
+    &#34;&#34;&#34;</code></pre>
+</details>
+<h3>Class variables</h3>
+<dl>
+<dt id="abi3info.models.Typedef.added"><code class="name">var <span class="ident">added</span> : <a title="abi3info.models.PyVersion" href="#abi3info.models.PyVersion">PyVersion</a></code></dt>
+<dd>
+<div class="desc"><p>When this typedef was added to the limited API.</p></div>
+</dd>
+<dt id="abi3info.models.Typedef.name"><code class="name">var <span class="ident">name</span> : str</code></dt>
+<dd>
+<div class="desc"><p>The name of this typedef.</p></div>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="abi3info" href="index.html">abi3info</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="abi3info.models.Data" href="#abi3info.models.Data">Data</a></code></h4>
+<ul class="">
+<li><code><a title="abi3info.models.Data.abi_only" href="#abi3info.models.Data.abi_only">abi_only</a></code></li>
+<li><code><a title="abi3info.models.Data.added" href="#abi3info.models.Data.added">added</a></code></li>
+<li><code><a title="abi3info.models.Data.ifdef" href="#abi3info.models.Data.ifdef">ifdef</a></code></li>
+<li><code><a title="abi3info.models.Data.symbol" href="#abi3info.models.Data.symbol">symbol</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="abi3info.models.FeatureMacro" href="#abi3info.models.FeatureMacro">FeatureMacro</a></code></h4>
+<ul class="">
+<li><code><a title="abi3info.models.FeatureMacro.doc" href="#abi3info.models.FeatureMacro.doc">doc</a></code></li>
+<li><code><a title="abi3info.models.FeatureMacro.name" href="#abi3info.models.FeatureMacro.name">name</a></code></li>
+<li><code><a title="abi3info.models.FeatureMacro.windows" href="#abi3info.models.FeatureMacro.windows">windows</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="abi3info.models.FullStruct" href="#abi3info.models.FullStruct">FullStruct</a></code></h4>
+<ul class="">
+<li><code><a title="abi3info.models.FullStruct.added" href="#abi3info.models.FullStruct.added">added</a></code></li>
+<li><code><a title="abi3info.models.FullStruct.name" href="#abi3info.models.FullStruct.name">name</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="abi3info.models.Function" href="#abi3info.models.Function">Function</a></code></h4>
+<ul class="">
+<li><code><a title="abi3info.models.Function.abi_only" href="#abi3info.models.Function.abi_only">abi_only</a></code></li>
+<li><code><a title="abi3info.models.Function.added" href="#abi3info.models.Function.added">added</a></code></li>
+<li><code><a title="abi3info.models.Function.ifdef" href="#abi3info.models.Function.ifdef">ifdef</a></code></li>
+<li><code><a title="abi3info.models.Function.symbol" href="#abi3info.models.Function.symbol">symbol</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="abi3info.models.Macro" href="#abi3info.models.Macro">Macro</a></code></h4>
+<ul class="">
+<li><code><a title="abi3info.models.Macro.added" href="#abi3info.models.Macro.added">added</a></code></li>
+<li><code><a title="abi3info.models.Macro.name" href="#abi3info.models.Macro.name">name</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="abi3info.models.OpaqueStruct" href="#abi3info.models.OpaqueStruct">OpaqueStruct</a></code></h4>
+<ul class="">
+<li><code><a title="abi3info.models.OpaqueStruct.added" href="#abi3info.models.OpaqueStruct.added">added</a></code></li>
+<li><code><a title="abi3info.models.OpaqueStruct.name" href="#abi3info.models.OpaqueStruct.name">name</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="abi3info.models.PartialStruct" href="#abi3info.models.PartialStruct">PartialStruct</a></code></h4>
+<ul class="">
+<li><code><a title="abi3info.models.PartialStruct.added" href="#abi3info.models.PartialStruct.added">added</a></code></li>
+<li><code><a title="abi3info.models.PartialStruct.members" href="#abi3info.models.PartialStruct.members">members</a></code></li>
+<li><code><a title="abi3info.models.PartialStruct.name" href="#abi3info.models.PartialStruct.name">name</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="abi3info.models.PyVersion" href="#abi3info.models.PyVersion">PyVersion</a></code></h4>
+<ul class="">
+<li><code><a title="abi3info.models.PyVersion.decode_version" href="#abi3info.models.PyVersion.decode_version">decode_version</a></code></li>
+<li><code><a title="abi3info.models.PyVersion.major" href="#abi3info.models.PyVersion.major">major</a></code></li>
+<li><code><a title="abi3info.models.PyVersion.minor" href="#abi3info.models.PyVersion.minor">minor</a></code></li>
+<li><code><a title="abi3info.models.PyVersion.parse_dotted" href="#abi3info.models.PyVersion.parse_dotted">parse_dotted</a></code></li>
+<li><code><a title="abi3info.models.PyVersion.parse_python_tag" href="#abi3info.models.PyVersion.parse_python_tag">parse_python_tag</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="abi3info.models.Symbol" href="#abi3info.models.Symbol">Symbol</a></code></h4>
+<ul class="">
+<li><code><a title="abi3info.models.Symbol.linux" href="#abi3info.models.Symbol.linux">linux</a></code></li>
+<li><code><a title="abi3info.models.Symbol.macos" href="#abi3info.models.Symbol.macos">macos</a></code></li>
+<li><code><a title="abi3info.models.Symbol.name" href="#abi3info.models.Symbol.name">name</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="abi3info.models.Typedef" href="#abi3info.models.Typedef">Typedef</a></code></h4>
+<ul class="">
+<li><code><a title="abi3info.models.Typedef.added" href="#abi3info.models.Typedef.added">added</a></code></li>
+<li><code><a title="abi3info.models.Typedef.name" href="#abi3info.models.Typedef.name">name</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>
