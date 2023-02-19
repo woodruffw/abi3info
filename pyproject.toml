@@ -46,7 +46,7 @@ lint = [
   "mypy",
 ]
 doc = [
-  "pdoc",
+  "pdoc >= 13.0.0",
 ]
 dev = [
   "build",
