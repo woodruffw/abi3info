@@ -634,6 +634,12 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         ifdef=None,
         abi_only=False,
     ),
+    Symbol(name="PyErr_DisplayException"): Function(
+        symbol=Symbol(name="PyErr_DisplayException"),
+        added=PyVersion(major=3, minor=12),
+        ifdef=None,
+        abi_only=False,
+    ),
     Symbol(name="PyErr_ExceptionMatches"): Function(
         symbol=Symbol(name="PyErr_ExceptionMatches"),
         added=PyVersion(major=3, minor=2),
