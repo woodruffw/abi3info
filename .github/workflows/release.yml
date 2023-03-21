@@ -30,11 +30,6 @@ jobs:
 
     - name: publish
       uses: pypa/gh-action-pypi-publish@v1.8.1
-      env:
-        DEBUG: true
-      with:
-        user: __token__
-        password: ${{ secrets.PYPI_TOKEN }}
 
     - name: sign
       uses: sigstore/gh-action-sigstore-python@v1.2.1
