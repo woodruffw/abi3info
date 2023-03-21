@@ -9,12 +9,15 @@ jobs:
   pypi:
     name: upload release to PyPI
     runs-on: ubuntu-latest
+    environment: release
     permissions:
+      # Used for OIDC publishing.
       # Used to sign the release's artifacts with sigstore-python.
       id-token: write
 
       # Used to attach signing artifacts to the published release.
       contents: write
+
     steps:
     - uses: actions/checkout@v3
 
@@ -30,11 +33,6 @@ jobs:
 
     - name: publish
       uses: pypa/gh-action-pypi-publish@v1.8.1
-      env:
-        DEBUG: true
-      with:
-        user: __token__
-        password: ${{ secrets.PYPI_TOKEN }}
 
     - name: sign
       uses: sigstore/gh-action-sigstore-python@v1.2.1
