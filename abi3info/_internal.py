@@ -4425,6 +4425,18 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         ifdef=None,
         abi_only=False,
     ),
+    Symbol(name="PyObject_GetTypeData"): Function(
+        symbol=Symbol(name="PyObject_GetTypeData"),
+        added=PyVersion(major=3, minor=12),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyType_GetTypeDataSize"): Function(
+        symbol=Symbol(name="PyType_GetTypeDataSize"),
+        added=PyVersion(major=3, minor=12),
+        ifdef=None,
+        abi_only=False,
+    ),
 }
 _MACROS: Final[dict[str, Macro]] = {
     "Py_tp_dealloc": Macro(name="Py_tp_dealloc", added=PyVersion(major=3, minor=2)),
@@ -4575,6 +4587,10 @@ _MACROS: Final[dict[str, Macro]] = {
     "Py_T_OBJECT_EX": Macro(name="Py_T_OBJECT_EX", added=PyVersion(major=3, minor=12)),
     "Py_READONLY": Macro(name="Py_READONLY", added=PyVersion(major=3, minor=12)),
     "Py_AUDIT_READ": Macro(name="Py_AUDIT_READ", added=PyVersion(major=3, minor=12)),
+    "Py_RELATIVE_OFFSET": Macro(name="Py_RELATIVE_OFFSET", added=PyVersion(major=3, minor=12)),
+    "Py_TPFLAGS_ITEMS_AT_END": Macro(
+        name="Py_TPFLAGS_ITEMS_AT_END", added=PyVersion(major=3, minor=12)
+    ),
     "Py_BEGIN_ALLOW_THREADS": Macro(
         name="Py_BEGIN_ALLOW_THREADS", added=PyVersion(major=3, minor=2)
     ),
