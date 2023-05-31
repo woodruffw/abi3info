@@ -806,19 +806,19 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         symbol=Symbol(name="PyEval_CallFunction"),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="PyEval_CallMethod"): Function(
         symbol=Symbol(name="PyEval_CallMethod"),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="PyEval_CallObjectWithKeywords"): Function(
         symbol=Symbol(name="PyEval_CallObjectWithKeywords"),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="PyEval_EvalCode"): Function(
         symbol=Symbol(name="PyEval_EvalCode"),
@@ -4436,6 +4436,26 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         added=PyVersion(major=3, minor=12),
         ifdef=None,
         abi_only=False,
+    ),
+    Symbol(name="_Py_IncRefTotal_DO_NOT_USE_THIS"): Function(
+        symbol=Symbol(name="_Py_IncRefTotal_DO_NOT_USE_THIS"),
+        added=PyVersion(major=3, minor=12),
+        ifdef=FeatureMacro(
+            name="Py_REF_DEBUG",
+            doc="when Python is compiled in debug mode (with Py_REF_DEBUG)",
+            windows="maybe",
+        ),
+        abi_only=True,
+    ),
+    Symbol(name="_Py_DecRefTotal_DO_NOT_USE_THIS"): Function(
+        symbol=Symbol(name="_Py_DecRefTotal_DO_NOT_USE_THIS"),
+        added=PyVersion(major=3, minor=12),
+        ifdef=FeatureMacro(
+            name="Py_REF_DEBUG",
+            doc="when Python is compiled in debug mode (with Py_REF_DEBUG)",
+            windows="maybe",
+        ),
+        abi_only=True,
     ),
 }
 _MACROS: Final[dict[str, Macro]] = {
