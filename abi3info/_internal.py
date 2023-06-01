@@ -236,7 +236,7 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         symbol=Symbol(name="PyCFunction_Call"),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="PyCFunction_GetFlags"): Function(
         symbol=Symbol(name="PyCFunction_GetFlags"),
@@ -794,7 +794,7 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         symbol=Symbol(name="PyEval_AcquireLock"),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="PyEval_AcquireThread"): Function(
         symbol=Symbol(name="PyEval_AcquireThread"),
@@ -884,13 +884,13 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         symbol=Symbol(name="PyEval_InitThreads"),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="PyEval_ReleaseLock"): Function(
         symbol=Symbol(name="PyEval_ReleaseLock"),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="PyEval_ReleaseThread"): Function(
         symbol=Symbol(name="PyEval_ReleaseThread"),
@@ -914,7 +914,7 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         symbol=Symbol(name="PyEval_ThreadsInitialized"),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="PyException_GetCause"): Function(
         symbol=Symbol(name="PyException_GetCause"),
@@ -2294,13 +2294,13 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         symbol=Symbol(name="PySys_AddWarnOption"),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="PySys_AddWarnOptionUnicode"): Function(
         symbol=Symbol(name="PySys_AddWarnOptionUnicode"),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="PySys_FormatStderr"): Function(
         symbol=Symbol(name="PySys_FormatStderr"),
@@ -2324,7 +2324,7 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         symbol=Symbol(name="PySys_HasWarnOptions"),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="PySys_ResetWarnOptions"): Function(
         symbol=Symbol(name="PySys_ResetWarnOptions"),
@@ -2336,13 +2336,13 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         symbol=Symbol(name="PySys_SetArgv"),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="PySys_SetArgvEx"): Function(
         symbol=Symbol(name="PySys_SetArgvEx"),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="PySys_SetObject"): Function(
         symbol=Symbol(name="PySys_SetObject"),
@@ -2354,7 +2354,7 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         symbol=Symbol(name="PySys_SetPath"),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="PySys_WriteStderr"): Function(
         symbol=Symbol(name="PySys_WriteStderr"),
@@ -3260,13 +3260,13 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         symbol=Symbol(name="Py_SetProgramName"),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="Py_SetPythonHome"): Function(
         symbol=Symbol(name="Py_SetPythonHome"),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="Py_SetRecursionLimit"): Function(
         symbol=Symbol(name="Py_SetRecursionLimit"),
@@ -3766,7 +3766,7 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         symbol=Symbol(name="PySys_AddXOption"),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="PySys_GetXOptions"): Function(
         symbol=Symbol(name="PySys_GetXOptions"),
@@ -3856,7 +3856,7 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         symbol=Symbol(name="Py_SetPath"),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="PyErr_SetExcFromWindowsErr"): Function(
         symbol=Symbol(name="PyErr_SetExcFromWindowsErr"),
