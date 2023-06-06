@@ -4437,26 +4437,6 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="_Py_IncRefTotal_DO_NOT_USE_THIS"): Function(
-        symbol=Symbol(name="_Py_IncRefTotal_DO_NOT_USE_THIS"),
-        added=PyVersion(major=3, minor=12),
-        ifdef=FeatureMacro(
-            name="Py_REF_DEBUG",
-            doc="when Python is compiled in debug mode (with Py_REF_DEBUG)",
-            windows="maybe",
-        ),
-        abi_only=True,
-    ),
-    Symbol(name="_Py_DecRefTotal_DO_NOT_USE_THIS"): Function(
-        symbol=Symbol(name="_Py_DecRefTotal_DO_NOT_USE_THIS"),
-        added=PyVersion(major=3, minor=12),
-        ifdef=FeatureMacro(
-            name="Py_REF_DEBUG",
-            doc="when Python is compiled in debug mode (with Py_REF_DEBUG)",
-            windows="maybe",
-        ),
-        abi_only=True,
-    ),
 }
 _MACROS: Final[dict[str, Macro]] = {
     "Py_tp_dealloc": Macro(name="Py_tp_dealloc", added=PyVersion(major=3, minor=2)),
