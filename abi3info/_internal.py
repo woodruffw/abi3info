@@ -4491,6 +4491,18 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         ifdef=None,
         abi_only=False,
     ),
+    Symbol(name="PyDict_GetItemRef"): Function(
+        symbol=Symbol(name="PyDict_GetItemRef"),
+        added=PyVersion(major=3, minor=13),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyDict_GetItemStringRef"): Function(
+        symbol=Symbol(name="PyDict_GetItemStringRef"),
+        added=PyVersion(major=3, minor=13),
+        ifdef=None,
+        abi_only=False,
+    ),
 }
 _MACROS: Final[dict[str, Macro]] = {
     "Py_tp_dealloc": Macro(name="Py_tp_dealloc", added=PyVersion(major=3, minor=2)),
