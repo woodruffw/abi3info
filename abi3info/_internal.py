@@ -4509,6 +4509,30 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         ifdef=None,
         abi_only=False,
     ),
+    Symbol(name="PyObject_HasAttrWithError"): Function(
+        symbol=Symbol(name="PyObject_HasAttrWithError"),
+        added=PyVersion(major=3, minor=13),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyObject_HasAttrStringWithError"): Function(
+        symbol=Symbol(name="PyObject_HasAttrStringWithError"),
+        added=PyVersion(major=3, minor=13),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyMapping_HasKeyWithError"): Function(
+        symbol=Symbol(name="PyMapping_HasKeyWithError"),
+        added=PyVersion(major=3, minor=13),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyMapping_HasKeyStringWithError"): Function(
+        symbol=Symbol(name="PyMapping_HasKeyStringWithError"),
+        added=PyVersion(major=3, minor=13),
+        ifdef=None,
+        abi_only=False,
+    ),
 }
 _MACROS: Final[dict[str, Macro]] = {
     "Py_tp_dealloc": Macro(name="Py_tp_dealloc", added=PyVersion(major=3, minor=2)),
