@@ -5370,12 +5370,6 @@ _DATAS: Final[dict[Symbol, Data]] = {
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="PY_TIMEOUT_MAX"): Data(
-        symbol=Symbol(name="PY_TIMEOUT_MAX"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
     Symbol(name="PyModuleDef_Type"): Data(
         symbol=Symbol(name="PyModuleDef_Type"),
         added=PyVersion(major=3, minor=5),
