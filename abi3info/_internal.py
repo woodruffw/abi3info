@@ -4539,6 +4539,18 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         ifdef=None,
         abi_only=False,
     ),
+    Symbol(name="PyUnicode_EqualToUTF8"): Function(
+        symbol=Symbol(name="PyUnicode_EqualToUTF8"),
+        added=PyVersion(major=3, minor=13),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_EqualToUTF8AndSize"): Function(
+        symbol=Symbol(name="PyUnicode_EqualToUTF8AndSize"),
+        added=PyVersion(major=3, minor=13),
+        ifdef=None,
+        abi_only=False,
+    ),
 }
 _MACROS: Final[dict[str, Macro]] = {
     "Py_tp_dealloc": Macro(name="Py_tp_dealloc", added=PyVersion(major=3, minor=2)),
