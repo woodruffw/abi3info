@@ -8,9 +8,7 @@ dynamic = ["version"]
 description = "A library for abi3 and other CPython API information"
 readme = "README.md"
 license = { file = "LICENSE" }
-authors = [
-  { name = "William Woodruff", email = "william@yossarian.net" }
-]
+authors = [{ name = "William Woodruff", email = "william@yossarian.net" }]
 classifiers = [
   "License :: OSI Approved :: MIT License",
   "Programming Language :: Python :: 3 :: Only",
@@ -31,33 +29,10 @@ Source = "https://github.com/woodruffw/abi3info"
 Documentation = "https://woodruffw.github.io/abi3info/"
 
 [project.optional-dependencies]
-test = [
-  "pytest",
-  "pytest-cov",
-  "pretend",
-  "coverage[toml]",
-]
-lint = [
-  "bandit",
-  "flake8",
-  "black",
-  "isort",
-  "interrogate",
-  "mypy",
-]
-doc = [
-  "pdoc >= 13.0.0",
-]
-dev = [
-  "build",
-  "toml",
-  "abi3info[test,lint,doc]",
-]
-
-[tool.isort]
-multi_line_output = 3
-known_first_party = "abi3info"
-include_trailing_comma = true
+test = ["pytest", "pytest-cov", "pretend", "coverage[toml]"]
+lint = ["bandit", "interrogate", "mypy", "ruff"]
+doc = ["pdoc >= 13.0.0"]
+dev = ["build", "toml", "abi3info[test,lint,doc]"]
 
 [tool.interrogate]
 exclude = ["env", "test", "codegen"]
@@ -83,5 +58,6 @@ warn_unused_ignores = true
 [tool.bandit]
 exclude_dirs = ["./test"]
 
-[tool.black]
+[tool.ruff]
 line-length = 100
+select = ["E", "F", "W", "UP", "I", "N", "YTT", "BLE", "C4", "SIM"]

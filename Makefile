@@ -48,17 +48,17 @@ codegen: env/pyvenv.cfg
 .PHONY: lint
 lint: env/pyvenv.cfg
 	. env/bin/activate && \
-		black --check $(ALL_PY_SRCS) && \
-		isort --check $(ALL_PY_SRCS) && \
-		flake8 $(ALL_PY_SRCS) && \
-		mypy $(PY_MODULE) && \
-		interrogate -c pyproject.toml .
+		ruff format --check $(ALL_PY_SRCS) && \
+		ruff $(ALL_PY_SRCS) && \
+		mypy $(PY_MODULE)
+		# TODO: re-enable once fixed on Python 3.12+
+		# interrogate -c pyproject.toml .
 
 .PHONY: reformat
 reformat:
 	. env/bin/activate && \
-		black $(ALL_PY_SRCS) && \
-		isort $(ALL_PY_SRCS)
+		ruff format $(ALL_PY_SRCS) && \
+		ruff --fix $(ALL_PY_SRCS)
 
 .PHONY: test tests
 test tests: env/pyvenv.cfg
