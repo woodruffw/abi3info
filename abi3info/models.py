@@ -5,7 +5,7 @@ Data models for the CPython limited API and stable ABI.
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import List, Literal, Optional, Union
+from typing import Literal, Union
 
 
 @dataclass(frozen=True, eq=False, unsafe_hash=True)
@@ -176,7 +176,7 @@ class PartialStruct:
 
     name: str
     added: PyVersion
-    members: List[str]
+    members: list[str]
 
 
 @dataclass(frozen=True)
@@ -245,7 +245,7 @@ class Function:
     When this function was added to the limited API and stable ABI.
     """
 
-    ifdef: Optional[FeatureMacro]
+    ifdef: FeatureMacro | None
     """
     The feature macro that controls this function's presence.
 
@@ -278,7 +278,7 @@ class Data:
     When this data object was added to the limited API and stable ABI.
     """
 
-    ifdef: Optional[FeatureMacro]
+    ifdef: FeatureMacro | None
     """
     The feature macro that controls this data object's presence.
 

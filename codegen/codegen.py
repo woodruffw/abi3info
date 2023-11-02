@@ -165,6 +165,6 @@ print(f"_TYPEDEFS: Final[dict[str, Typedef]] = {typedefs}", file=_OUT)
 _OUT.close()
 
 print("[+] codegen: reformatting", file=sys.stderr)
-subprocess.run(["black", _INTERNAL], check=True)
+subprocess.run(["ruff", "format", _INTERNAL], check=True)
 
 print("[+] codegen: all done!", file=sys.stderr)
