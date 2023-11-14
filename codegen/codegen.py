@@ -25,7 +25,7 @@ from abi3info.models import (
 )
 
 # Sanity checks.
-assert shutil.which("black"), "codegen needs `black` for auto-formatting!"
+assert shutil.which("ruff"), "codegen needs `ruff` for auto-formatting!"
 
 _THIS = Path(__file__).resolve()
 _HERE = _THIS.parent
