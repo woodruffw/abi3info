@@ -4587,11 +4587,11 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_AsUTF8"): Function(
-        symbol=Symbol(name="PyUnicode_AsUTF8"),
+    Symbol(name="_Py_SetRefcnt"): Function(
+        symbol=Symbol(name="_Py_SetRefcnt"),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
 }
 _MACROS: Final[dict[str, Macro]] = {
