@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@v5
         with:
           # NOTE: We use 3.10+ typing syntax via future, which pdoc only
           # understands if it's actually run with Python 3.10 or newer.
