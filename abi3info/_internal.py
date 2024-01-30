@@ -37,6 +37,9 @@ _FEATURE_MACROS: Final[dict[str, FeatureMacro]] = {
         doc="when Python is compiled in debug mode (with Py_REF_DEBUG)",
         windows="maybe",
     ),
+    "Py_TRACE_REFS": FeatureMacro(
+        name="Py_TRACE_REFS", doc="when Python is compiled with Py_TRACE_REFS", windows="maybe"
+    ),
 }
 _STRUCTS: Final[dict[str, Struct]] = {
     "PyObject": PartialStruct(
