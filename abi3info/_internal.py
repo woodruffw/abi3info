@@ -4596,6 +4596,12 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         ifdef=None,
         abi_only=True,
     ),
+    Symbol(name="PyList_GetItemRef"): Function(
+        symbol=Symbol(name="PyList_GetItemRef"),
+        added=PyVersion(major=3, minor=13),
+        ifdef=None,
+        abi_only=False,
+    ),
 }
 _MACROS: Final[dict[str, Macro]] = {
     "Py_tp_dealloc": Macro(name="Py_tp_dealloc", added=PyVersion(major=3, minor=2)),
@@ -5620,6 +5626,12 @@ _DATAS: Final[dict[Symbol, Data]] = {
     Symbol(name="Py_Version"): Data(
         symbol=Symbol(name="Py_Version"),
         added=PyVersion(major=3, minor=11),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyExc_IncompleteInputError"): Data(
+        symbol=Symbol(name="PyExc_IncompleteInputError"),
+        added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
