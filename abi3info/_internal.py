@@ -5681,4 +5681,8 @@ _TYPEDEFS: Final[dict[str, Typedef]] = {
     "vectorcallfunc": Typedef(name="vectorcallfunc", added=PyVersion(major=3, minor=12)),
     "getbufferproc": Typedef(name="getbufferproc", added=PyVersion(major=3, minor=12)),
     "releasebufferproc": Typedef(name="releasebufferproc", added=PyVersion(major=3, minor=12)),
+    "PyCFunctionFast": Typedef(name="PyCFunctionFast", added=PyVersion(major=3, minor=13)),
+    "PyCFunctionFastWithKeywords": Typedef(
+        name="PyCFunctionFastWithKeywords", added=PyVersion(major=3, minor=13)
+    ),
 }
