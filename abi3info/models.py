@@ -7,6 +7,9 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Literal, Union
 
+# values taken from the GCC/Clang manual.
+Visibility = Literal["default", "hidden", "internal", "protected"]
+
 
 @dataclass(frozen=True, eq=False, unsafe_hash=True)
 class Symbol:
@@ -23,6 +26,11 @@ class Symbol:
     """
     The symbol's underlying name. This may not correspond to an actual symbol
     in a binary without platform-specific normalization.
+    """
+    visibility: Visibility | None = None
+    """
+    The symbol's visibility in the shared object file, or None if it could not
+    be determined.
     """
 
     @property
