@@ -73,4185 +73,4194 @@ _STRUCTS: Final[dict[str, Struct]] = {
     "Py_buffer": FullStruct(name="Py_buffer", added=PyVersion(major=3, minor=11)),
 }
 _FUNCTIONS: Final[dict[Symbol, Function]] = {
-    Symbol(name="PyType_FromSpec"): Function(
-        symbol=Symbol(name="PyType_FromSpec"),
+    Symbol(name="PyType_FromSpec", visibility=None): Function(
+        symbol=Symbol(name="PyType_FromSpec", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyArg_Parse"): Function(
-        symbol=Symbol(name="PyArg_Parse"),
+    Symbol(name="PyArg_Parse", visibility=None): Function(
+        symbol=Symbol(name="PyArg_Parse", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyArg_ParseTuple"): Function(
-        symbol=Symbol(name="PyArg_ParseTuple"),
+    Symbol(name="PyArg_ParseTuple", visibility=None): Function(
+        symbol=Symbol(name="PyArg_ParseTuple", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyArg_ParseTupleAndKeywords"): Function(
-        symbol=Symbol(name="PyArg_ParseTupleAndKeywords"),
+    Symbol(name="PyArg_ParseTupleAndKeywords", visibility=None): Function(
+        symbol=Symbol(name="PyArg_ParseTupleAndKeywords", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyArg_UnpackTuple"): Function(
-        symbol=Symbol(name="PyArg_UnpackTuple"),
+    Symbol(name="PyArg_UnpackTuple", visibility=None): Function(
+        symbol=Symbol(name="PyArg_UnpackTuple", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyArg_VaParse"): Function(
-        symbol=Symbol(name="PyArg_VaParse"),
+    Symbol(name="PyArg_VaParse", visibility=None): Function(
+        symbol=Symbol(name="PyArg_VaParse", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyArg_VaParseTupleAndKeywords"): Function(
-        symbol=Symbol(name="PyArg_VaParseTupleAndKeywords"),
+    Symbol(name="PyArg_VaParseTupleAndKeywords", visibility=None): Function(
+        symbol=Symbol(name="PyArg_VaParseTupleAndKeywords", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyArg_ValidateKeywordArguments"): Function(
-        symbol=Symbol(name="PyArg_ValidateKeywordArguments"),
+    Symbol(name="PyArg_ValidateKeywordArguments", visibility=None): Function(
+        symbol=Symbol(name="PyArg_ValidateKeywordArguments", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyBool_FromLong"): Function(
-        symbol=Symbol(name="PyBool_FromLong"),
+    Symbol(name="PyBool_FromLong", visibility=None): Function(
+        symbol=Symbol(name="PyBool_FromLong", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyByteArray_AsString"): Function(
-        symbol=Symbol(name="PyByteArray_AsString"),
+    Symbol(name="PyByteArray_AsString", visibility=None): Function(
+        symbol=Symbol(name="PyByteArray_AsString", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyByteArray_Concat"): Function(
-        symbol=Symbol(name="PyByteArray_Concat"),
+    Symbol(name="PyByteArray_Concat", visibility=None): Function(
+        symbol=Symbol(name="PyByteArray_Concat", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyByteArray_FromObject"): Function(
-        symbol=Symbol(name="PyByteArray_FromObject"),
+    Symbol(name="PyByteArray_FromObject", visibility=None): Function(
+        symbol=Symbol(name="PyByteArray_FromObject", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyByteArray_FromStringAndSize"): Function(
-        symbol=Symbol(name="PyByteArray_FromStringAndSize"),
+    Symbol(name="PyByteArray_FromStringAndSize", visibility=None): Function(
+        symbol=Symbol(name="PyByteArray_FromStringAndSize", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyByteArray_Resize"): Function(
-        symbol=Symbol(name="PyByteArray_Resize"),
+    Symbol(name="PyByteArray_Resize", visibility=None): Function(
+        symbol=Symbol(name="PyByteArray_Resize", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyByteArray_Size"): Function(
-        symbol=Symbol(name="PyByteArray_Size"),
+    Symbol(name="PyByteArray_Size", visibility=None): Function(
+        symbol=Symbol(name="PyByteArray_Size", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyBytes_AsString"): Function(
-        symbol=Symbol(name="PyBytes_AsString"),
+    Symbol(name="PyBytes_AsString", visibility=None): Function(
+        symbol=Symbol(name="PyBytes_AsString", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyBytes_AsStringAndSize"): Function(
-        symbol=Symbol(name="PyBytes_AsStringAndSize"),
+    Symbol(name="PyBytes_AsStringAndSize", visibility=None): Function(
+        symbol=Symbol(name="PyBytes_AsStringAndSize", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyBytes_Concat"): Function(
-        symbol=Symbol(name="PyBytes_Concat"),
+    Symbol(name="PyBytes_Concat", visibility=None): Function(
+        symbol=Symbol(name="PyBytes_Concat", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyBytes_ConcatAndDel"): Function(
-        symbol=Symbol(name="PyBytes_ConcatAndDel"),
+    Symbol(name="PyBytes_ConcatAndDel", visibility=None): Function(
+        symbol=Symbol(name="PyBytes_ConcatAndDel", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyBytes_DecodeEscape"): Function(
-        symbol=Symbol(name="PyBytes_DecodeEscape"),
+    Symbol(name="PyBytes_DecodeEscape", visibility=None): Function(
+        symbol=Symbol(name="PyBytes_DecodeEscape", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyBytes_FromFormat"): Function(
-        symbol=Symbol(name="PyBytes_FromFormat"),
+    Symbol(name="PyBytes_FromFormat", visibility=None): Function(
+        symbol=Symbol(name="PyBytes_FromFormat", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyBytes_FromFormatV"): Function(
-        symbol=Symbol(name="PyBytes_FromFormatV"),
+    Symbol(name="PyBytes_FromFormatV", visibility=None): Function(
+        symbol=Symbol(name="PyBytes_FromFormatV", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyBytes_FromObject"): Function(
-        symbol=Symbol(name="PyBytes_FromObject"),
+    Symbol(name="PyBytes_FromObject", visibility=None): Function(
+        symbol=Symbol(name="PyBytes_FromObject", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyBytes_FromString"): Function(
-        symbol=Symbol(name="PyBytes_FromString"),
+    Symbol(name="PyBytes_FromString", visibility=None): Function(
+        symbol=Symbol(name="PyBytes_FromString", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyBytes_FromStringAndSize"): Function(
-        symbol=Symbol(name="PyBytes_FromStringAndSize"),
+    Symbol(name="PyBytes_FromStringAndSize", visibility=None): Function(
+        symbol=Symbol(name="PyBytes_FromStringAndSize", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyBytes_Repr"): Function(
-        symbol=Symbol(name="PyBytes_Repr"),
+    Symbol(name="PyBytes_Repr", visibility=None): Function(
+        symbol=Symbol(name="PyBytes_Repr", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyBytes_Size"): Function(
-        symbol=Symbol(name="PyBytes_Size"),
+    Symbol(name="PyBytes_Size", visibility=None): Function(
+        symbol=Symbol(name="PyBytes_Size", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCFunction_Call"): Function(
-        symbol=Symbol(name="PyCFunction_Call"),
+    Symbol(name="PyCFunction_Call", visibility=None): Function(
+        symbol=Symbol(name="PyCFunction_Call", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="PyCFunction_GetFlags"): Function(
-        symbol=Symbol(name="PyCFunction_GetFlags"),
+    Symbol(name="PyCFunction_GetFlags", visibility=None): Function(
+        symbol=Symbol(name="PyCFunction_GetFlags", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCFunction_GetFunction"): Function(
-        symbol=Symbol(name="PyCFunction_GetFunction"),
+    Symbol(name="PyCFunction_GetFunction", visibility=None): Function(
+        symbol=Symbol(name="PyCFunction_GetFunction", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCFunction_GetSelf"): Function(
-        symbol=Symbol(name="PyCFunction_GetSelf"),
+    Symbol(name="PyCFunction_GetSelf", visibility=None): Function(
+        symbol=Symbol(name="PyCFunction_GetSelf", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCFunction_NewEx"): Function(
-        symbol=Symbol(name="PyCFunction_NewEx"),
+    Symbol(name="PyCFunction_NewEx", visibility=None): Function(
+        symbol=Symbol(name="PyCFunction_NewEx", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCallIter_New"): Function(
-        symbol=Symbol(name="PyCallIter_New"),
+    Symbol(name="PyCallIter_New", visibility=None): Function(
+        symbol=Symbol(name="PyCallIter_New", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCallable_Check"): Function(
-        symbol=Symbol(name="PyCallable_Check"),
+    Symbol(name="PyCallable_Check", visibility=None): Function(
+        symbol=Symbol(name="PyCallable_Check", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCapsule_GetContext"): Function(
-        symbol=Symbol(name="PyCapsule_GetContext"),
+    Symbol(name="PyCapsule_GetContext", visibility=None): Function(
+        symbol=Symbol(name="PyCapsule_GetContext", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCapsule_GetDestructor"): Function(
-        symbol=Symbol(name="PyCapsule_GetDestructor"),
+    Symbol(name="PyCapsule_GetDestructor", visibility=None): Function(
+        symbol=Symbol(name="PyCapsule_GetDestructor", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCapsule_GetName"): Function(
-        symbol=Symbol(name="PyCapsule_GetName"),
+    Symbol(name="PyCapsule_GetName", visibility=None): Function(
+        symbol=Symbol(name="PyCapsule_GetName", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCapsule_GetPointer"): Function(
-        symbol=Symbol(name="PyCapsule_GetPointer"),
+    Symbol(name="PyCapsule_GetPointer", visibility=None): Function(
+        symbol=Symbol(name="PyCapsule_GetPointer", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCapsule_Import"): Function(
-        symbol=Symbol(name="PyCapsule_Import"),
+    Symbol(name="PyCapsule_Import", visibility=None): Function(
+        symbol=Symbol(name="PyCapsule_Import", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCapsule_IsValid"): Function(
-        symbol=Symbol(name="PyCapsule_IsValid"),
+    Symbol(name="PyCapsule_IsValid", visibility=None): Function(
+        symbol=Symbol(name="PyCapsule_IsValid", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCapsule_New"): Function(
-        symbol=Symbol(name="PyCapsule_New"),
+    Symbol(name="PyCapsule_New", visibility=None): Function(
+        symbol=Symbol(name="PyCapsule_New", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCapsule_SetContext"): Function(
-        symbol=Symbol(name="PyCapsule_SetContext"),
+    Symbol(name="PyCapsule_SetContext", visibility=None): Function(
+        symbol=Symbol(name="PyCapsule_SetContext", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCapsule_SetDestructor"): Function(
-        symbol=Symbol(name="PyCapsule_SetDestructor"),
+    Symbol(name="PyCapsule_SetDestructor", visibility=None): Function(
+        symbol=Symbol(name="PyCapsule_SetDestructor", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCapsule_SetName"): Function(
-        symbol=Symbol(name="PyCapsule_SetName"),
+    Symbol(name="PyCapsule_SetName", visibility=None): Function(
+        symbol=Symbol(name="PyCapsule_SetName", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCapsule_SetPointer"): Function(
-        symbol=Symbol(name="PyCapsule_SetPointer"),
+    Symbol(name="PyCapsule_SetPointer", visibility=None): Function(
+        symbol=Symbol(name="PyCapsule_SetPointer", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCodec_BackslashReplaceErrors"): Function(
-        symbol=Symbol(name="PyCodec_BackslashReplaceErrors"),
+    Symbol(name="PyCodec_BackslashReplaceErrors", visibility=None): Function(
+        symbol=Symbol(name="PyCodec_BackslashReplaceErrors", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCodec_Decode"): Function(
-        symbol=Symbol(name="PyCodec_Decode"),
+    Symbol(name="PyCodec_Decode", visibility=None): Function(
+        symbol=Symbol(name="PyCodec_Decode", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCodec_Decoder"): Function(
-        symbol=Symbol(name="PyCodec_Decoder"),
+    Symbol(name="PyCodec_Decoder", visibility=None): Function(
+        symbol=Symbol(name="PyCodec_Decoder", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCodec_Encode"): Function(
-        symbol=Symbol(name="PyCodec_Encode"),
+    Symbol(name="PyCodec_Encode", visibility=None): Function(
+        symbol=Symbol(name="PyCodec_Encode", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCodec_Encoder"): Function(
-        symbol=Symbol(name="PyCodec_Encoder"),
+    Symbol(name="PyCodec_Encoder", visibility=None): Function(
+        symbol=Symbol(name="PyCodec_Encoder", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCodec_IgnoreErrors"): Function(
-        symbol=Symbol(name="PyCodec_IgnoreErrors"),
+    Symbol(name="PyCodec_IgnoreErrors", visibility=None): Function(
+        symbol=Symbol(name="PyCodec_IgnoreErrors", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCodec_IncrementalDecoder"): Function(
-        symbol=Symbol(name="PyCodec_IncrementalDecoder"),
+    Symbol(name="PyCodec_IncrementalDecoder", visibility=None): Function(
+        symbol=Symbol(name="PyCodec_IncrementalDecoder", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCodec_IncrementalEncoder"): Function(
-        symbol=Symbol(name="PyCodec_IncrementalEncoder"),
+    Symbol(name="PyCodec_IncrementalEncoder", visibility=None): Function(
+        symbol=Symbol(name="PyCodec_IncrementalEncoder", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCodec_KnownEncoding"): Function(
-        symbol=Symbol(name="PyCodec_KnownEncoding"),
+    Symbol(name="PyCodec_KnownEncoding", visibility=None): Function(
+        symbol=Symbol(name="PyCodec_KnownEncoding", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCodec_LookupError"): Function(
-        symbol=Symbol(name="PyCodec_LookupError"),
+    Symbol(name="PyCodec_LookupError", visibility=None): Function(
+        symbol=Symbol(name="PyCodec_LookupError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCodec_Register"): Function(
-        symbol=Symbol(name="PyCodec_Register"),
+    Symbol(name="PyCodec_Register", visibility=None): Function(
+        symbol=Symbol(name="PyCodec_Register", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCodec_RegisterError"): Function(
-        symbol=Symbol(name="PyCodec_RegisterError"),
+    Symbol(name="PyCodec_RegisterError", visibility=None): Function(
+        symbol=Symbol(name="PyCodec_RegisterError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCodec_ReplaceErrors"): Function(
-        symbol=Symbol(name="PyCodec_ReplaceErrors"),
+    Symbol(name="PyCodec_ReplaceErrors", visibility=None): Function(
+        symbol=Symbol(name="PyCodec_ReplaceErrors", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCodec_StreamReader"): Function(
-        symbol=Symbol(name="PyCodec_StreamReader"),
+    Symbol(name="PyCodec_StreamReader", visibility=None): Function(
+        symbol=Symbol(name="PyCodec_StreamReader", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCodec_StreamWriter"): Function(
-        symbol=Symbol(name="PyCodec_StreamWriter"),
+    Symbol(name="PyCodec_StreamWriter", visibility=None): Function(
+        symbol=Symbol(name="PyCodec_StreamWriter", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCodec_StrictErrors"): Function(
-        symbol=Symbol(name="PyCodec_StrictErrors"),
+    Symbol(name="PyCodec_StrictErrors", visibility=None): Function(
+        symbol=Symbol(name="PyCodec_StrictErrors", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCodec_XMLCharRefReplaceErrors"): Function(
-        symbol=Symbol(name="PyCodec_XMLCharRefReplaceErrors"),
+    Symbol(name="PyCodec_XMLCharRefReplaceErrors", visibility=None): Function(
+        symbol=Symbol(name="PyCodec_XMLCharRefReplaceErrors", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyComplex_FromDoubles"): Function(
-        symbol=Symbol(name="PyComplex_FromDoubles"),
+    Symbol(name="PyComplex_FromDoubles", visibility=None): Function(
+        symbol=Symbol(name="PyComplex_FromDoubles", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyComplex_ImagAsDouble"): Function(
-        symbol=Symbol(name="PyComplex_ImagAsDouble"),
+    Symbol(name="PyComplex_ImagAsDouble", visibility=None): Function(
+        symbol=Symbol(name="PyComplex_ImagAsDouble", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyComplex_RealAsDouble"): Function(
-        symbol=Symbol(name="PyComplex_RealAsDouble"),
+    Symbol(name="PyComplex_RealAsDouble", visibility=None): Function(
+        symbol=Symbol(name="PyComplex_RealAsDouble", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDescr_NewClassMethod"): Function(
-        symbol=Symbol(name="PyDescr_NewClassMethod"),
+    Symbol(name="PyDescr_NewClassMethod", visibility=None): Function(
+        symbol=Symbol(name="PyDescr_NewClassMethod", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDescr_NewGetSet"): Function(
-        symbol=Symbol(name="PyDescr_NewGetSet"),
+    Symbol(name="PyDescr_NewGetSet", visibility=None): Function(
+        symbol=Symbol(name="PyDescr_NewGetSet", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDescr_NewMember"): Function(
-        symbol=Symbol(name="PyDescr_NewMember"),
+    Symbol(name="PyDescr_NewMember", visibility=None): Function(
+        symbol=Symbol(name="PyDescr_NewMember", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDescr_NewMethod"): Function(
-        symbol=Symbol(name="PyDescr_NewMethod"),
+    Symbol(name="PyDescr_NewMethod", visibility=None): Function(
+        symbol=Symbol(name="PyDescr_NewMethod", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDictProxy_New"): Function(
-        symbol=Symbol(name="PyDictProxy_New"),
+    Symbol(name="PyDictProxy_New", visibility=None): Function(
+        symbol=Symbol(name="PyDictProxy_New", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDict_Clear"): Function(
-        symbol=Symbol(name="PyDict_Clear"),
+    Symbol(name="PyDict_Clear", visibility=None): Function(
+        symbol=Symbol(name="PyDict_Clear", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDict_Contains"): Function(
-        symbol=Symbol(name="PyDict_Contains"),
+    Symbol(name="PyDict_Contains", visibility=None): Function(
+        symbol=Symbol(name="PyDict_Contains", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDict_Copy"): Function(
-        symbol=Symbol(name="PyDict_Copy"),
+    Symbol(name="PyDict_Copy", visibility=None): Function(
+        symbol=Symbol(name="PyDict_Copy", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDict_DelItem"): Function(
-        symbol=Symbol(name="PyDict_DelItem"),
+    Symbol(name="PyDict_DelItem", visibility=None): Function(
+        symbol=Symbol(name="PyDict_DelItem", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDict_DelItemString"): Function(
-        symbol=Symbol(name="PyDict_DelItemString"),
+    Symbol(name="PyDict_DelItemString", visibility=None): Function(
+        symbol=Symbol(name="PyDict_DelItemString", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDict_GetItem"): Function(
-        symbol=Symbol(name="PyDict_GetItem"),
+    Symbol(name="PyDict_GetItem", visibility=None): Function(
+        symbol=Symbol(name="PyDict_GetItem", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDict_GetItemString"): Function(
-        symbol=Symbol(name="PyDict_GetItemString"),
+    Symbol(name="PyDict_GetItemString", visibility=None): Function(
+        symbol=Symbol(name="PyDict_GetItemString", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDict_GetItemWithError"): Function(
-        symbol=Symbol(name="PyDict_GetItemWithError"),
+    Symbol(name="PyDict_GetItemWithError", visibility=None): Function(
+        symbol=Symbol(name="PyDict_GetItemWithError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDict_Items"): Function(
-        symbol=Symbol(name="PyDict_Items"),
+    Symbol(name="PyDict_Items", visibility=None): Function(
+        symbol=Symbol(name="PyDict_Items", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDict_Keys"): Function(
-        symbol=Symbol(name="PyDict_Keys"),
+    Symbol(name="PyDict_Keys", visibility=None): Function(
+        symbol=Symbol(name="PyDict_Keys", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDict_Merge"): Function(
-        symbol=Symbol(name="PyDict_Merge"),
+    Symbol(name="PyDict_Merge", visibility=None): Function(
+        symbol=Symbol(name="PyDict_Merge", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDict_MergeFromSeq2"): Function(
-        symbol=Symbol(name="PyDict_MergeFromSeq2"),
+    Symbol(name="PyDict_MergeFromSeq2", visibility=None): Function(
+        symbol=Symbol(name="PyDict_MergeFromSeq2", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDict_New"): Function(
-        symbol=Symbol(name="PyDict_New"),
+    Symbol(name="PyDict_New", visibility=None): Function(
+        symbol=Symbol(name="PyDict_New", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDict_Next"): Function(
-        symbol=Symbol(name="PyDict_Next"),
+    Symbol(name="PyDict_Next", visibility=None): Function(
+        symbol=Symbol(name="PyDict_Next", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDict_SetItem"): Function(
-        symbol=Symbol(name="PyDict_SetItem"),
+    Symbol(name="PyDict_SetItem", visibility=None): Function(
+        symbol=Symbol(name="PyDict_SetItem", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDict_SetItemString"): Function(
-        symbol=Symbol(name="PyDict_SetItemString"),
+    Symbol(name="PyDict_SetItemString", visibility=None): Function(
+        symbol=Symbol(name="PyDict_SetItemString", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDict_Size"): Function(
-        symbol=Symbol(name="PyDict_Size"),
+    Symbol(name="PyDict_Size", visibility=None): Function(
+        symbol=Symbol(name="PyDict_Size", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDict_Update"): Function(
-        symbol=Symbol(name="PyDict_Update"),
+    Symbol(name="PyDict_Update", visibility=None): Function(
+        symbol=Symbol(name="PyDict_Update", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDict_Values"): Function(
-        symbol=Symbol(name="PyDict_Values"),
+    Symbol(name="PyDict_Values", visibility=None): Function(
+        symbol=Symbol(name="PyDict_Values", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_BadArgument"): Function(
-        symbol=Symbol(name="PyErr_BadArgument"),
+    Symbol(name="PyErr_BadArgument", visibility=None): Function(
+        symbol=Symbol(name="PyErr_BadArgument", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_BadInternalCall"): Function(
-        symbol=Symbol(name="PyErr_BadInternalCall"),
+    Symbol(name="PyErr_BadInternalCall", visibility=None): Function(
+        symbol=Symbol(name="PyErr_BadInternalCall", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_CheckSignals"): Function(
-        symbol=Symbol(name="PyErr_CheckSignals"),
+    Symbol(name="PyErr_CheckSignals", visibility=None): Function(
+        symbol=Symbol(name="PyErr_CheckSignals", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_Clear"): Function(
-        symbol=Symbol(name="PyErr_Clear"),
+    Symbol(name="PyErr_Clear", visibility=None): Function(
+        symbol=Symbol(name="PyErr_Clear", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_Display"): Function(
-        symbol=Symbol(name="PyErr_Display"),
+    Symbol(name="PyErr_Display", visibility=None): Function(
+        symbol=Symbol(name="PyErr_Display", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_DisplayException"): Function(
-        symbol=Symbol(name="PyErr_DisplayException"),
+    Symbol(name="PyErr_DisplayException", visibility=None): Function(
+        symbol=Symbol(name="PyErr_DisplayException", visibility=None),
         added=PyVersion(major=3, minor=12),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_ExceptionMatches"): Function(
-        symbol=Symbol(name="PyErr_ExceptionMatches"),
+    Symbol(name="PyErr_ExceptionMatches", visibility=None): Function(
+        symbol=Symbol(name="PyErr_ExceptionMatches", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_Fetch"): Function(
-        symbol=Symbol(name="PyErr_Fetch"),
+    Symbol(name="PyErr_Fetch", visibility=None): Function(
+        symbol=Symbol(name="PyErr_Fetch", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_Format"): Function(
-        symbol=Symbol(name="PyErr_Format"),
+    Symbol(name="PyErr_Format", visibility=None): Function(
+        symbol=Symbol(name="PyErr_Format", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_GivenExceptionMatches"): Function(
-        symbol=Symbol(name="PyErr_GivenExceptionMatches"),
+    Symbol(name="PyErr_GivenExceptionMatches", visibility=None): Function(
+        symbol=Symbol(name="PyErr_GivenExceptionMatches", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_NewException"): Function(
-        symbol=Symbol(name="PyErr_NewException"),
+    Symbol(name="PyErr_NewException", visibility=None): Function(
+        symbol=Symbol(name="PyErr_NewException", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_NewExceptionWithDoc"): Function(
-        symbol=Symbol(name="PyErr_NewExceptionWithDoc"),
+    Symbol(name="PyErr_NewExceptionWithDoc", visibility=None): Function(
+        symbol=Symbol(name="PyErr_NewExceptionWithDoc", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_NoMemory"): Function(
-        symbol=Symbol(name="PyErr_NoMemory"),
+    Symbol(name="PyErr_NoMemory", visibility=None): Function(
+        symbol=Symbol(name="PyErr_NoMemory", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_NormalizeException"): Function(
-        symbol=Symbol(name="PyErr_NormalizeException"),
+    Symbol(name="PyErr_NormalizeException", visibility=None): Function(
+        symbol=Symbol(name="PyErr_NormalizeException", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_Occurred"): Function(
-        symbol=Symbol(name="PyErr_Occurred"),
+    Symbol(name="PyErr_Occurred", visibility=None): Function(
+        symbol=Symbol(name="PyErr_Occurred", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_Print"): Function(
-        symbol=Symbol(name="PyErr_Print"),
+    Symbol(name="PyErr_Print", visibility=None): Function(
+        symbol=Symbol(name="PyErr_Print", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_PrintEx"): Function(
-        symbol=Symbol(name="PyErr_PrintEx"),
+    Symbol(name="PyErr_PrintEx", visibility=None): Function(
+        symbol=Symbol(name="PyErr_PrintEx", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_ProgramText"): Function(
-        symbol=Symbol(name="PyErr_ProgramText"),
+    Symbol(name="PyErr_ProgramText", visibility=None): Function(
+        symbol=Symbol(name="PyErr_ProgramText", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_Restore"): Function(
-        symbol=Symbol(name="PyErr_Restore"),
+    Symbol(name="PyErr_Restore", visibility=None): Function(
+        symbol=Symbol(name="PyErr_Restore", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_SetFromErrno"): Function(
-        symbol=Symbol(name="PyErr_SetFromErrno"),
+    Symbol(name="PyErr_SetFromErrno", visibility=None): Function(
+        symbol=Symbol(name="PyErr_SetFromErrno", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_SetFromErrnoWithFilename"): Function(
-        symbol=Symbol(name="PyErr_SetFromErrnoWithFilename"),
+    Symbol(name="PyErr_SetFromErrnoWithFilename", visibility=None): Function(
+        symbol=Symbol(name="PyErr_SetFromErrnoWithFilename", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_SetFromErrnoWithFilenameObject"): Function(
-        symbol=Symbol(name="PyErr_SetFromErrnoWithFilenameObject"),
+    Symbol(name="PyErr_SetFromErrnoWithFilenameObject", visibility=None): Function(
+        symbol=Symbol(name="PyErr_SetFromErrnoWithFilenameObject", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_SetInterrupt"): Function(
-        symbol=Symbol(name="PyErr_SetInterrupt"),
+    Symbol(name="PyErr_SetInterrupt", visibility=None): Function(
+        symbol=Symbol(name="PyErr_SetInterrupt", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_SetNone"): Function(
-        symbol=Symbol(name="PyErr_SetNone"),
+    Symbol(name="PyErr_SetNone", visibility=None): Function(
+        symbol=Symbol(name="PyErr_SetNone", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_SetObject"): Function(
-        symbol=Symbol(name="PyErr_SetObject"),
+    Symbol(name="PyErr_SetObject", visibility=None): Function(
+        symbol=Symbol(name="PyErr_SetObject", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_SetString"): Function(
-        symbol=Symbol(name="PyErr_SetString"),
+    Symbol(name="PyErr_SetString", visibility=None): Function(
+        symbol=Symbol(name="PyErr_SetString", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_SyntaxLocation"): Function(
-        symbol=Symbol(name="PyErr_SyntaxLocation"),
+    Symbol(name="PyErr_SyntaxLocation", visibility=None): Function(
+        symbol=Symbol(name="PyErr_SyntaxLocation", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_WarnEx"): Function(
-        symbol=Symbol(name="PyErr_WarnEx"),
+    Symbol(name="PyErr_WarnEx", visibility=None): Function(
+        symbol=Symbol(name="PyErr_WarnEx", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_WarnExplicit"): Function(
-        symbol=Symbol(name="PyErr_WarnExplicit"),
+    Symbol(name="PyErr_WarnExplicit", visibility=None): Function(
+        symbol=Symbol(name="PyErr_WarnExplicit", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_WarnFormat"): Function(
-        symbol=Symbol(name="PyErr_WarnFormat"),
+    Symbol(name="PyErr_WarnFormat", visibility=None): Function(
+        symbol=Symbol(name="PyErr_WarnFormat", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_WriteUnraisable"): Function(
-        symbol=Symbol(name="PyErr_WriteUnraisable"),
+    Symbol(name="PyErr_WriteUnraisable", visibility=None): Function(
+        symbol=Symbol(name="PyErr_WriteUnraisable", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyEval_AcquireLock"): Function(
-        symbol=Symbol(name="PyEval_AcquireLock"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=True,
-    ),
-    Symbol(name="PyEval_AcquireThread"): Function(
-        symbol=Symbol(name="PyEval_AcquireThread"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyEval_CallFunction"): Function(
-        symbol=Symbol(name="PyEval_CallFunction"),
+    Symbol(name="PyEval_AcquireLock", visibility=None): Function(
+        symbol=Symbol(name="PyEval_AcquireLock", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="PyEval_CallMethod"): Function(
-        symbol=Symbol(name="PyEval_CallMethod"),
+    Symbol(name="PyEval_AcquireThread", visibility=None): Function(
+        symbol=Symbol(name="PyEval_AcquireThread", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyEval_CallFunction", visibility=None): Function(
+        symbol=Symbol(name="PyEval_CallFunction", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="PyEval_CallObjectWithKeywords"): Function(
-        symbol=Symbol(name="PyEval_CallObjectWithKeywords"),
+    Symbol(name="PyEval_CallMethod", visibility=None): Function(
+        symbol=Symbol(name="PyEval_CallMethod", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="PyEval_EvalCode"): Function(
-        symbol=Symbol(name="PyEval_EvalCode"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyEval_EvalCodeEx"): Function(
-        symbol=Symbol(name="PyEval_EvalCodeEx"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyEval_EvalFrame"): Function(
-        symbol=Symbol(name="PyEval_EvalFrame"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyEval_EvalFrameEx"): Function(
-        symbol=Symbol(name="PyEval_EvalFrameEx"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyEval_GetBuiltins"): Function(
-        symbol=Symbol(name="PyEval_GetBuiltins"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyEval_GetFrame"): Function(
-        symbol=Symbol(name="PyEval_GetFrame"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyEval_GetFuncDesc"): Function(
-        symbol=Symbol(name="PyEval_GetFuncDesc"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyEval_GetFuncName"): Function(
-        symbol=Symbol(name="PyEval_GetFuncName"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyEval_GetGlobals"): Function(
-        symbol=Symbol(name="PyEval_GetGlobals"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyEval_GetLocals"): Function(
-        symbol=Symbol(name="PyEval_GetLocals"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyEval_InitThreads"): Function(
-        symbol=Symbol(name="PyEval_InitThreads"),
+    Symbol(name="PyEval_CallObjectWithKeywords", visibility=None): Function(
+        symbol=Symbol(name="PyEval_CallObjectWithKeywords", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="PyEval_ReleaseLock"): Function(
-        symbol=Symbol(name="PyEval_ReleaseLock"),
+    Symbol(name="PyEval_EvalCode", visibility=None): Function(
+        symbol=Symbol(name="PyEval_EvalCode", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyEval_EvalCodeEx", visibility=None): Function(
+        symbol=Symbol(name="PyEval_EvalCodeEx", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyEval_EvalFrame", visibility=None): Function(
+        symbol=Symbol(name="PyEval_EvalFrame", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyEval_EvalFrameEx", visibility=None): Function(
+        symbol=Symbol(name="PyEval_EvalFrameEx", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyEval_GetBuiltins", visibility=None): Function(
+        symbol=Symbol(name="PyEval_GetBuiltins", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyEval_GetFrame", visibility=None): Function(
+        symbol=Symbol(name="PyEval_GetFrame", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyEval_GetFuncDesc", visibility=None): Function(
+        symbol=Symbol(name="PyEval_GetFuncDesc", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyEval_GetFuncName", visibility=None): Function(
+        symbol=Symbol(name="PyEval_GetFuncName", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyEval_GetGlobals", visibility=None): Function(
+        symbol=Symbol(name="PyEval_GetGlobals", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyEval_GetLocals", visibility=None): Function(
+        symbol=Symbol(name="PyEval_GetLocals", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyEval_InitThreads", visibility=None): Function(
+        symbol=Symbol(name="PyEval_InitThreads", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="PyEval_ReleaseThread"): Function(
-        symbol=Symbol(name="PyEval_ReleaseThread"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyEval_RestoreThread"): Function(
-        symbol=Symbol(name="PyEval_RestoreThread"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyEval_SaveThread"): Function(
-        symbol=Symbol(name="PyEval_SaveThread"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyEval_ThreadsInitialized"): Function(
-        symbol=Symbol(name="PyEval_ThreadsInitialized"),
+    Symbol(name="PyEval_ReleaseLock", visibility=None): Function(
+        symbol=Symbol(name="PyEval_ReleaseLock", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="PyException_GetCause"): Function(
-        symbol=Symbol(name="PyException_GetCause"),
+    Symbol(name="PyEval_ReleaseThread", visibility=None): Function(
+        symbol=Symbol(name="PyEval_ReleaseThread", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyException_GetContext"): Function(
-        symbol=Symbol(name="PyException_GetContext"),
+    Symbol(name="PyEval_RestoreThread", visibility=None): Function(
+        symbol=Symbol(name="PyEval_RestoreThread", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyException_GetTraceback"): Function(
-        symbol=Symbol(name="PyException_GetTraceback"),
+    Symbol(name="PyEval_SaveThread", visibility=None): Function(
+        symbol=Symbol(name="PyEval_SaveThread", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyException_SetCause"): Function(
-        symbol=Symbol(name="PyException_SetCause"),
+    Symbol(name="PyEval_ThreadsInitialized", visibility=None): Function(
+        symbol=Symbol(name="PyEval_ThreadsInitialized", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
+        abi_only=True,
+    ),
+    Symbol(name="PyException_GetCause", visibility=None): Function(
+        symbol=Symbol(name="PyException_GetCause", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyException_GetContext", visibility=None): Function(
+        symbol=Symbol(name="PyException_GetContext", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyException_GetTraceback", visibility=None): Function(
+        symbol=Symbol(name="PyException_GetTraceback", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyException_SetCause", visibility=None): Function(
+        symbol=Symbol(name="PyException_SetCause", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyException_SetContext"): Function(
-        symbol=Symbol(name="PyException_SetContext"),
+    Symbol(name="PyException_SetContext", visibility=None): Function(
+        symbol=Symbol(name="PyException_SetContext", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyException_SetTraceback"): Function(
-        symbol=Symbol(name="PyException_SetTraceback"),
+    Symbol(name="PyException_SetTraceback", visibility=None): Function(
+        symbol=Symbol(name="PyException_SetTraceback", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyFile_FromFd"): Function(
-        symbol=Symbol(name="PyFile_FromFd"),
+    Symbol(name="PyFile_FromFd", visibility=None): Function(
+        symbol=Symbol(name="PyFile_FromFd", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyFile_GetLine"): Function(
-        symbol=Symbol(name="PyFile_GetLine"),
+    Symbol(name="PyFile_GetLine", visibility=None): Function(
+        symbol=Symbol(name="PyFile_GetLine", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyFile_WriteObject"): Function(
-        symbol=Symbol(name="PyFile_WriteObject"),
+    Symbol(name="PyFile_WriteObject", visibility=None): Function(
+        symbol=Symbol(name="PyFile_WriteObject", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyFile_WriteString"): Function(
-        symbol=Symbol(name="PyFile_WriteString"),
+    Symbol(name="PyFile_WriteString", visibility=None): Function(
+        symbol=Symbol(name="PyFile_WriteString", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyFloat_AsDouble"): Function(
-        symbol=Symbol(name="PyFloat_AsDouble"),
+    Symbol(name="PyFloat_AsDouble", visibility=None): Function(
+        symbol=Symbol(name="PyFloat_AsDouble", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyFloat_FromDouble"): Function(
-        symbol=Symbol(name="PyFloat_FromDouble"),
+    Symbol(name="PyFloat_FromDouble", visibility=None): Function(
+        symbol=Symbol(name="PyFloat_FromDouble", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyFloat_FromString"): Function(
-        symbol=Symbol(name="PyFloat_FromString"),
+    Symbol(name="PyFloat_FromString", visibility=None): Function(
+        symbol=Symbol(name="PyFloat_FromString", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyFloat_GetInfo"): Function(
-        symbol=Symbol(name="PyFloat_GetInfo"),
+    Symbol(name="PyFloat_GetInfo", visibility=None): Function(
+        symbol=Symbol(name="PyFloat_GetInfo", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyFloat_GetMax"): Function(
-        symbol=Symbol(name="PyFloat_GetMax"),
+    Symbol(name="PyFloat_GetMax", visibility=None): Function(
+        symbol=Symbol(name="PyFloat_GetMax", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyFloat_GetMin"): Function(
-        symbol=Symbol(name="PyFloat_GetMin"),
+    Symbol(name="PyFloat_GetMin", visibility=None): Function(
+        symbol=Symbol(name="PyFloat_GetMin", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyFrozenSet_New"): Function(
-        symbol=Symbol(name="PyFrozenSet_New"),
+    Symbol(name="PyFrozenSet_New", visibility=None): Function(
+        symbol=Symbol(name="PyFrozenSet_New", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyGC_Collect"): Function(
-        symbol=Symbol(name="PyGC_Collect"),
+    Symbol(name="PyGC_Collect", visibility=None): Function(
+        symbol=Symbol(name="PyGC_Collect", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyGILState_Ensure"): Function(
-        symbol=Symbol(name="PyGILState_Ensure"),
+    Symbol(name="PyGILState_Ensure", visibility=None): Function(
+        symbol=Symbol(name="PyGILState_Ensure", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyGILState_GetThisThreadState"): Function(
-        symbol=Symbol(name="PyGILState_GetThisThreadState"),
+    Symbol(name="PyGILState_GetThisThreadState", visibility=None): Function(
+        symbol=Symbol(name="PyGILState_GetThisThreadState", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyGILState_Release"): Function(
-        symbol=Symbol(name="PyGILState_Release"),
+    Symbol(name="PyGILState_Release", visibility=None): Function(
+        symbol=Symbol(name="PyGILState_Release", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyImport_AddModule"): Function(
-        symbol=Symbol(name="PyImport_AddModule"),
+    Symbol(name="PyImport_AddModule", visibility=None): Function(
+        symbol=Symbol(name="PyImport_AddModule", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyImport_AppendInittab"): Function(
-        symbol=Symbol(name="PyImport_AppendInittab"),
+    Symbol(name="PyImport_AppendInittab", visibility=None): Function(
+        symbol=Symbol(name="PyImport_AppendInittab", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyImport_ExecCodeModule"): Function(
-        symbol=Symbol(name="PyImport_ExecCodeModule"),
+    Symbol(name="PyImport_ExecCodeModule", visibility=None): Function(
+        symbol=Symbol(name="PyImport_ExecCodeModule", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyImport_ExecCodeModuleEx"): Function(
-        symbol=Symbol(name="PyImport_ExecCodeModuleEx"),
+    Symbol(name="PyImport_ExecCodeModuleEx", visibility=None): Function(
+        symbol=Symbol(name="PyImport_ExecCodeModuleEx", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyImport_ExecCodeModuleWithPathnames"): Function(
-        symbol=Symbol(name="PyImport_ExecCodeModuleWithPathnames"),
+    Symbol(name="PyImport_ExecCodeModuleWithPathnames", visibility=None): Function(
+        symbol=Symbol(name="PyImport_ExecCodeModuleWithPathnames", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyImport_GetImporter"): Function(
-        symbol=Symbol(name="PyImport_GetImporter"),
+    Symbol(name="PyImport_GetImporter", visibility=None): Function(
+        symbol=Symbol(name="PyImport_GetImporter", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyImport_GetMagicNumber"): Function(
-        symbol=Symbol(name="PyImport_GetMagicNumber"),
+    Symbol(name="PyImport_GetMagicNumber", visibility=None): Function(
+        symbol=Symbol(name="PyImport_GetMagicNumber", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyImport_GetMagicTag"): Function(
-        symbol=Symbol(name="PyImport_GetMagicTag"),
+    Symbol(name="PyImport_GetMagicTag", visibility=None): Function(
+        symbol=Symbol(name="PyImport_GetMagicTag", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyImport_GetModuleDict"): Function(
-        symbol=Symbol(name="PyImport_GetModuleDict"),
+    Symbol(name="PyImport_GetModuleDict", visibility=None): Function(
+        symbol=Symbol(name="PyImport_GetModuleDict", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyImport_Import"): Function(
-        symbol=Symbol(name="PyImport_Import"),
+    Symbol(name="PyImport_Import", visibility=None): Function(
+        symbol=Symbol(name="PyImport_Import", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyImport_ImportFrozenModule"): Function(
-        symbol=Symbol(name="PyImport_ImportFrozenModule"),
+    Symbol(name="PyImport_ImportFrozenModule", visibility=None): Function(
+        symbol=Symbol(name="PyImport_ImportFrozenModule", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyImport_ImportModule"): Function(
-        symbol=Symbol(name="PyImport_ImportModule"),
+    Symbol(name="PyImport_ImportModule", visibility=None): Function(
+        symbol=Symbol(name="PyImport_ImportModule", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyImport_ImportModuleLevel"): Function(
-        symbol=Symbol(name="PyImport_ImportModuleLevel"),
+    Symbol(name="PyImport_ImportModuleLevel", visibility=None): Function(
+        symbol=Symbol(name="PyImport_ImportModuleLevel", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyImport_ImportModuleNoBlock"): Function(
-        symbol=Symbol(name="PyImport_ImportModuleNoBlock"),
+    Symbol(name="PyImport_ImportModuleNoBlock", visibility=None): Function(
+        symbol=Symbol(name="PyImport_ImportModuleNoBlock", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyImport_ReloadModule"): Function(
-        symbol=Symbol(name="PyImport_ReloadModule"),
+    Symbol(name="PyImport_ReloadModule", visibility=None): Function(
+        symbol=Symbol(name="PyImport_ReloadModule", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyInterpreterState_Clear"): Function(
-        symbol=Symbol(name="PyInterpreterState_Clear"),
+    Symbol(name="PyInterpreterState_Clear", visibility=None): Function(
+        symbol=Symbol(name="PyInterpreterState_Clear", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyInterpreterState_Delete"): Function(
-        symbol=Symbol(name="PyInterpreterState_Delete"),
+    Symbol(name="PyInterpreterState_Delete", visibility=None): Function(
+        symbol=Symbol(name="PyInterpreterState_Delete", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyInterpreterState_New"): Function(
-        symbol=Symbol(name="PyInterpreterState_New"),
+    Symbol(name="PyInterpreterState_New", visibility=None): Function(
+        symbol=Symbol(name="PyInterpreterState_New", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyIter_Next"): Function(
-        symbol=Symbol(name="PyIter_Next"),
+    Symbol(name="PyIter_Next", visibility=None): Function(
+        symbol=Symbol(name="PyIter_Next", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyList_Append"): Function(
-        symbol=Symbol(name="PyList_Append"),
+    Symbol(name="PyList_Append", visibility=None): Function(
+        symbol=Symbol(name="PyList_Append", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyList_AsTuple"): Function(
-        symbol=Symbol(name="PyList_AsTuple"),
+    Symbol(name="PyList_AsTuple", visibility=None): Function(
+        symbol=Symbol(name="PyList_AsTuple", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyList_GetItem"): Function(
-        symbol=Symbol(name="PyList_GetItem"),
+    Symbol(name="PyList_GetItem", visibility=None): Function(
+        symbol=Symbol(name="PyList_GetItem", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyList_GetSlice"): Function(
-        symbol=Symbol(name="PyList_GetSlice"),
+    Symbol(name="PyList_GetSlice", visibility=None): Function(
+        symbol=Symbol(name="PyList_GetSlice", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyList_Insert"): Function(
-        symbol=Symbol(name="PyList_Insert"),
+    Symbol(name="PyList_Insert", visibility=None): Function(
+        symbol=Symbol(name="PyList_Insert", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyList_New"): Function(
-        symbol=Symbol(name="PyList_New"),
+    Symbol(name="PyList_New", visibility=None): Function(
+        symbol=Symbol(name="PyList_New", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyList_Reverse"): Function(
-        symbol=Symbol(name="PyList_Reverse"),
+    Symbol(name="PyList_Reverse", visibility=None): Function(
+        symbol=Symbol(name="PyList_Reverse", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyList_SetItem"): Function(
-        symbol=Symbol(name="PyList_SetItem"),
+    Symbol(name="PyList_SetItem", visibility=None): Function(
+        symbol=Symbol(name="PyList_SetItem", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyList_SetSlice"): Function(
-        symbol=Symbol(name="PyList_SetSlice"),
+    Symbol(name="PyList_SetSlice", visibility=None): Function(
+        symbol=Symbol(name="PyList_SetSlice", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyList_Size"): Function(
-        symbol=Symbol(name="PyList_Size"),
+    Symbol(name="PyList_Size", visibility=None): Function(
+        symbol=Symbol(name="PyList_Size", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyList_Sort"): Function(
-        symbol=Symbol(name="PyList_Sort"),
+    Symbol(name="PyList_Sort", visibility=None): Function(
+        symbol=Symbol(name="PyList_Sort", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyLong_AsDouble"): Function(
-        symbol=Symbol(name="PyLong_AsDouble"),
+    Symbol(name="PyLong_AsDouble", visibility=None): Function(
+        symbol=Symbol(name="PyLong_AsDouble", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyLong_AsLong"): Function(
-        symbol=Symbol(name="PyLong_AsLong"),
+    Symbol(name="PyLong_AsLong", visibility=None): Function(
+        symbol=Symbol(name="PyLong_AsLong", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyLong_AsLongAndOverflow"): Function(
-        symbol=Symbol(name="PyLong_AsLongAndOverflow"),
+    Symbol(name="PyLong_AsLongAndOverflow", visibility=None): Function(
+        symbol=Symbol(name="PyLong_AsLongAndOverflow", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyLong_AsLongLong"): Function(
-        symbol=Symbol(name="PyLong_AsLongLong"),
+    Symbol(name="PyLong_AsLongLong", visibility=None): Function(
+        symbol=Symbol(name="PyLong_AsLongLong", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyLong_AsLongLongAndOverflow"): Function(
-        symbol=Symbol(name="PyLong_AsLongLongAndOverflow"),
+    Symbol(name="PyLong_AsLongLongAndOverflow", visibility=None): Function(
+        symbol=Symbol(name="PyLong_AsLongLongAndOverflow", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyLong_AsSize_t"): Function(
-        symbol=Symbol(name="PyLong_AsSize_t"),
+    Symbol(name="PyLong_AsSize_t", visibility=None): Function(
+        symbol=Symbol(name="PyLong_AsSize_t", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyLong_AsSsize_t"): Function(
-        symbol=Symbol(name="PyLong_AsSsize_t"),
+    Symbol(name="PyLong_AsSsize_t", visibility=None): Function(
+        symbol=Symbol(name="PyLong_AsSsize_t", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyLong_AsUnsignedLong"): Function(
-        symbol=Symbol(name="PyLong_AsUnsignedLong"),
+    Symbol(name="PyLong_AsUnsignedLong", visibility=None): Function(
+        symbol=Symbol(name="PyLong_AsUnsignedLong", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyLong_AsUnsignedLongLong"): Function(
-        symbol=Symbol(name="PyLong_AsUnsignedLongLong"),
+    Symbol(name="PyLong_AsUnsignedLongLong", visibility=None): Function(
+        symbol=Symbol(name="PyLong_AsUnsignedLongLong", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyLong_AsUnsignedLongLongMask"): Function(
-        symbol=Symbol(name="PyLong_AsUnsignedLongLongMask"),
+    Symbol(name="PyLong_AsUnsignedLongLongMask", visibility=None): Function(
+        symbol=Symbol(name="PyLong_AsUnsignedLongLongMask", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyLong_AsUnsignedLongMask"): Function(
-        symbol=Symbol(name="PyLong_AsUnsignedLongMask"),
+    Symbol(name="PyLong_AsUnsignedLongMask", visibility=None): Function(
+        symbol=Symbol(name="PyLong_AsUnsignedLongMask", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyLong_AsVoidPtr"): Function(
-        symbol=Symbol(name="PyLong_AsVoidPtr"),
+    Symbol(name="PyLong_AsVoidPtr", visibility=None): Function(
+        symbol=Symbol(name="PyLong_AsVoidPtr", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyLong_FromDouble"): Function(
-        symbol=Symbol(name="PyLong_FromDouble"),
+    Symbol(name="PyLong_FromDouble", visibility=None): Function(
+        symbol=Symbol(name="PyLong_FromDouble", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyLong_FromLong"): Function(
-        symbol=Symbol(name="PyLong_FromLong"),
+    Symbol(name="PyLong_FromLong", visibility=None): Function(
+        symbol=Symbol(name="PyLong_FromLong", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyLong_FromLongLong"): Function(
-        symbol=Symbol(name="PyLong_FromLongLong"),
+    Symbol(name="PyLong_FromLongLong", visibility=None): Function(
+        symbol=Symbol(name="PyLong_FromLongLong", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyLong_FromSize_t"): Function(
-        symbol=Symbol(name="PyLong_FromSize_t"),
+    Symbol(name="PyLong_FromSize_t", visibility=None): Function(
+        symbol=Symbol(name="PyLong_FromSize_t", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyLong_FromSsize_t"): Function(
-        symbol=Symbol(name="PyLong_FromSsize_t"),
+    Symbol(name="PyLong_FromSsize_t", visibility=None): Function(
+        symbol=Symbol(name="PyLong_FromSsize_t", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyLong_FromString"): Function(
-        symbol=Symbol(name="PyLong_FromString"),
+    Symbol(name="PyLong_FromString", visibility=None): Function(
+        symbol=Symbol(name="PyLong_FromString", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyLong_FromUnsignedLong"): Function(
-        symbol=Symbol(name="PyLong_FromUnsignedLong"),
+    Symbol(name="PyLong_FromUnsignedLong", visibility=None): Function(
+        symbol=Symbol(name="PyLong_FromUnsignedLong", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyLong_FromUnsignedLongLong"): Function(
-        symbol=Symbol(name="PyLong_FromUnsignedLongLong"),
+    Symbol(name="PyLong_FromUnsignedLongLong", visibility=None): Function(
+        symbol=Symbol(name="PyLong_FromUnsignedLongLong", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyLong_FromVoidPtr"): Function(
-        symbol=Symbol(name="PyLong_FromVoidPtr"),
+    Symbol(name="PyLong_FromVoidPtr", visibility=None): Function(
+        symbol=Symbol(name="PyLong_FromVoidPtr", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyLong_GetInfo"): Function(
-        symbol=Symbol(name="PyLong_GetInfo"),
+    Symbol(name="PyLong_GetInfo", visibility=None): Function(
+        symbol=Symbol(name="PyLong_GetInfo", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMapping_Check"): Function(
-        symbol=Symbol(name="PyMapping_Check"),
+    Symbol(name="PyMapping_Check", visibility=None): Function(
+        symbol=Symbol(name="PyMapping_Check", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMapping_GetItemString"): Function(
-        symbol=Symbol(name="PyMapping_GetItemString"),
+    Symbol(name="PyMapping_GetItemString", visibility=None): Function(
+        symbol=Symbol(name="PyMapping_GetItemString", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMapping_HasKey"): Function(
-        symbol=Symbol(name="PyMapping_HasKey"),
+    Symbol(name="PyMapping_HasKey", visibility=None): Function(
+        symbol=Symbol(name="PyMapping_HasKey", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMapping_HasKeyString"): Function(
-        symbol=Symbol(name="PyMapping_HasKeyString"),
+    Symbol(name="PyMapping_HasKeyString", visibility=None): Function(
+        symbol=Symbol(name="PyMapping_HasKeyString", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMapping_Items"): Function(
-        symbol=Symbol(name="PyMapping_Items"),
+    Symbol(name="PyMapping_Items", visibility=None): Function(
+        symbol=Symbol(name="PyMapping_Items", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMapping_Keys"): Function(
-        symbol=Symbol(name="PyMapping_Keys"),
+    Symbol(name="PyMapping_Keys", visibility=None): Function(
+        symbol=Symbol(name="PyMapping_Keys", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMapping_Length"): Function(
-        symbol=Symbol(name="PyMapping_Length"),
+    Symbol(name="PyMapping_Length", visibility=None): Function(
+        symbol=Symbol(name="PyMapping_Length", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMapping_SetItemString"): Function(
-        symbol=Symbol(name="PyMapping_SetItemString"),
+    Symbol(name="PyMapping_SetItemString", visibility=None): Function(
+        symbol=Symbol(name="PyMapping_SetItemString", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMapping_Size"): Function(
-        symbol=Symbol(name="PyMapping_Size"),
+    Symbol(name="PyMapping_Size", visibility=None): Function(
+        symbol=Symbol(name="PyMapping_Size", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMapping_Values"): Function(
-        symbol=Symbol(name="PyMapping_Values"),
+    Symbol(name="PyMapping_Values", visibility=None): Function(
+        symbol=Symbol(name="PyMapping_Values", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMem_Free"): Function(
-        symbol=Symbol(name="PyMem_Free"),
+    Symbol(name="PyMem_Free", visibility=None): Function(
+        symbol=Symbol(name="PyMem_Free", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMem_Malloc"): Function(
-        symbol=Symbol(name="PyMem_Malloc"),
+    Symbol(name="PyMem_Malloc", visibility=None): Function(
+        symbol=Symbol(name="PyMem_Malloc", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMem_Realloc"): Function(
-        symbol=Symbol(name="PyMem_Realloc"),
+    Symbol(name="PyMem_Realloc", visibility=None): Function(
+        symbol=Symbol(name="PyMem_Realloc", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMemoryView_FromObject"): Function(
-        symbol=Symbol(name="PyMemoryView_FromObject"),
+    Symbol(name="PyMemoryView_FromObject", visibility=None): Function(
+        symbol=Symbol(name="PyMemoryView_FromObject", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMemoryView_GetContiguous"): Function(
-        symbol=Symbol(name="PyMemoryView_GetContiguous"),
+    Symbol(name="PyMemoryView_GetContiguous", visibility=None): Function(
+        symbol=Symbol(name="PyMemoryView_GetContiguous", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyModule_AddIntConstant"): Function(
-        symbol=Symbol(name="PyModule_AddIntConstant"),
+    Symbol(name="PyModule_AddIntConstant", visibility=None): Function(
+        symbol=Symbol(name="PyModule_AddIntConstant", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyModule_AddObject"): Function(
-        symbol=Symbol(name="PyModule_AddObject"),
+    Symbol(name="PyModule_AddObject", visibility=None): Function(
+        symbol=Symbol(name="PyModule_AddObject", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyModule_AddStringConstant"): Function(
-        symbol=Symbol(name="PyModule_AddStringConstant"),
+    Symbol(name="PyModule_AddStringConstant", visibility=None): Function(
+        symbol=Symbol(name="PyModule_AddStringConstant", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyModule_Create2"): Function(
-        symbol=Symbol(name="PyModule_Create2"),
+    Symbol(name="PyModule_Create2", visibility=None): Function(
+        symbol=Symbol(name="PyModule_Create2", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyModule_GetDef"): Function(
-        symbol=Symbol(name="PyModule_GetDef"),
+    Symbol(name="PyModule_GetDef", visibility=None): Function(
+        symbol=Symbol(name="PyModule_GetDef", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyModule_GetDict"): Function(
-        symbol=Symbol(name="PyModule_GetDict"),
+    Symbol(name="PyModule_GetDict", visibility=None): Function(
+        symbol=Symbol(name="PyModule_GetDict", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyModule_GetFilename"): Function(
-        symbol=Symbol(name="PyModule_GetFilename"),
+    Symbol(name="PyModule_GetFilename", visibility=None): Function(
+        symbol=Symbol(name="PyModule_GetFilename", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyModule_GetFilenameObject"): Function(
-        symbol=Symbol(name="PyModule_GetFilenameObject"),
+    Symbol(name="PyModule_GetFilenameObject", visibility=None): Function(
+        symbol=Symbol(name="PyModule_GetFilenameObject", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyModule_GetName"): Function(
-        symbol=Symbol(name="PyModule_GetName"),
+    Symbol(name="PyModule_GetName", visibility=None): Function(
+        symbol=Symbol(name="PyModule_GetName", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyModule_GetState"): Function(
-        symbol=Symbol(name="PyModule_GetState"),
+    Symbol(name="PyModule_GetState", visibility=None): Function(
+        symbol=Symbol(name="PyModule_GetState", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyModule_New"): Function(
-        symbol=Symbol(name="PyModule_New"),
+    Symbol(name="PyModule_New", visibility=None): Function(
+        symbol=Symbol(name="PyModule_New", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_Absolute"): Function(
-        symbol=Symbol(name="PyNumber_Absolute"),
+    Symbol(name="PyNumber_Absolute", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_Absolute", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_Add"): Function(
-        symbol=Symbol(name="PyNumber_Add"),
+    Symbol(name="PyNumber_Add", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_Add", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_And"): Function(
-        symbol=Symbol(name="PyNumber_And"),
+    Symbol(name="PyNumber_And", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_And", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_AsSsize_t"): Function(
-        symbol=Symbol(name="PyNumber_AsSsize_t"),
+    Symbol(name="PyNumber_AsSsize_t", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_AsSsize_t", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_Check"): Function(
-        symbol=Symbol(name="PyNumber_Check"),
+    Symbol(name="PyNumber_Check", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_Check", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_Divmod"): Function(
-        symbol=Symbol(name="PyNumber_Divmod"),
+    Symbol(name="PyNumber_Divmod", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_Divmod", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_Float"): Function(
-        symbol=Symbol(name="PyNumber_Float"),
+    Symbol(name="PyNumber_Float", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_Float", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_FloorDivide"): Function(
-        symbol=Symbol(name="PyNumber_FloorDivide"),
+    Symbol(name="PyNumber_FloorDivide", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_FloorDivide", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_InPlaceAdd"): Function(
-        symbol=Symbol(name="PyNumber_InPlaceAdd"),
+    Symbol(name="PyNumber_InPlaceAdd", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_InPlaceAdd", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_InPlaceAnd"): Function(
-        symbol=Symbol(name="PyNumber_InPlaceAnd"),
+    Symbol(name="PyNumber_InPlaceAnd", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_InPlaceAnd", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_InPlaceFloorDivide"): Function(
-        symbol=Symbol(name="PyNumber_InPlaceFloorDivide"),
+    Symbol(name="PyNumber_InPlaceFloorDivide", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_InPlaceFloorDivide", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_InPlaceLshift"): Function(
-        symbol=Symbol(name="PyNumber_InPlaceLshift"),
+    Symbol(name="PyNumber_InPlaceLshift", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_InPlaceLshift", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_InPlaceMultiply"): Function(
-        symbol=Symbol(name="PyNumber_InPlaceMultiply"),
+    Symbol(name="PyNumber_InPlaceMultiply", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_InPlaceMultiply", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_InPlaceOr"): Function(
-        symbol=Symbol(name="PyNumber_InPlaceOr"),
+    Symbol(name="PyNumber_InPlaceOr", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_InPlaceOr", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_InPlacePower"): Function(
-        symbol=Symbol(name="PyNumber_InPlacePower"),
+    Symbol(name="PyNumber_InPlacePower", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_InPlacePower", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_InPlaceRemainder"): Function(
-        symbol=Symbol(name="PyNumber_InPlaceRemainder"),
+    Symbol(name="PyNumber_InPlaceRemainder", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_InPlaceRemainder", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_InPlaceRshift"): Function(
-        symbol=Symbol(name="PyNumber_InPlaceRshift"),
+    Symbol(name="PyNumber_InPlaceRshift", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_InPlaceRshift", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_InPlaceSubtract"): Function(
-        symbol=Symbol(name="PyNumber_InPlaceSubtract"),
+    Symbol(name="PyNumber_InPlaceSubtract", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_InPlaceSubtract", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_InPlaceTrueDivide"): Function(
-        symbol=Symbol(name="PyNumber_InPlaceTrueDivide"),
+    Symbol(name="PyNumber_InPlaceTrueDivide", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_InPlaceTrueDivide", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_InPlaceXor"): Function(
-        symbol=Symbol(name="PyNumber_InPlaceXor"),
+    Symbol(name="PyNumber_InPlaceXor", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_InPlaceXor", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_Index"): Function(
-        symbol=Symbol(name="PyNumber_Index"),
+    Symbol(name="PyNumber_Index", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_Index", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_Invert"): Function(
-        symbol=Symbol(name="PyNumber_Invert"),
+    Symbol(name="PyNumber_Invert", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_Invert", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_Long"): Function(
-        symbol=Symbol(name="PyNumber_Long"),
+    Symbol(name="PyNumber_Long", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_Long", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_Lshift"): Function(
-        symbol=Symbol(name="PyNumber_Lshift"),
+    Symbol(name="PyNumber_Lshift", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_Lshift", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_Multiply"): Function(
-        symbol=Symbol(name="PyNumber_Multiply"),
+    Symbol(name="PyNumber_Multiply", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_Multiply", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_Negative"): Function(
-        symbol=Symbol(name="PyNumber_Negative"),
+    Symbol(name="PyNumber_Negative", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_Negative", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_Or"): Function(
-        symbol=Symbol(name="PyNumber_Or"),
+    Symbol(name="PyNumber_Or", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_Or", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_Positive"): Function(
-        symbol=Symbol(name="PyNumber_Positive"),
+    Symbol(name="PyNumber_Positive", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_Positive", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_Power"): Function(
-        symbol=Symbol(name="PyNumber_Power"),
+    Symbol(name="PyNumber_Power", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_Power", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_Remainder"): Function(
-        symbol=Symbol(name="PyNumber_Remainder"),
+    Symbol(name="PyNumber_Remainder", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_Remainder", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_Rshift"): Function(
-        symbol=Symbol(name="PyNumber_Rshift"),
+    Symbol(name="PyNumber_Rshift", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_Rshift", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_Subtract"): Function(
-        symbol=Symbol(name="PyNumber_Subtract"),
+    Symbol(name="PyNumber_Subtract", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_Subtract", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_ToBase"): Function(
-        symbol=Symbol(name="PyNumber_ToBase"),
+    Symbol(name="PyNumber_ToBase", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_ToBase", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_TrueDivide"): Function(
-        symbol=Symbol(name="PyNumber_TrueDivide"),
+    Symbol(name="PyNumber_TrueDivide", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_TrueDivide", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_Xor"): Function(
-        symbol=Symbol(name="PyNumber_Xor"),
+    Symbol(name="PyNumber_Xor", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_Xor", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyOS_AfterFork"): Function(
-        symbol=Symbol(name="PyOS_AfterFork"),
+    Symbol(name="PyOS_AfterFork", visibility=None): Function(
+        symbol=Symbol(name="PyOS_AfterFork", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=FeatureMacro(name="HAVE_FORK", doc="on platforms with fork()", windows=False),
         abi_only=False,
     ),
-    Symbol(name="PyOS_InterruptOccurred"): Function(
-        symbol=Symbol(name="PyOS_InterruptOccurred"),
+    Symbol(name="PyOS_InterruptOccurred", visibility=None): Function(
+        symbol=Symbol(name="PyOS_InterruptOccurred", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyOS_double_to_string"): Function(
-        symbol=Symbol(name="PyOS_double_to_string"),
+    Symbol(name="PyOS_double_to_string", visibility=None): Function(
+        symbol=Symbol(name="PyOS_double_to_string", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyOS_getsig"): Function(
-        symbol=Symbol(name="PyOS_getsig"),
+    Symbol(name="PyOS_getsig", visibility=None): Function(
+        symbol=Symbol(name="PyOS_getsig", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyOS_mystricmp"): Function(
-        symbol=Symbol(name="PyOS_mystricmp"),
+    Symbol(name="PyOS_mystricmp", visibility=None): Function(
+        symbol=Symbol(name="PyOS_mystricmp", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyOS_mystrnicmp"): Function(
-        symbol=Symbol(name="PyOS_mystrnicmp"),
+    Symbol(name="PyOS_mystrnicmp", visibility=None): Function(
+        symbol=Symbol(name="PyOS_mystrnicmp", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyOS_setsig"): Function(
-        symbol=Symbol(name="PyOS_setsig"),
+    Symbol(name="PyOS_setsig", visibility=None): Function(
+        symbol=Symbol(name="PyOS_setsig", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyOS_snprintf"): Function(
-        symbol=Symbol(name="PyOS_snprintf"),
+    Symbol(name="PyOS_snprintf", visibility=None): Function(
+        symbol=Symbol(name="PyOS_snprintf", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyOS_string_to_double"): Function(
-        symbol=Symbol(name="PyOS_string_to_double"),
+    Symbol(name="PyOS_string_to_double", visibility=None): Function(
+        symbol=Symbol(name="PyOS_string_to_double", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyOS_strtol"): Function(
-        symbol=Symbol(name="PyOS_strtol"),
+    Symbol(name="PyOS_strtol", visibility=None): Function(
+        symbol=Symbol(name="PyOS_strtol", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyOS_strtoul"): Function(
-        symbol=Symbol(name="PyOS_strtoul"),
+    Symbol(name="PyOS_strtoul", visibility=None): Function(
+        symbol=Symbol(name="PyOS_strtoul", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyOS_vsnprintf"): Function(
-        symbol=Symbol(name="PyOS_vsnprintf"),
+    Symbol(name="PyOS_vsnprintf", visibility=None): Function(
+        symbol=Symbol(name="PyOS_vsnprintf", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_ASCII"): Function(
-        symbol=Symbol(name="PyObject_ASCII"),
+    Symbol(name="PyObject_ASCII", visibility=None): Function(
+        symbol=Symbol(name="PyObject_ASCII", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_AsFileDescriptor"): Function(
-        symbol=Symbol(name="PyObject_AsFileDescriptor"),
+    Symbol(name="PyObject_AsFileDescriptor", visibility=None): Function(
+        symbol=Symbol(name="PyObject_AsFileDescriptor", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_Bytes"): Function(
-        symbol=Symbol(name="PyObject_Bytes"),
+    Symbol(name="PyObject_Bytes", visibility=None): Function(
+        symbol=Symbol(name="PyObject_Bytes", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_Call"): Function(
-        symbol=Symbol(name="PyObject_Call"),
+    Symbol(name="PyObject_Call", visibility=None): Function(
+        symbol=Symbol(name="PyObject_Call", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_CallFunction"): Function(
-        symbol=Symbol(name="PyObject_CallFunction"),
+    Symbol(name="PyObject_CallFunction", visibility=None): Function(
+        symbol=Symbol(name="PyObject_CallFunction", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_CallFunctionObjArgs"): Function(
-        symbol=Symbol(name="PyObject_CallFunctionObjArgs"),
+    Symbol(name="PyObject_CallFunctionObjArgs", visibility=None): Function(
+        symbol=Symbol(name="PyObject_CallFunctionObjArgs", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_CallMethod"): Function(
-        symbol=Symbol(name="PyObject_CallMethod"),
+    Symbol(name="PyObject_CallMethod", visibility=None): Function(
+        symbol=Symbol(name="PyObject_CallMethod", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_CallMethodObjArgs"): Function(
-        symbol=Symbol(name="PyObject_CallMethodObjArgs"),
+    Symbol(name="PyObject_CallMethodObjArgs", visibility=None): Function(
+        symbol=Symbol(name="PyObject_CallMethodObjArgs", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_CallObject"): Function(
-        symbol=Symbol(name="PyObject_CallObject"),
+    Symbol(name="PyObject_CallObject", visibility=None): Function(
+        symbol=Symbol(name="PyObject_CallObject", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_ClearWeakRefs"): Function(
-        symbol=Symbol(name="PyObject_ClearWeakRefs"),
+    Symbol(name="PyObject_ClearWeakRefs", visibility=None): Function(
+        symbol=Symbol(name="PyObject_ClearWeakRefs", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_DelItem"): Function(
-        symbol=Symbol(name="PyObject_DelItem"),
+    Symbol(name="PyObject_DelItem", visibility=None): Function(
+        symbol=Symbol(name="PyObject_DelItem", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_DelItemString"): Function(
-        symbol=Symbol(name="PyObject_DelItemString"),
+    Symbol(name="PyObject_DelItemString", visibility=None): Function(
+        symbol=Symbol(name="PyObject_DelItemString", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_Dir"): Function(
-        symbol=Symbol(name="PyObject_Dir"),
+    Symbol(name="PyObject_Dir", visibility=None): Function(
+        symbol=Symbol(name="PyObject_Dir", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_Format"): Function(
-        symbol=Symbol(name="PyObject_Format"),
+    Symbol(name="PyObject_Format", visibility=None): Function(
+        symbol=Symbol(name="PyObject_Format", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_Free"): Function(
-        symbol=Symbol(name="PyObject_Free"),
+    Symbol(name="PyObject_Free", visibility=None): Function(
+        symbol=Symbol(name="PyObject_Free", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_GC_Del"): Function(
-        symbol=Symbol(name="PyObject_GC_Del"),
+    Symbol(name="PyObject_GC_Del", visibility=None): Function(
+        symbol=Symbol(name="PyObject_GC_Del", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_GC_Track"): Function(
-        symbol=Symbol(name="PyObject_GC_Track"),
+    Symbol(name="PyObject_GC_Track", visibility=None): Function(
+        symbol=Symbol(name="PyObject_GC_Track", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_GC_UnTrack"): Function(
-        symbol=Symbol(name="PyObject_GC_UnTrack"),
+    Symbol(name="PyObject_GC_UnTrack", visibility=None): Function(
+        symbol=Symbol(name="PyObject_GC_UnTrack", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_GenericGetAttr"): Function(
-        symbol=Symbol(name="PyObject_GenericGetAttr"),
+    Symbol(name="PyObject_GenericGetAttr", visibility=None): Function(
+        symbol=Symbol(name="PyObject_GenericGetAttr", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_GenericSetAttr"): Function(
-        symbol=Symbol(name="PyObject_GenericSetAttr"),
+    Symbol(name="PyObject_GenericSetAttr", visibility=None): Function(
+        symbol=Symbol(name="PyObject_GenericSetAttr", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_GetAttr"): Function(
-        symbol=Symbol(name="PyObject_GetAttr"),
+    Symbol(name="PyObject_GetAttr", visibility=None): Function(
+        symbol=Symbol(name="PyObject_GetAttr", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_GetAttrString"): Function(
-        symbol=Symbol(name="PyObject_GetAttrString"),
+    Symbol(name="PyObject_GetAttrString", visibility=None): Function(
+        symbol=Symbol(name="PyObject_GetAttrString", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_GetItem"): Function(
-        symbol=Symbol(name="PyObject_GetItem"),
+    Symbol(name="PyObject_GetItem", visibility=None): Function(
+        symbol=Symbol(name="PyObject_GetItem", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_GetIter"): Function(
-        symbol=Symbol(name="PyObject_GetIter"),
+    Symbol(name="PyObject_GetIter", visibility=None): Function(
+        symbol=Symbol(name="PyObject_GetIter", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_HasAttr"): Function(
-        symbol=Symbol(name="PyObject_HasAttr"),
+    Symbol(name="PyObject_HasAttr", visibility=None): Function(
+        symbol=Symbol(name="PyObject_HasAttr", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_HasAttrString"): Function(
-        symbol=Symbol(name="PyObject_HasAttrString"),
+    Symbol(name="PyObject_HasAttrString", visibility=None): Function(
+        symbol=Symbol(name="PyObject_HasAttrString", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_Hash"): Function(
-        symbol=Symbol(name="PyObject_Hash"),
+    Symbol(name="PyObject_Hash", visibility=None): Function(
+        symbol=Symbol(name="PyObject_Hash", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_HashNotImplemented"): Function(
-        symbol=Symbol(name="PyObject_HashNotImplemented"),
+    Symbol(name="PyObject_HashNotImplemented", visibility=None): Function(
+        symbol=Symbol(name="PyObject_HashNotImplemented", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_Init"): Function(
-        symbol=Symbol(name="PyObject_Init"),
+    Symbol(name="PyObject_Init", visibility=None): Function(
+        symbol=Symbol(name="PyObject_Init", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_InitVar"): Function(
-        symbol=Symbol(name="PyObject_InitVar"),
+    Symbol(name="PyObject_InitVar", visibility=None): Function(
+        symbol=Symbol(name="PyObject_InitVar", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_IsInstance"): Function(
-        symbol=Symbol(name="PyObject_IsInstance"),
+    Symbol(name="PyObject_IsInstance", visibility=None): Function(
+        symbol=Symbol(name="PyObject_IsInstance", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_IsSubclass"): Function(
-        symbol=Symbol(name="PyObject_IsSubclass"),
+    Symbol(name="PyObject_IsSubclass", visibility=None): Function(
+        symbol=Symbol(name="PyObject_IsSubclass", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_IsTrue"): Function(
-        symbol=Symbol(name="PyObject_IsTrue"),
+    Symbol(name="PyObject_IsTrue", visibility=None): Function(
+        symbol=Symbol(name="PyObject_IsTrue", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_Length"): Function(
-        symbol=Symbol(name="PyObject_Length"),
+    Symbol(name="PyObject_Length", visibility=None): Function(
+        symbol=Symbol(name="PyObject_Length", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_Malloc"): Function(
-        symbol=Symbol(name="PyObject_Malloc"),
+    Symbol(name="PyObject_Malloc", visibility=None): Function(
+        symbol=Symbol(name="PyObject_Malloc", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_Not"): Function(
-        symbol=Symbol(name="PyObject_Not"),
+    Symbol(name="PyObject_Not", visibility=None): Function(
+        symbol=Symbol(name="PyObject_Not", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_Realloc"): Function(
-        symbol=Symbol(name="PyObject_Realloc"),
+    Symbol(name="PyObject_Realloc", visibility=None): Function(
+        symbol=Symbol(name="PyObject_Realloc", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_Repr"): Function(
-        symbol=Symbol(name="PyObject_Repr"),
+    Symbol(name="PyObject_Repr", visibility=None): Function(
+        symbol=Symbol(name="PyObject_Repr", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_RichCompare"): Function(
-        symbol=Symbol(name="PyObject_RichCompare"),
+    Symbol(name="PyObject_RichCompare", visibility=None): Function(
+        symbol=Symbol(name="PyObject_RichCompare", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_RichCompareBool"): Function(
-        symbol=Symbol(name="PyObject_RichCompareBool"),
+    Symbol(name="PyObject_RichCompareBool", visibility=None): Function(
+        symbol=Symbol(name="PyObject_RichCompareBool", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_SelfIter"): Function(
-        symbol=Symbol(name="PyObject_SelfIter"),
+    Symbol(name="PyObject_SelfIter", visibility=None): Function(
+        symbol=Symbol(name="PyObject_SelfIter", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_SetAttr"): Function(
-        symbol=Symbol(name="PyObject_SetAttr"),
+    Symbol(name="PyObject_SetAttr", visibility=None): Function(
+        symbol=Symbol(name="PyObject_SetAttr", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_SetAttrString"): Function(
-        symbol=Symbol(name="PyObject_SetAttrString"),
+    Symbol(name="PyObject_SetAttrString", visibility=None): Function(
+        symbol=Symbol(name="PyObject_SetAttrString", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_SetItem"): Function(
-        symbol=Symbol(name="PyObject_SetItem"),
+    Symbol(name="PyObject_SetItem", visibility=None): Function(
+        symbol=Symbol(name="PyObject_SetItem", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_Size"): Function(
-        symbol=Symbol(name="PyObject_Size"),
+    Symbol(name="PyObject_Size", visibility=None): Function(
+        symbol=Symbol(name="PyObject_Size", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_Str"): Function(
-        symbol=Symbol(name="PyObject_Str"),
+    Symbol(name="PyObject_Str", visibility=None): Function(
+        symbol=Symbol(name="PyObject_Str", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_Type"): Function(
-        symbol=Symbol(name="PyObject_Type"),
+    Symbol(name="PyObject_Type", visibility=None): Function(
+        symbol=Symbol(name="PyObject_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySeqIter_New"): Function(
-        symbol=Symbol(name="PySeqIter_New"),
+    Symbol(name="PySeqIter_New", visibility=None): Function(
+        symbol=Symbol(name="PySeqIter_New", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySequence_Check"): Function(
-        symbol=Symbol(name="PySequence_Check"),
+    Symbol(name="PySequence_Check", visibility=None): Function(
+        symbol=Symbol(name="PySequence_Check", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySequence_Concat"): Function(
-        symbol=Symbol(name="PySequence_Concat"),
+    Symbol(name="PySequence_Concat", visibility=None): Function(
+        symbol=Symbol(name="PySequence_Concat", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySequence_Contains"): Function(
-        symbol=Symbol(name="PySequence_Contains"),
+    Symbol(name="PySequence_Contains", visibility=None): Function(
+        symbol=Symbol(name="PySequence_Contains", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySequence_Count"): Function(
-        symbol=Symbol(name="PySequence_Count"),
+    Symbol(name="PySequence_Count", visibility=None): Function(
+        symbol=Symbol(name="PySequence_Count", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySequence_DelItem"): Function(
-        symbol=Symbol(name="PySequence_DelItem"),
+    Symbol(name="PySequence_DelItem", visibility=None): Function(
+        symbol=Symbol(name="PySequence_DelItem", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySequence_DelSlice"): Function(
-        symbol=Symbol(name="PySequence_DelSlice"),
+    Symbol(name="PySequence_DelSlice", visibility=None): Function(
+        symbol=Symbol(name="PySequence_DelSlice", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySequence_Fast"): Function(
-        symbol=Symbol(name="PySequence_Fast"),
+    Symbol(name="PySequence_Fast", visibility=None): Function(
+        symbol=Symbol(name="PySequence_Fast", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySequence_GetItem"): Function(
-        symbol=Symbol(name="PySequence_GetItem"),
+    Symbol(name="PySequence_GetItem", visibility=None): Function(
+        symbol=Symbol(name="PySequence_GetItem", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySequence_GetSlice"): Function(
-        symbol=Symbol(name="PySequence_GetSlice"),
+    Symbol(name="PySequence_GetSlice", visibility=None): Function(
+        symbol=Symbol(name="PySequence_GetSlice", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySequence_In"): Function(
-        symbol=Symbol(name="PySequence_In"),
+    Symbol(name="PySequence_In", visibility=None): Function(
+        symbol=Symbol(name="PySequence_In", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySequence_InPlaceConcat"): Function(
-        symbol=Symbol(name="PySequence_InPlaceConcat"),
+    Symbol(name="PySequence_InPlaceConcat", visibility=None): Function(
+        symbol=Symbol(name="PySequence_InPlaceConcat", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySequence_InPlaceRepeat"): Function(
-        symbol=Symbol(name="PySequence_InPlaceRepeat"),
+    Symbol(name="PySequence_InPlaceRepeat", visibility=None): Function(
+        symbol=Symbol(name="PySequence_InPlaceRepeat", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySequence_Index"): Function(
-        symbol=Symbol(name="PySequence_Index"),
+    Symbol(name="PySequence_Index", visibility=None): Function(
+        symbol=Symbol(name="PySequence_Index", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySequence_Length"): Function(
-        symbol=Symbol(name="PySequence_Length"),
+    Symbol(name="PySequence_Length", visibility=None): Function(
+        symbol=Symbol(name="PySequence_Length", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySequence_List"): Function(
-        symbol=Symbol(name="PySequence_List"),
+    Symbol(name="PySequence_List", visibility=None): Function(
+        symbol=Symbol(name="PySequence_List", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySequence_Repeat"): Function(
-        symbol=Symbol(name="PySequence_Repeat"),
+    Symbol(name="PySequence_Repeat", visibility=None): Function(
+        symbol=Symbol(name="PySequence_Repeat", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySequence_SetItem"): Function(
-        symbol=Symbol(name="PySequence_SetItem"),
+    Symbol(name="PySequence_SetItem", visibility=None): Function(
+        symbol=Symbol(name="PySequence_SetItem", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySequence_SetSlice"): Function(
-        symbol=Symbol(name="PySequence_SetSlice"),
+    Symbol(name="PySequence_SetSlice", visibility=None): Function(
+        symbol=Symbol(name="PySequence_SetSlice", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySequence_Size"): Function(
-        symbol=Symbol(name="PySequence_Size"),
+    Symbol(name="PySequence_Size", visibility=None): Function(
+        symbol=Symbol(name="PySequence_Size", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySequence_Tuple"): Function(
-        symbol=Symbol(name="PySequence_Tuple"),
+    Symbol(name="PySequence_Tuple", visibility=None): Function(
+        symbol=Symbol(name="PySequence_Tuple", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySet_Add"): Function(
-        symbol=Symbol(name="PySet_Add"),
+    Symbol(name="PySet_Add", visibility=None): Function(
+        symbol=Symbol(name="PySet_Add", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySet_Clear"): Function(
-        symbol=Symbol(name="PySet_Clear"),
+    Symbol(name="PySet_Clear", visibility=None): Function(
+        symbol=Symbol(name="PySet_Clear", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySet_Contains"): Function(
-        symbol=Symbol(name="PySet_Contains"),
+    Symbol(name="PySet_Contains", visibility=None): Function(
+        symbol=Symbol(name="PySet_Contains", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySet_Discard"): Function(
-        symbol=Symbol(name="PySet_Discard"),
+    Symbol(name="PySet_Discard", visibility=None): Function(
+        symbol=Symbol(name="PySet_Discard", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySet_New"): Function(
-        symbol=Symbol(name="PySet_New"),
+    Symbol(name="PySet_New", visibility=None): Function(
+        symbol=Symbol(name="PySet_New", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySet_Pop"): Function(
-        symbol=Symbol(name="PySet_Pop"),
+    Symbol(name="PySet_Pop", visibility=None): Function(
+        symbol=Symbol(name="PySet_Pop", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySet_Size"): Function(
-        symbol=Symbol(name="PySet_Size"),
+    Symbol(name="PySet_Size", visibility=None): Function(
+        symbol=Symbol(name="PySet_Size", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySlice_GetIndices"): Function(
-        symbol=Symbol(name="PySlice_GetIndices"),
+    Symbol(name="PySlice_GetIndices", visibility=None): Function(
+        symbol=Symbol(name="PySlice_GetIndices", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySlice_GetIndicesEx"): Function(
-        symbol=Symbol(name="PySlice_GetIndicesEx"),
+    Symbol(name="PySlice_GetIndicesEx", visibility=None): Function(
+        symbol=Symbol(name="PySlice_GetIndicesEx", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySlice_New"): Function(
-        symbol=Symbol(name="PySlice_New"),
+    Symbol(name="PySlice_New", visibility=None): Function(
+        symbol=Symbol(name="PySlice_New", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyState_FindModule"): Function(
-        symbol=Symbol(name="PyState_FindModule"),
+    Symbol(name="PyState_FindModule", visibility=None): Function(
+        symbol=Symbol(name="PyState_FindModule", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyStructSequence_GetItem"): Function(
-        symbol=Symbol(name="PyStructSequence_GetItem"),
+    Symbol(name="PyStructSequence_GetItem", visibility=None): Function(
+        symbol=Symbol(name="PyStructSequence_GetItem", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyStructSequence_New"): Function(
-        symbol=Symbol(name="PyStructSequence_New"),
+    Symbol(name="PyStructSequence_New", visibility=None): Function(
+        symbol=Symbol(name="PyStructSequence_New", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyStructSequence_NewType"): Function(
-        symbol=Symbol(name="PyStructSequence_NewType"),
+    Symbol(name="PyStructSequence_NewType", visibility=None): Function(
+        symbol=Symbol(name="PyStructSequence_NewType", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyStructSequence_SetItem"): Function(
-        symbol=Symbol(name="PyStructSequence_SetItem"),
+    Symbol(name="PyStructSequence_SetItem", visibility=None): Function(
+        symbol=Symbol(name="PyStructSequence_SetItem", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySys_AddWarnOption"): Function(
-        symbol=Symbol(name="PySys_AddWarnOption"),
+    Symbol(name="PySys_AddWarnOption", visibility=None): Function(
+        symbol=Symbol(name="PySys_AddWarnOption", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="PySys_AddWarnOptionUnicode"): Function(
-        symbol=Symbol(name="PySys_AddWarnOptionUnicode"),
+    Symbol(name="PySys_AddWarnOptionUnicode", visibility=None): Function(
+        symbol=Symbol(name="PySys_AddWarnOptionUnicode", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="PySys_FormatStderr"): Function(
-        symbol=Symbol(name="PySys_FormatStderr"),
+    Symbol(name="PySys_FormatStderr", visibility=None): Function(
+        symbol=Symbol(name="PySys_FormatStderr", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySys_FormatStdout"): Function(
-        symbol=Symbol(name="PySys_FormatStdout"),
+    Symbol(name="PySys_FormatStdout", visibility=None): Function(
+        symbol=Symbol(name="PySys_FormatStdout", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySys_GetObject"): Function(
-        symbol=Symbol(name="PySys_GetObject"),
+    Symbol(name="PySys_GetObject", visibility=None): Function(
+        symbol=Symbol(name="PySys_GetObject", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySys_HasWarnOptions"): Function(
-        symbol=Symbol(name="PySys_HasWarnOptions"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=True,
-    ),
-    Symbol(name="PySys_ResetWarnOptions"): Function(
-        symbol=Symbol(name="PySys_ResetWarnOptions"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PySys_SetArgv"): Function(
-        symbol=Symbol(name="PySys_SetArgv"),
+    Symbol(name="PySys_HasWarnOptions", visibility=None): Function(
+        symbol=Symbol(name="PySys_HasWarnOptions", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="PySys_SetArgvEx"): Function(
-        symbol=Symbol(name="PySys_SetArgvEx"),
+    Symbol(name="PySys_ResetWarnOptions", visibility=None): Function(
+        symbol=Symbol(name="PySys_ResetWarnOptions", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PySys_SetArgv", visibility=None): Function(
+        symbol=Symbol(name="PySys_SetArgv", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="PySys_SetObject"): Function(
-        symbol=Symbol(name="PySys_SetObject"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PySys_SetPath"): Function(
-        symbol=Symbol(name="PySys_SetPath"),
+    Symbol(name="PySys_SetArgvEx", visibility=None): Function(
+        symbol=Symbol(name="PySys_SetArgvEx", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="PySys_WriteStderr"): Function(
-        symbol=Symbol(name="PySys_WriteStderr"),
+    Symbol(name="PySys_SetObject", visibility=None): Function(
+        symbol=Symbol(name="PySys_SetObject", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySys_WriteStdout"): Function(
-        symbol=Symbol(name="PySys_WriteStdout"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyThreadState_Clear"): Function(
-        symbol=Symbol(name="PyThreadState_Clear"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyThreadState_Delete"): Function(
-        symbol=Symbol(name="PyThreadState_Delete"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyThreadState_DeleteCurrent"): Function(
-        symbol=Symbol(name="PyThreadState_DeleteCurrent"),
+    Symbol(name="PySys_SetPath", visibility=None): Function(
+        symbol=Symbol(name="PySys_SetPath", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="PyThreadState_Get"): Function(
-        symbol=Symbol(name="PyThreadState_Get"),
+    Symbol(name="PySys_WriteStderr", visibility=None): Function(
+        symbol=Symbol(name="PySys_WriteStderr", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThreadState_GetDict"): Function(
-        symbol=Symbol(name="PyThreadState_GetDict"),
+    Symbol(name="PySys_WriteStdout", visibility=None): Function(
+        symbol=Symbol(name="PySys_WriteStdout", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThreadState_New"): Function(
-        symbol=Symbol(name="PyThreadState_New"),
+    Symbol(name="PyThreadState_Clear", visibility=None): Function(
+        symbol=Symbol(name="PyThreadState_Clear", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThreadState_SetAsyncExc"): Function(
-        symbol=Symbol(name="PyThreadState_SetAsyncExc"),
+    Symbol(name="PyThreadState_Delete", visibility=None): Function(
+        symbol=Symbol(name="PyThreadState_Delete", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThreadState_Swap"): Function(
-        symbol=Symbol(name="PyThreadState_Swap"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyTraceBack_Here"): Function(
-        symbol=Symbol(name="PyTraceBack_Here"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyTraceBack_Print"): Function(
-        symbol=Symbol(name="PyTraceBack_Print"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyTuple_GetItem"): Function(
-        symbol=Symbol(name="PyTuple_GetItem"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyTuple_GetSlice"): Function(
-        symbol=Symbol(name="PyTuple_GetSlice"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyTuple_New"): Function(
-        symbol=Symbol(name="PyTuple_New"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyTuple_Pack"): Function(
-        symbol=Symbol(name="PyTuple_Pack"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyTuple_SetItem"): Function(
-        symbol=Symbol(name="PyTuple_SetItem"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyTuple_Size"): Function(
-        symbol=Symbol(name="PyTuple_Size"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyType_ClearCache"): Function(
-        symbol=Symbol(name="PyType_ClearCache"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyType_GenericAlloc"): Function(
-        symbol=Symbol(name="PyType_GenericAlloc"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyType_GenericNew"): Function(
-        symbol=Symbol(name="PyType_GenericNew"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyType_GetFlags"): Function(
-        symbol=Symbol(name="PyType_GetFlags"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyType_IsSubtype"): Function(
-        symbol=Symbol(name="PyType_IsSubtype"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyType_Modified"): Function(
-        symbol=Symbol(name="PyType_Modified"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyType_Ready"): Function(
-        symbol=Symbol(name="PyType_Ready"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicodeDecodeError_Create"): Function(
-        symbol=Symbol(name="PyUnicodeDecodeError_Create"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicodeDecodeError_GetEncoding"): Function(
-        symbol=Symbol(name="PyUnicodeDecodeError_GetEncoding"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicodeDecodeError_GetEnd"): Function(
-        symbol=Symbol(name="PyUnicodeDecodeError_GetEnd"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicodeDecodeError_GetObject"): Function(
-        symbol=Symbol(name="PyUnicodeDecodeError_GetObject"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicodeDecodeError_GetReason"): Function(
-        symbol=Symbol(name="PyUnicodeDecodeError_GetReason"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicodeDecodeError_GetStart"): Function(
-        symbol=Symbol(name="PyUnicodeDecodeError_GetStart"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicodeDecodeError_SetEnd"): Function(
-        symbol=Symbol(name="PyUnicodeDecodeError_SetEnd"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicodeDecodeError_SetReason"): Function(
-        symbol=Symbol(name="PyUnicodeDecodeError_SetReason"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicodeDecodeError_SetStart"): Function(
-        symbol=Symbol(name="PyUnicodeDecodeError_SetStart"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicodeEncodeError_GetEncoding"): Function(
-        symbol=Symbol(name="PyUnicodeEncodeError_GetEncoding"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicodeEncodeError_GetEnd"): Function(
-        symbol=Symbol(name="PyUnicodeEncodeError_GetEnd"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicodeEncodeError_GetObject"): Function(
-        symbol=Symbol(name="PyUnicodeEncodeError_GetObject"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicodeEncodeError_GetReason"): Function(
-        symbol=Symbol(name="PyUnicodeEncodeError_GetReason"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicodeEncodeError_GetStart"): Function(
-        symbol=Symbol(name="PyUnicodeEncodeError_GetStart"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicodeEncodeError_SetEnd"): Function(
-        symbol=Symbol(name="PyUnicodeEncodeError_SetEnd"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicodeEncodeError_SetReason"): Function(
-        symbol=Symbol(name="PyUnicodeEncodeError_SetReason"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicodeEncodeError_SetStart"): Function(
-        symbol=Symbol(name="PyUnicodeEncodeError_SetStart"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicodeTranslateError_GetEnd"): Function(
-        symbol=Symbol(name="PyUnicodeTranslateError_GetEnd"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicodeTranslateError_GetObject"): Function(
-        symbol=Symbol(name="PyUnicodeTranslateError_GetObject"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicodeTranslateError_GetReason"): Function(
-        symbol=Symbol(name="PyUnicodeTranslateError_GetReason"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicodeTranslateError_GetStart"): Function(
-        symbol=Symbol(name="PyUnicodeTranslateError_GetStart"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicodeTranslateError_SetEnd"): Function(
-        symbol=Symbol(name="PyUnicodeTranslateError_SetEnd"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicodeTranslateError_SetReason"): Function(
-        symbol=Symbol(name="PyUnicodeTranslateError_SetReason"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicodeTranslateError_SetStart"): Function(
-        symbol=Symbol(name="PyUnicodeTranslateError_SetStart"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_Append"): Function(
-        symbol=Symbol(name="PyUnicode_Append"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_AppendAndDel"): Function(
-        symbol=Symbol(name="PyUnicode_AppendAndDel"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_AsASCIIString"): Function(
-        symbol=Symbol(name="PyUnicode_AsASCIIString"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_AsCharmapString"): Function(
-        symbol=Symbol(name="PyUnicode_AsCharmapString"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_AsDecodedObject"): Function(
-        symbol=Symbol(name="PyUnicode_AsDecodedObject"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_AsDecodedUnicode"): Function(
-        symbol=Symbol(name="PyUnicode_AsDecodedUnicode"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_AsEncodedObject"): Function(
-        symbol=Symbol(name="PyUnicode_AsEncodedObject"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_AsEncodedString"): Function(
-        symbol=Symbol(name="PyUnicode_AsEncodedString"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_AsEncodedUnicode"): Function(
-        symbol=Symbol(name="PyUnicode_AsEncodedUnicode"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_AsLatin1String"): Function(
-        symbol=Symbol(name="PyUnicode_AsLatin1String"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_AsRawUnicodeEscapeString"): Function(
-        symbol=Symbol(name="PyUnicode_AsRawUnicodeEscapeString"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_AsUTF16String"): Function(
-        symbol=Symbol(name="PyUnicode_AsUTF16String"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_AsUTF32String"): Function(
-        symbol=Symbol(name="PyUnicode_AsUTF32String"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_AsUTF8String"): Function(
-        symbol=Symbol(name="PyUnicode_AsUTF8String"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_AsUnicodeEscapeString"): Function(
-        symbol=Symbol(name="PyUnicode_AsUnicodeEscapeString"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_AsWideChar"): Function(
-        symbol=Symbol(name="PyUnicode_AsWideChar"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_Compare"): Function(
-        symbol=Symbol(name="PyUnicode_Compare"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_Concat"): Function(
-        symbol=Symbol(name="PyUnicode_Concat"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_Contains"): Function(
-        symbol=Symbol(name="PyUnicode_Contains"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_Count"): Function(
-        symbol=Symbol(name="PyUnicode_Count"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_Decode"): Function(
-        symbol=Symbol(name="PyUnicode_Decode"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_DecodeASCII"): Function(
-        symbol=Symbol(name="PyUnicode_DecodeASCII"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_DecodeCharmap"): Function(
-        symbol=Symbol(name="PyUnicode_DecodeCharmap"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_DecodeFSDefault"): Function(
-        symbol=Symbol(name="PyUnicode_DecodeFSDefault"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_DecodeFSDefaultAndSize"): Function(
-        symbol=Symbol(name="PyUnicode_DecodeFSDefaultAndSize"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_DecodeLatin1"): Function(
-        symbol=Symbol(name="PyUnicode_DecodeLatin1"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_DecodeRawUnicodeEscape"): Function(
-        symbol=Symbol(name="PyUnicode_DecodeRawUnicodeEscape"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_DecodeUTF16"): Function(
-        symbol=Symbol(name="PyUnicode_DecodeUTF16"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_DecodeUTF16Stateful"): Function(
-        symbol=Symbol(name="PyUnicode_DecodeUTF16Stateful"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_DecodeUTF32"): Function(
-        symbol=Symbol(name="PyUnicode_DecodeUTF32"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_DecodeUTF32Stateful"): Function(
-        symbol=Symbol(name="PyUnicode_DecodeUTF32Stateful"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_DecodeUTF8"): Function(
-        symbol=Symbol(name="PyUnicode_DecodeUTF8"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_DecodeUTF8Stateful"): Function(
-        symbol=Symbol(name="PyUnicode_DecodeUTF8Stateful"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_DecodeUnicodeEscape"): Function(
-        symbol=Symbol(name="PyUnicode_DecodeUnicodeEscape"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_FSConverter"): Function(
-        symbol=Symbol(name="PyUnicode_FSConverter"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_FSDecoder"): Function(
-        symbol=Symbol(name="PyUnicode_FSDecoder"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_Find"): Function(
-        symbol=Symbol(name="PyUnicode_Find"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_Format"): Function(
-        symbol=Symbol(name="PyUnicode_Format"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_FromEncodedObject"): Function(
-        symbol=Symbol(name="PyUnicode_FromEncodedObject"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_FromFormat"): Function(
-        symbol=Symbol(name="PyUnicode_FromFormat"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_FromFormatV"): Function(
-        symbol=Symbol(name="PyUnicode_FromFormatV"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_FromObject"): Function(
-        symbol=Symbol(name="PyUnicode_FromObject"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_FromOrdinal"): Function(
-        symbol=Symbol(name="PyUnicode_FromOrdinal"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_FromString"): Function(
-        symbol=Symbol(name="PyUnicode_FromString"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_FromStringAndSize"): Function(
-        symbol=Symbol(name="PyUnicode_FromStringAndSize"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_FromWideChar"): Function(
-        symbol=Symbol(name="PyUnicode_FromWideChar"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_GetDefaultEncoding"): Function(
-        symbol=Symbol(name="PyUnicode_GetDefaultEncoding"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyUnicode_GetSize"): Function(
-        symbol=Symbol(name="PyUnicode_GetSize"),
+    Symbol(name="PyThreadState_DeleteCurrent", visibility=None): Function(
+        symbol=Symbol(name="PyThreadState_DeleteCurrent", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="PyUnicode_IsIdentifier"): Function(
-        symbol=Symbol(name="PyUnicode_IsIdentifier"),
+    Symbol(name="PyThreadState_Get", visibility=None): Function(
+        symbol=Symbol(name="PyThreadState_Get", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_Join"): Function(
-        symbol=Symbol(name="PyUnicode_Join"),
+    Symbol(name="PyThreadState_GetDict", visibility=None): Function(
+        symbol=Symbol(name="PyThreadState_GetDict", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_Partition"): Function(
-        symbol=Symbol(name="PyUnicode_Partition"),
+    Symbol(name="PyThreadState_New", visibility=None): Function(
+        symbol=Symbol(name="PyThreadState_New", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_RPartition"): Function(
-        symbol=Symbol(name="PyUnicode_RPartition"),
+    Symbol(name="PyThreadState_SetAsyncExc", visibility=None): Function(
+        symbol=Symbol(name="PyThreadState_SetAsyncExc", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_RSplit"): Function(
-        symbol=Symbol(name="PyUnicode_RSplit"),
+    Symbol(name="PyThreadState_Swap", visibility=None): Function(
+        symbol=Symbol(name="PyThreadState_Swap", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_Replace"): Function(
-        symbol=Symbol(name="PyUnicode_Replace"),
+    Symbol(name="PyTraceBack_Here", visibility=None): Function(
+        symbol=Symbol(name="PyTraceBack_Here", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_Resize"): Function(
-        symbol=Symbol(name="PyUnicode_Resize"),
+    Symbol(name="PyTraceBack_Print", visibility=None): Function(
+        symbol=Symbol(name="PyTraceBack_Print", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_RichCompare"): Function(
-        symbol=Symbol(name="PyUnicode_RichCompare"),
+    Symbol(name="PyTuple_GetItem", visibility=None): Function(
+        symbol=Symbol(name="PyTuple_GetItem", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_Split"): Function(
-        symbol=Symbol(name="PyUnicode_Split"),
+    Symbol(name="PyTuple_GetSlice", visibility=None): Function(
+        symbol=Symbol(name="PyTuple_GetSlice", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_Splitlines"): Function(
-        symbol=Symbol(name="PyUnicode_Splitlines"),
+    Symbol(name="PyTuple_New", visibility=None): Function(
+        symbol=Symbol(name="PyTuple_New", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_Tailmatch"): Function(
-        symbol=Symbol(name="PyUnicode_Tailmatch"),
+    Symbol(name="PyTuple_Pack", visibility=None): Function(
+        symbol=Symbol(name="PyTuple_Pack", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_Translate"): Function(
-        symbol=Symbol(name="PyUnicode_Translate"),
+    Symbol(name="PyTuple_SetItem", visibility=None): Function(
+        symbol=Symbol(name="PyTuple_SetItem", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_BuildEncodingMap"): Function(
-        symbol=Symbol(name="PyUnicode_BuildEncodingMap"),
+    Symbol(name="PyTuple_Size", visibility=None): Function(
+        symbol=Symbol(name="PyTuple_Size", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_CompareWithASCIIString"): Function(
-        symbol=Symbol(name="PyUnicode_CompareWithASCIIString"),
+    Symbol(name="PyType_ClearCache", visibility=None): Function(
+        symbol=Symbol(name="PyType_ClearCache", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_DecodeUTF7"): Function(
-        symbol=Symbol(name="PyUnicode_DecodeUTF7"),
+    Symbol(name="PyType_GenericAlloc", visibility=None): Function(
+        symbol=Symbol(name="PyType_GenericAlloc", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_DecodeUTF7Stateful"): Function(
-        symbol=Symbol(name="PyUnicode_DecodeUTF7Stateful"),
+    Symbol(name="PyType_GenericNew", visibility=None): Function(
+        symbol=Symbol(name="PyType_GenericNew", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_EncodeFSDefault"): Function(
-        symbol=Symbol(name="PyUnicode_EncodeFSDefault"),
+    Symbol(name="PyType_GetFlags", visibility=None): Function(
+        symbol=Symbol(name="PyType_GetFlags", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_InternFromString"): Function(
-        symbol=Symbol(name="PyUnicode_InternFromString"),
+    Symbol(name="PyType_IsSubtype", visibility=None): Function(
+        symbol=Symbol(name="PyType_IsSubtype", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_InternImmortal"): Function(
-        symbol=Symbol(name="PyUnicode_InternImmortal"),
+    Symbol(name="PyType_Modified", visibility=None): Function(
+        symbol=Symbol(name="PyType_Modified", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyType_Ready", visibility=None): Function(
+        symbol=Symbol(name="PyType_Ready", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicodeDecodeError_Create", visibility=None): Function(
+        symbol=Symbol(name="PyUnicodeDecodeError_Create", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicodeDecodeError_GetEncoding", visibility=None): Function(
+        symbol=Symbol(name="PyUnicodeDecodeError_GetEncoding", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicodeDecodeError_GetEnd", visibility=None): Function(
+        symbol=Symbol(name="PyUnicodeDecodeError_GetEnd", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicodeDecodeError_GetObject", visibility=None): Function(
+        symbol=Symbol(name="PyUnicodeDecodeError_GetObject", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicodeDecodeError_GetReason", visibility=None): Function(
+        symbol=Symbol(name="PyUnicodeDecodeError_GetReason", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicodeDecodeError_GetStart", visibility=None): Function(
+        symbol=Symbol(name="PyUnicodeDecodeError_GetStart", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicodeDecodeError_SetEnd", visibility=None): Function(
+        symbol=Symbol(name="PyUnicodeDecodeError_SetEnd", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicodeDecodeError_SetReason", visibility=None): Function(
+        symbol=Symbol(name="PyUnicodeDecodeError_SetReason", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicodeDecodeError_SetStart", visibility=None): Function(
+        symbol=Symbol(name="PyUnicodeDecodeError_SetStart", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicodeEncodeError_GetEncoding", visibility=None): Function(
+        symbol=Symbol(name="PyUnicodeEncodeError_GetEncoding", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicodeEncodeError_GetEnd", visibility=None): Function(
+        symbol=Symbol(name="PyUnicodeEncodeError_GetEnd", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicodeEncodeError_GetObject", visibility=None): Function(
+        symbol=Symbol(name="PyUnicodeEncodeError_GetObject", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicodeEncodeError_GetReason", visibility=None): Function(
+        symbol=Symbol(name="PyUnicodeEncodeError_GetReason", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicodeEncodeError_GetStart", visibility=None): Function(
+        symbol=Symbol(name="PyUnicodeEncodeError_GetStart", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicodeEncodeError_SetEnd", visibility=None): Function(
+        symbol=Symbol(name="PyUnicodeEncodeError_SetEnd", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicodeEncodeError_SetReason", visibility=None): Function(
+        symbol=Symbol(name="PyUnicodeEncodeError_SetReason", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicodeEncodeError_SetStart", visibility=None): Function(
+        symbol=Symbol(name="PyUnicodeEncodeError_SetStart", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicodeTranslateError_GetEnd", visibility=None): Function(
+        symbol=Symbol(name="PyUnicodeTranslateError_GetEnd", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicodeTranslateError_GetObject", visibility=None): Function(
+        symbol=Symbol(name="PyUnicodeTranslateError_GetObject", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicodeTranslateError_GetReason", visibility=None): Function(
+        symbol=Symbol(name="PyUnicodeTranslateError_GetReason", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicodeTranslateError_GetStart", visibility=None): Function(
+        symbol=Symbol(name="PyUnicodeTranslateError_GetStart", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicodeTranslateError_SetEnd", visibility=None): Function(
+        symbol=Symbol(name="PyUnicodeTranslateError_SetEnd", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicodeTranslateError_SetReason", visibility=None): Function(
+        symbol=Symbol(name="PyUnicodeTranslateError_SetReason", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicodeTranslateError_SetStart", visibility=None): Function(
+        symbol=Symbol(name="PyUnicodeTranslateError_SetStart", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_Append", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_Append", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_AppendAndDel", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_AppendAndDel", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_AsASCIIString", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_AsASCIIString", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_AsCharmapString", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_AsCharmapString", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_AsDecodedObject", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_AsDecodedObject", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_AsDecodedUnicode", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_AsDecodedUnicode", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_AsEncodedObject", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_AsEncodedObject", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_AsEncodedString", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_AsEncodedString", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_AsEncodedUnicode", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_AsEncodedUnicode", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_AsLatin1String", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_AsLatin1String", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_AsRawUnicodeEscapeString", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_AsRawUnicodeEscapeString", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_AsUTF16String", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_AsUTF16String", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_AsUTF32String", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_AsUTF32String", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_AsUTF8String", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_AsUTF8String", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_AsUnicodeEscapeString", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_AsUnicodeEscapeString", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_AsWideChar", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_AsWideChar", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_Compare", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_Compare", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_Concat", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_Concat", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_Contains", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_Contains", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_Count", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_Count", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_Decode", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_Decode", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_DecodeASCII", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_DecodeASCII", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_DecodeCharmap", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_DecodeCharmap", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_DecodeFSDefault", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_DecodeFSDefault", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_DecodeFSDefaultAndSize", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_DecodeFSDefaultAndSize", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_DecodeLatin1", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_DecodeLatin1", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_DecodeRawUnicodeEscape", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_DecodeRawUnicodeEscape", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_DecodeUTF16", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_DecodeUTF16", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_DecodeUTF16Stateful", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_DecodeUTF16Stateful", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_DecodeUTF32", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_DecodeUTF32", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_DecodeUTF32Stateful", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_DecodeUTF32Stateful", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_DecodeUTF8", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_DecodeUTF8", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_DecodeUTF8Stateful", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_DecodeUTF8Stateful", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_DecodeUnicodeEscape", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_DecodeUnicodeEscape", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_FSConverter", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_FSConverter", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_FSDecoder", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_FSDecoder", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_Find", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_Find", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_Format", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_Format", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_FromEncodedObject", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_FromEncodedObject", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_FromFormat", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_FromFormat", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_FromFormatV", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_FromFormatV", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_FromObject", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_FromObject", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_FromOrdinal", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_FromOrdinal", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_FromString", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_FromString", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_FromStringAndSize", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_FromStringAndSize", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_FromWideChar", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_FromWideChar", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_GetDefaultEncoding", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_GetDefaultEncoding", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyUnicode_GetSize", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_GetSize", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="PyUnicode_InternInPlace"): Function(
-        symbol=Symbol(name="PyUnicode_InternInPlace"),
+    Symbol(name="PyUnicode_IsIdentifier", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_IsIdentifier", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyWeakref_GetObject"): Function(
-        symbol=Symbol(name="PyWeakref_GetObject"),
+    Symbol(name="PyUnicode_Join", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_Join", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyWeakref_NewProxy"): Function(
-        symbol=Symbol(name="PyWeakref_NewProxy"),
+    Symbol(name="PyUnicode_Partition", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_Partition", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyWeakref_NewRef"): Function(
-        symbol=Symbol(name="PyWeakref_NewRef"),
+    Symbol(name="PyUnicode_RPartition", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_RPartition", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyWrapper_New"): Function(
-        symbol=Symbol(name="PyWrapper_New"),
+    Symbol(name="PyUnicode_RSplit", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_RSplit", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_AddPendingCall"): Function(
-        symbol=Symbol(name="Py_AddPendingCall"),
+    Symbol(name="PyUnicode_Replace", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_Replace", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_AtExit"): Function(
-        symbol=Symbol(name="Py_AtExit"),
+    Symbol(name="PyUnicode_Resize", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_Resize", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_BuildValue"): Function(
-        symbol=Symbol(name="Py_BuildValue"),
+    Symbol(name="PyUnicode_RichCompare", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_RichCompare", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_CompileString"): Function(
-        symbol=Symbol(name="Py_CompileString"),
+    Symbol(name="PyUnicode_Split", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_Split", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_DecRef"): Function(
-        symbol=Symbol(name="Py_DecRef"),
+    Symbol(name="PyUnicode_Splitlines", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_Splitlines", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_EndInterpreter"): Function(
-        symbol=Symbol(name="Py_EndInterpreter"),
+    Symbol(name="PyUnicode_Tailmatch", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_Tailmatch", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_Exit"): Function(
-        symbol=Symbol(name="Py_Exit"), added=PyVersion(major=3, minor=2), ifdef=None, abi_only=False
-    ),
-    Symbol(name="Py_FatalError"): Function(
-        symbol=Symbol(name="Py_FatalError"),
+    Symbol(name="PyUnicode_Translate", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_Translate", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_Finalize"): Function(
-        symbol=Symbol(name="Py_Finalize"),
+    Symbol(name="PyUnicode_BuildEncodingMap", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_BuildEncodingMap", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_GetBuildInfo"): Function(
-        symbol=Symbol(name="Py_GetBuildInfo"),
+    Symbol(name="PyUnicode_CompareWithASCIIString", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_CompareWithASCIIString", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_GetCompiler"): Function(
-        symbol=Symbol(name="Py_GetCompiler"),
+    Symbol(name="PyUnicode_DecodeUTF7", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_DecodeUTF7", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_GetCopyright"): Function(
-        symbol=Symbol(name="Py_GetCopyright"),
+    Symbol(name="PyUnicode_DecodeUTF7Stateful", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_DecodeUTF7Stateful", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_GetExecPrefix"): Function(
-        symbol=Symbol(name="Py_GetExecPrefix"),
+    Symbol(name="PyUnicode_EncodeFSDefault", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_EncodeFSDefault", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_GetPath"): Function(
-        symbol=Symbol(name="Py_GetPath"),
+    Symbol(name="PyUnicode_InternFromString", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_InternFromString", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_GetPlatform"): Function(
-        symbol=Symbol(name="Py_GetPlatform"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="Py_GetPrefix"): Function(
-        symbol=Symbol(name="Py_GetPrefix"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="Py_GetProgramFullPath"): Function(
-        symbol=Symbol(name="Py_GetProgramFullPath"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="Py_GetProgramName"): Function(
-        symbol=Symbol(name="Py_GetProgramName"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="Py_GetPythonHome"): Function(
-        symbol=Symbol(name="Py_GetPythonHome"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="Py_GetRecursionLimit"): Function(
-        symbol=Symbol(name="Py_GetRecursionLimit"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="Py_GetVersion"): Function(
-        symbol=Symbol(name="Py_GetVersion"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="Py_IncRef"): Function(
-        symbol=Symbol(name="Py_IncRef"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="Py_Initialize"): Function(
-        symbol=Symbol(name="Py_Initialize"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="Py_InitializeEx"): Function(
-        symbol=Symbol(name="Py_InitializeEx"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="Py_IsInitialized"): Function(
-        symbol=Symbol(name="Py_IsInitialized"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="Py_Main"): Function(
-        symbol=Symbol(name="Py_Main"), added=PyVersion(major=3, minor=2), ifdef=None, abi_only=False
-    ),
-    Symbol(name="Py_MakePendingCalls"): Function(
-        symbol=Symbol(name="Py_MakePendingCalls"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="Py_NewInterpreter"): Function(
-        symbol=Symbol(name="Py_NewInterpreter"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="Py_ReprEnter"): Function(
-        symbol=Symbol(name="Py_ReprEnter"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="Py_ReprLeave"): Function(
-        symbol=Symbol(name="Py_ReprLeave"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="Py_SetProgramName"): Function(
-        symbol=Symbol(name="Py_SetProgramName"),
+    Symbol(name="PyUnicode_InternImmortal", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_InternImmortal", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="Py_SetPythonHome"): Function(
-        symbol=Symbol(name="Py_SetPythonHome"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=True,
-    ),
-    Symbol(name="Py_SetRecursionLimit"): Function(
-        symbol=Symbol(name="Py_SetRecursionLimit"),
+    Symbol(name="PyUnicode_InternInPlace", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_InternInPlace", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_VaBuildValue"): Function(
-        symbol=Symbol(name="Py_VaBuildValue"),
+    Symbol(name="PyWeakref_GetObject", visibility=None): Function(
+        symbol=Symbol(name="PyWeakref_GetObject", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="_PyErr_BadInternalCall"): Function(
-        symbol=Symbol(name="_PyErr_BadInternalCall"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=True,
-    ),
-    Symbol(name="_PyObject_CallFunction_SizeT"): Function(
-        symbol=Symbol(name="_PyObject_CallFunction_SizeT"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=True,
-    ),
-    Symbol(name="_PyObject_CallMethod_SizeT"): Function(
-        symbol=Symbol(name="_PyObject_CallMethod_SizeT"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=True,
-    ),
-    Symbol(name="_PyObject_GC_New"): Function(
-        symbol=Symbol(name="_PyObject_GC_New"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=True,
-    ),
-    Symbol(name="_PyObject_GC_NewVar"): Function(
-        symbol=Symbol(name="_PyObject_GC_NewVar"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=True,
-    ),
-    Symbol(name="_PyObject_GC_Resize"): Function(
-        symbol=Symbol(name="_PyObject_GC_Resize"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=True,
-    ),
-    Symbol(name="_PyObject_New"): Function(
-        symbol=Symbol(name="_PyObject_New"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=True,
-    ),
-    Symbol(name="_PyObject_NewVar"): Function(
-        symbol=Symbol(name="_PyObject_NewVar"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=True,
-    ),
-    Symbol(name="_PyState_AddModule"): Function(
-        symbol=Symbol(name="_PyState_AddModule"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=True,
-    ),
-    Symbol(name="_PyThreadState_Init"): Function(
-        symbol=Symbol(name="_PyThreadState_Init"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=True,
-    ),
-    Symbol(name="_PyThreadState_Prealloc"): Function(
-        symbol=Symbol(name="_PyThreadState_Prealloc"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=True,
-    ),
-    Symbol(name="_Py_BuildValue_SizeT"): Function(
-        symbol=Symbol(name="_Py_BuildValue_SizeT"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=True,
-    ),
-    Symbol(name="_Py_CheckRecursiveCall"): Function(
-        symbol=Symbol(name="_Py_CheckRecursiveCall"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=True,
-    ),
-    Symbol(name="_Py_Dealloc"): Function(
-        symbol=Symbol(name="_Py_Dealloc"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=True,
-    ),
-    Symbol(name="_Py_VaBuildValue_SizeT"): Function(
-        symbol=Symbol(name="_Py_VaBuildValue_SizeT"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=True,
-    ),
-    Symbol(name="PyObject_AsCharBuffer"): Function(
-        symbol=Symbol(name="PyObject_AsCharBuffer"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=True,
-    ),
-    Symbol(name="PyObject_AsReadBuffer"): Function(
-        symbol=Symbol(name="PyObject_AsReadBuffer"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=True,
-    ),
-    Symbol(name="PyObject_AsWriteBuffer"): Function(
-        symbol=Symbol(name="PyObject_AsWriteBuffer"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=True,
-    ),
-    Symbol(name="PyObject_CheckReadBuffer"): Function(
-        symbol=Symbol(name="PyObject_CheckReadBuffer"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=True,
-    ),
-    Symbol(name="PyMarshal_ReadObjectFromString"): Function(
-        symbol=Symbol(name="PyMarshal_ReadObjectFromString"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=True,
-    ),
-    Symbol(name="PyMarshal_WriteObjectToString"): Function(
-        symbol=Symbol(name="PyMarshal_WriteObjectToString"),
-        added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=True,
-    ),
-    Symbol(name="PyMember_GetOne"): Function(
-        symbol=Symbol(name="PyMember_GetOne"),
+    Symbol(name="PyWeakref_NewProxy", visibility=None): Function(
+        symbol=Symbol(name="PyWeakref_NewProxy", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMember_SetOne"): Function(
-        symbol=Symbol(name="PyMember_SetOne"),
+    Symbol(name="PyWeakref_NewRef", visibility=None): Function(
+        symbol=Symbol(name="PyWeakref_NewRef", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThread_ReInitTLS"): Function(
-        symbol=Symbol(name="PyThread_ReInitTLS"),
+    Symbol(name="PyWrapper_New", visibility=None): Function(
+        symbol=Symbol(name="PyWrapper_New", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThread_create_key"): Function(
-        symbol=Symbol(name="PyThread_create_key"),
+    Symbol(name="Py_AddPendingCall", visibility=None): Function(
+        symbol=Symbol(name="Py_AddPendingCall", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThread_delete_key"): Function(
-        symbol=Symbol(name="PyThread_delete_key"),
+    Symbol(name="Py_AtExit", visibility=None): Function(
+        symbol=Symbol(name="Py_AtExit", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThread_set_key_value"): Function(
-        symbol=Symbol(name="PyThread_set_key_value"),
+    Symbol(name="Py_BuildValue", visibility=None): Function(
+        symbol=Symbol(name="Py_BuildValue", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThread_get_key_value"): Function(
-        symbol=Symbol(name="PyThread_get_key_value"),
+    Symbol(name="Py_CompileString", visibility=None): Function(
+        symbol=Symbol(name="Py_CompileString", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThread_delete_key_value"): Function(
-        symbol=Symbol(name="PyThread_delete_key_value"),
+    Symbol(name="Py_DecRef", visibility=None): Function(
+        symbol=Symbol(name="Py_DecRef", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThread_acquire_lock"): Function(
-        symbol=Symbol(name="PyThread_acquire_lock"),
+    Symbol(name="Py_EndInterpreter", visibility=None): Function(
+        symbol=Symbol(name="Py_EndInterpreter", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThread_acquire_lock_timed"): Function(
-        symbol=Symbol(name="PyThread_acquire_lock_timed"),
+    Symbol(name="Py_Exit", visibility=None): Function(
+        symbol=Symbol(name="Py_Exit", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThread_allocate_lock"): Function(
-        symbol=Symbol(name="PyThread_allocate_lock"),
+    Symbol(name="Py_FatalError", visibility=None): Function(
+        symbol=Symbol(name="Py_FatalError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThread_exit_thread"): Function(
-        symbol=Symbol(name="PyThread_exit_thread"),
+    Symbol(name="Py_Finalize", visibility=None): Function(
+        symbol=Symbol(name="Py_Finalize", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThread_free_lock"): Function(
-        symbol=Symbol(name="PyThread_free_lock"),
+    Symbol(name="Py_GetBuildInfo", visibility=None): Function(
+        symbol=Symbol(name="Py_GetBuildInfo", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThread_get_stacksize"): Function(
-        symbol=Symbol(name="PyThread_get_stacksize"),
+    Symbol(name="Py_GetCompiler", visibility=None): Function(
+        symbol=Symbol(name="Py_GetCompiler", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThread_get_thread_ident"): Function(
-        symbol=Symbol(name="PyThread_get_thread_ident"),
+    Symbol(name="Py_GetCopyright", visibility=None): Function(
+        symbol=Symbol(name="Py_GetCopyright", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThread_get_thread_native_id"): Function(
-        symbol=Symbol(name="PyThread_get_thread_native_id"),
+    Symbol(name="Py_GetExecPrefix", visibility=None): Function(
+        symbol=Symbol(name="Py_GetExecPrefix", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="Py_GetPath", visibility=None): Function(
+        symbol=Symbol(name="Py_GetPath", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="Py_GetPlatform", visibility=None): Function(
+        symbol=Symbol(name="Py_GetPlatform", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="Py_GetPrefix", visibility=None): Function(
+        symbol=Symbol(name="Py_GetPrefix", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="Py_GetProgramFullPath", visibility=None): Function(
+        symbol=Symbol(name="Py_GetProgramFullPath", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="Py_GetProgramName", visibility=None): Function(
+        symbol=Symbol(name="Py_GetProgramName", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="Py_GetPythonHome", visibility=None): Function(
+        symbol=Symbol(name="Py_GetPythonHome", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="Py_GetRecursionLimit", visibility=None): Function(
+        symbol=Symbol(name="Py_GetRecursionLimit", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="Py_GetVersion", visibility=None): Function(
+        symbol=Symbol(name="Py_GetVersion", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="Py_IncRef", visibility=None): Function(
+        symbol=Symbol(name="Py_IncRef", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="Py_Initialize", visibility=None): Function(
+        symbol=Symbol(name="Py_Initialize", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="Py_InitializeEx", visibility=None): Function(
+        symbol=Symbol(name="Py_InitializeEx", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="Py_IsInitialized", visibility=None): Function(
+        symbol=Symbol(name="Py_IsInitialized", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="Py_Main", visibility=None): Function(
+        symbol=Symbol(name="Py_Main", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="Py_MakePendingCalls", visibility=None): Function(
+        symbol=Symbol(name="Py_MakePendingCalls", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="Py_NewInterpreter", visibility=None): Function(
+        symbol=Symbol(name="Py_NewInterpreter", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="Py_ReprEnter", visibility=None): Function(
+        symbol=Symbol(name="Py_ReprEnter", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="Py_ReprLeave", visibility=None): Function(
+        symbol=Symbol(name="Py_ReprLeave", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="Py_SetProgramName", visibility=None): Function(
+        symbol=Symbol(name="Py_SetProgramName", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=True,
+    ),
+    Symbol(name="Py_SetPythonHome", visibility=None): Function(
+        symbol=Symbol(name="Py_SetPythonHome", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=True,
+    ),
+    Symbol(name="Py_SetRecursionLimit", visibility=None): Function(
+        symbol=Symbol(name="Py_SetRecursionLimit", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="Py_VaBuildValue", visibility=None): Function(
+        symbol=Symbol(name="Py_VaBuildValue", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="_PyErr_BadInternalCall", visibility=None): Function(
+        symbol=Symbol(name="_PyErr_BadInternalCall", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=True,
+    ),
+    Symbol(name="_PyObject_CallFunction_SizeT", visibility=None): Function(
+        symbol=Symbol(name="_PyObject_CallFunction_SizeT", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=True,
+    ),
+    Symbol(name="_PyObject_CallMethod_SizeT", visibility=None): Function(
+        symbol=Symbol(name="_PyObject_CallMethod_SizeT", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=True,
+    ),
+    Symbol(name="_PyObject_GC_New", visibility=None): Function(
+        symbol=Symbol(name="_PyObject_GC_New", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=True,
+    ),
+    Symbol(name="_PyObject_GC_NewVar", visibility=None): Function(
+        symbol=Symbol(name="_PyObject_GC_NewVar", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=True,
+    ),
+    Symbol(name="_PyObject_GC_Resize", visibility=None): Function(
+        symbol=Symbol(name="_PyObject_GC_Resize", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=True,
+    ),
+    Symbol(name="_PyObject_New", visibility=None): Function(
+        symbol=Symbol(name="_PyObject_New", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=True,
+    ),
+    Symbol(name="_PyObject_NewVar", visibility=None): Function(
+        symbol=Symbol(name="_PyObject_NewVar", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=True,
+    ),
+    Symbol(name="_PyState_AddModule", visibility=None): Function(
+        symbol=Symbol(name="_PyState_AddModule", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=True,
+    ),
+    Symbol(name="_PyThreadState_Init", visibility=None): Function(
+        symbol=Symbol(name="_PyThreadState_Init", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=True,
+    ),
+    Symbol(name="_PyThreadState_Prealloc", visibility=None): Function(
+        symbol=Symbol(name="_PyThreadState_Prealloc", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=True,
+    ),
+    Symbol(name="_Py_BuildValue_SizeT", visibility=None): Function(
+        symbol=Symbol(name="_Py_BuildValue_SizeT", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=True,
+    ),
+    Symbol(name="_Py_CheckRecursiveCall", visibility=None): Function(
+        symbol=Symbol(name="_Py_CheckRecursiveCall", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=True,
+    ),
+    Symbol(name="_Py_Dealloc", visibility=None): Function(
+        symbol=Symbol(name="_Py_Dealloc", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=True,
+    ),
+    Symbol(name="_Py_VaBuildValue_SizeT", visibility=None): Function(
+        symbol=Symbol(name="_Py_VaBuildValue_SizeT", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=True,
+    ),
+    Symbol(name="PyObject_AsCharBuffer", visibility=None): Function(
+        symbol=Symbol(name="PyObject_AsCharBuffer", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=True,
+    ),
+    Symbol(name="PyObject_AsReadBuffer", visibility=None): Function(
+        symbol=Symbol(name="PyObject_AsReadBuffer", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=True,
+    ),
+    Symbol(name="PyObject_AsWriteBuffer", visibility=None): Function(
+        symbol=Symbol(name="PyObject_AsWriteBuffer", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=True,
+    ),
+    Symbol(name="PyObject_CheckReadBuffer", visibility=None): Function(
+        symbol=Symbol(name="PyObject_CheckReadBuffer", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=True,
+    ),
+    Symbol(name="PyMarshal_ReadObjectFromString", visibility=None): Function(
+        symbol=Symbol(name="PyMarshal_ReadObjectFromString", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=True,
+    ),
+    Symbol(name="PyMarshal_WriteObjectToString", visibility=None): Function(
+        symbol=Symbol(name="PyMarshal_WriteObjectToString", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=True,
+    ),
+    Symbol(name="PyMember_GetOne", visibility=None): Function(
+        symbol=Symbol(name="PyMember_GetOne", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyMember_SetOne", visibility=None): Function(
+        symbol=Symbol(name="PyMember_SetOne", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyThread_ReInitTLS", visibility=None): Function(
+        symbol=Symbol(name="PyThread_ReInitTLS", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyThread_create_key", visibility=None): Function(
+        symbol=Symbol(name="PyThread_create_key", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyThread_delete_key", visibility=None): Function(
+        symbol=Symbol(name="PyThread_delete_key", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyThread_set_key_value", visibility=None): Function(
+        symbol=Symbol(name="PyThread_set_key_value", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyThread_get_key_value", visibility=None): Function(
+        symbol=Symbol(name="PyThread_get_key_value", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyThread_delete_key_value", visibility=None): Function(
+        symbol=Symbol(name="PyThread_delete_key_value", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyThread_acquire_lock", visibility=None): Function(
+        symbol=Symbol(name="PyThread_acquire_lock", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyThread_acquire_lock_timed", visibility=None): Function(
+        symbol=Symbol(name="PyThread_acquire_lock_timed", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyThread_allocate_lock", visibility=None): Function(
+        symbol=Symbol(name="PyThread_allocate_lock", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyThread_exit_thread", visibility=None): Function(
+        symbol=Symbol(name="PyThread_exit_thread", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyThread_free_lock", visibility=None): Function(
+        symbol=Symbol(name="PyThread_free_lock", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyThread_get_stacksize", visibility=None): Function(
+        symbol=Symbol(name="PyThread_get_stacksize", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyThread_get_thread_ident", visibility=None): Function(
+        symbol=Symbol(name="PyThread_get_thread_ident", visibility=None),
+        added=PyVersion(major=3, minor=2),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyThread_get_thread_native_id", visibility=None): Function(
+        symbol=Symbol(name="PyThread_get_thread_native_id", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=FeatureMacro(
             name="PY_HAVE_THREAD_NATIVE_ID", doc="on platforms with native thread IDs", windows=True
         ),
         abi_only=False,
     ),
-    Symbol(name="PyThread_init_thread"): Function(
-        symbol=Symbol(name="PyThread_init_thread"),
+    Symbol(name="PyThread_init_thread", visibility=None): Function(
+        symbol=Symbol(name="PyThread_init_thread", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThread_release_lock"): Function(
-        symbol=Symbol(name="PyThread_release_lock"),
+    Symbol(name="PyThread_release_lock", visibility=None): Function(
+        symbol=Symbol(name="PyThread_release_lock", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThread_set_stacksize"): Function(
-        symbol=Symbol(name="PyThread_set_stacksize"),
+    Symbol(name="PyThread_set_stacksize", visibility=None): Function(
+        symbol=Symbol(name="PyThread_set_stacksize", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThread_start_new_thread"): Function(
-        symbol=Symbol(name="PyThread_start_new_thread"),
+    Symbol(name="PyThread_start_new_thread", visibility=None): Function(
+        symbol=Symbol(name="PyThread_start_new_thread", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyState_AddModule"): Function(
-        symbol=Symbol(name="PyState_AddModule"),
+    Symbol(name="PyState_AddModule", visibility=None): Function(
+        symbol=Symbol(name="PyState_AddModule", visibility=None),
         added=PyVersion(major=3, minor=3),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyState_RemoveModule"): Function(
-        symbol=Symbol(name="PyState_RemoveModule"),
+    Symbol(name="PyState_RemoveModule", visibility=None): Function(
+        symbol=Symbol(name="PyState_RemoveModule", visibility=None),
         added=PyVersion(major=3, minor=3),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyType_FromSpecWithBases"): Function(
-        symbol=Symbol(name="PyType_FromSpecWithBases"),
+    Symbol(name="PyType_FromSpecWithBases", visibility=None): Function(
+        symbol=Symbol(name="PyType_FromSpecWithBases", visibility=None),
         added=PyVersion(major=3, minor=3),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="_PyArg_Parse_SizeT"): Function(
-        symbol=Symbol(name="_PyArg_Parse_SizeT"),
+    Symbol(name="_PyArg_Parse_SizeT", visibility=None): Function(
+        symbol=Symbol(name="_PyArg_Parse_SizeT", visibility=None),
         added=PyVersion(major=3, minor=3),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="_PyArg_ParseTuple_SizeT"): Function(
-        symbol=Symbol(name="_PyArg_ParseTuple_SizeT"),
+    Symbol(name="_PyArg_ParseTuple_SizeT", visibility=None): Function(
+        symbol=Symbol(name="_PyArg_ParseTuple_SizeT", visibility=None),
         added=PyVersion(major=3, minor=3),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="_PyArg_ParseTupleAndKeywords_SizeT"): Function(
-        symbol=Symbol(name="_PyArg_ParseTupleAndKeywords_SizeT"),
+    Symbol(name="_PyArg_ParseTupleAndKeywords_SizeT", visibility=None): Function(
+        symbol=Symbol(name="_PyArg_ParseTupleAndKeywords_SizeT", visibility=None),
         added=PyVersion(major=3, minor=3),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="_PyArg_VaParse_SizeT"): Function(
-        symbol=Symbol(name="_PyArg_VaParse_SizeT"),
+    Symbol(name="_PyArg_VaParse_SizeT", visibility=None): Function(
+        symbol=Symbol(name="_PyArg_VaParse_SizeT", visibility=None),
         added=PyVersion(major=3, minor=3),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="_PyArg_VaParseTupleAndKeywords_SizeT"): Function(
-        symbol=Symbol(name="_PyArg_VaParseTupleAndKeywords_SizeT"),
+    Symbol(name="_PyArg_VaParseTupleAndKeywords_SizeT", visibility=None): Function(
+        symbol=Symbol(name="_PyArg_VaParseTupleAndKeywords_SizeT", visibility=None),
         added=PyVersion(major=3, minor=3),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="PyThread_GetInfo"): Function(
-        symbol=Symbol(name="PyThread_GetInfo"),
+    Symbol(name="PyThread_GetInfo", visibility=None): Function(
+        symbol=Symbol(name="PyThread_GetInfo", visibility=None),
         added=PyVersion(major=3, minor=3),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCFunction_New"): Function(
-        symbol=Symbol(name="PyCFunction_New"),
+    Symbol(name="PyCFunction_New", visibility=None): Function(
+        symbol=Symbol(name="PyCFunction_New", visibility=None),
         added=PyVersion(major=3, minor=4),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyType_GetSlot"): Function(
-        symbol=Symbol(name="PyType_GetSlot"),
+    Symbol(name="PyType_GetSlot", visibility=None): Function(
+        symbol=Symbol(name="PyType_GetSlot", visibility=None),
         added=PyVersion(major=3, minor=4),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_FormatV"): Function(
-        symbol=Symbol(name="PyErr_FormatV"),
+    Symbol(name="PyErr_FormatV", visibility=None): Function(
+        symbol=Symbol(name="PyErr_FormatV", visibility=None),
         added=PyVersion(major=3, minor=5),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyModuleDef_Init"): Function(
-        symbol=Symbol(name="PyModuleDef_Init"),
+    Symbol(name="PyModuleDef_Init", visibility=None): Function(
+        symbol=Symbol(name="PyModuleDef_Init", visibility=None),
         added=PyVersion(major=3, minor=5),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_FinalizeEx"): Function(
-        symbol=Symbol(name="Py_FinalizeEx"),
+    Symbol(name="Py_FinalizeEx", visibility=None): Function(
+        symbol=Symbol(name="Py_FinalizeEx", visibility=None),
         added=PyVersion(major=3, minor=6),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyOS_FSPath"): Function(
-        symbol=Symbol(name="PyOS_FSPath"),
+    Symbol(name="PyOS_FSPath", visibility=None): Function(
+        symbol=Symbol(name="PyOS_FSPath", visibility=None),
         added=PyVersion(major=3, minor=6),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_ResourceWarning"): Function(
-        symbol=Symbol(name="PyErr_ResourceWarning"),
+    Symbol(name="PyErr_ResourceWarning", visibility=None): Function(
+        symbol=Symbol(name="PyErr_ResourceWarning", visibility=None),
         added=PyVersion(major=3, minor=6),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_SetImportErrorSubclass"): Function(
-        symbol=Symbol(name="PyErr_SetImportErrorSubclass"),
+    Symbol(name="PyErr_SetImportErrorSubclass", visibility=None): Function(
+        symbol=Symbol(name="PyErr_SetImportErrorSubclass", visibility=None),
         added=PyVersion(major=3, minor=6),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCodec_NameReplaceErrors"): Function(
-        symbol=Symbol(name="PyCodec_NameReplaceErrors"),
+    Symbol(name="PyCodec_NameReplaceErrors", visibility=None): Function(
+        symbol=Symbol(name="PyCodec_NameReplaceErrors", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_GetExcInfo"): Function(
-        symbol=Symbol(name="PyErr_GetExcInfo"),
+    Symbol(name="PyErr_GetExcInfo", visibility=None): Function(
+        symbol=Symbol(name="PyErr_GetExcInfo", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_SetExcInfo"): Function(
-        symbol=Symbol(name="PyErr_SetExcInfo"),
+    Symbol(name="PyErr_SetExcInfo", visibility=None): Function(
+        symbol=Symbol(name="PyErr_SetExcInfo", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_SetFromErrnoWithFilenameObjects"): Function(
-        symbol=Symbol(name="PyErr_SetFromErrnoWithFilenameObjects"),
+    Symbol(name="PyErr_SetFromErrnoWithFilenameObjects", visibility=None): Function(
+        symbol=Symbol(name="PyErr_SetFromErrnoWithFilenameObjects", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_SetImportError"): Function(
-        symbol=Symbol(name="PyErr_SetImportError"),
+    Symbol(name="PyErr_SetImportError", visibility=None): Function(
+        symbol=Symbol(name="PyErr_SetImportError", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_SyntaxLocationEx"): Function(
-        symbol=Symbol(name="PyErr_SyntaxLocationEx"),
+    Symbol(name="PyErr_SyntaxLocationEx", visibility=None): Function(
+        symbol=Symbol(name="PyErr_SyntaxLocationEx", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyImport_AddModuleObject"): Function(
-        symbol=Symbol(name="PyImport_AddModuleObject"),
+    Symbol(name="PyImport_AddModuleObject", visibility=None): Function(
+        symbol=Symbol(name="PyImport_AddModuleObject", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyImport_ExecCodeModuleObject"): Function(
-        symbol=Symbol(name="PyImport_ExecCodeModuleObject"),
+    Symbol(name="PyImport_ExecCodeModuleObject", visibility=None): Function(
+        symbol=Symbol(name="PyImport_ExecCodeModuleObject", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyImport_ImportFrozenModuleObject"): Function(
-        symbol=Symbol(name="PyImport_ImportFrozenModuleObject"),
+    Symbol(name="PyImport_ImportFrozenModuleObject", visibility=None): Function(
+        symbol=Symbol(name="PyImport_ImportFrozenModuleObject", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyImport_ImportModuleLevelObject"): Function(
-        symbol=Symbol(name="PyImport_ImportModuleLevelObject"),
+    Symbol(name="PyImport_ImportModuleLevelObject", visibility=None): Function(
+        symbol=Symbol(name="PyImport_ImportModuleLevelObject", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMem_Calloc"): Function(
-        symbol=Symbol(name="PyMem_Calloc"),
+    Symbol(name="PyMem_Calloc", visibility=None): Function(
+        symbol=Symbol(name="PyMem_Calloc", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMemoryView_FromMemory"): Function(
-        symbol=Symbol(name="PyMemoryView_FromMemory"),
+    Symbol(name="PyMemoryView_FromMemory", visibility=None): Function(
+        symbol=Symbol(name="PyMemoryView_FromMemory", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyModule_AddFunctions"): Function(
-        symbol=Symbol(name="PyModule_AddFunctions"),
+    Symbol(name="PyModule_AddFunctions", visibility=None): Function(
+        symbol=Symbol(name="PyModule_AddFunctions", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyModule_ExecDef"): Function(
-        symbol=Symbol(name="PyModule_ExecDef"),
+    Symbol(name="PyModule_ExecDef", visibility=None): Function(
+        symbol=Symbol(name="PyModule_ExecDef", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyModule_FromDefAndSpec2"): Function(
-        symbol=Symbol(name="PyModule_FromDefAndSpec2"),
+    Symbol(name="PyModule_FromDefAndSpec2", visibility=None): Function(
+        symbol=Symbol(name="PyModule_FromDefAndSpec2", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyModule_GetNameObject"): Function(
-        symbol=Symbol(name="PyModule_GetNameObject"),
+    Symbol(name="PyModule_GetNameObject", visibility=None): Function(
+        symbol=Symbol(name="PyModule_GetNameObject", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyModule_NewObject"): Function(
-        symbol=Symbol(name="PyModule_NewObject"),
+    Symbol(name="PyModule_NewObject", visibility=None): Function(
+        symbol=Symbol(name="PyModule_NewObject", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyModule_SetDocString"): Function(
-        symbol=Symbol(name="PyModule_SetDocString"),
+    Symbol(name="PyModule_SetDocString", visibility=None): Function(
+        symbol=Symbol(name="PyModule_SetDocString", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_InPlaceMatrixMultiply"): Function(
-        symbol=Symbol(name="PyNumber_InPlaceMatrixMultiply"),
+    Symbol(name="PyNumber_InPlaceMatrixMultiply", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_InPlaceMatrixMultiply", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyNumber_MatrixMultiply"): Function(
-        symbol=Symbol(name="PyNumber_MatrixMultiply"),
+    Symbol(name="PyNumber_MatrixMultiply", visibility=None): Function(
+        symbol=Symbol(name="PyNumber_MatrixMultiply", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_Calloc"): Function(
-        symbol=Symbol(name="PyObject_Calloc"),
+    Symbol(name="PyObject_Calloc", visibility=None): Function(
+        symbol=Symbol(name="PyObject_Calloc", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_GenericSetDict"): Function(
-        symbol=Symbol(name="PyObject_GenericSetDict"),
+    Symbol(name="PyObject_GenericSetDict", visibility=None): Function(
+        symbol=Symbol(name="PyObject_GenericSetDict", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySys_AddXOption"): Function(
-        symbol=Symbol(name="PySys_AddXOption"),
+    Symbol(name="PySys_AddXOption", visibility=None): Function(
+        symbol=Symbol(name="PySys_AddXOption", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="PySys_GetXOptions"): Function(
-        symbol=Symbol(name="PySys_GetXOptions"),
+    Symbol(name="PySys_GetXOptions", visibility=None): Function(
+        symbol=Symbol(name="PySys_GetXOptions", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_AsUCS4"): Function(
-        symbol=Symbol(name="PyUnicode_AsUCS4"),
+    Symbol(name="PyUnicode_AsUCS4", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_AsUCS4", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_AsUCS4Copy"): Function(
-        symbol=Symbol(name="PyUnicode_AsUCS4Copy"),
+    Symbol(name="PyUnicode_AsUCS4Copy", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_AsUCS4Copy", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_AsWideCharString"): Function(
-        symbol=Symbol(name="PyUnicode_AsWideCharString"),
+    Symbol(name="PyUnicode_AsWideCharString", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_AsWideCharString", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_DecodeLocale"): Function(
-        symbol=Symbol(name="PyUnicode_DecodeLocale"),
+    Symbol(name="PyUnicode_DecodeLocale", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_DecodeLocale", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_DecodeLocaleAndSize"): Function(
-        symbol=Symbol(name="PyUnicode_DecodeLocaleAndSize"),
+    Symbol(name="PyUnicode_DecodeLocaleAndSize", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_DecodeLocaleAndSize", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_EncodeLocale"): Function(
-        symbol=Symbol(name="PyUnicode_EncodeLocale"),
+    Symbol(name="PyUnicode_EncodeLocale", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_EncodeLocale", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_FindChar"): Function(
-        symbol=Symbol(name="PyUnicode_FindChar"),
+    Symbol(name="PyUnicode_FindChar", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_FindChar", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_GetLength"): Function(
-        symbol=Symbol(name="PyUnicode_GetLength"),
+    Symbol(name="PyUnicode_GetLength", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_GetLength", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_ReadChar"): Function(
-        symbol=Symbol(name="PyUnicode_ReadChar"),
+    Symbol(name="PyUnicode_ReadChar", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_ReadChar", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_Substring"): Function(
-        symbol=Symbol(name="PyUnicode_Substring"),
+    Symbol(name="PyUnicode_Substring", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_Substring", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_WriteChar"): Function(
-        symbol=Symbol(name="PyUnicode_WriteChar"),
+    Symbol(name="PyUnicode_WriteChar", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_WriteChar", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_DecodeLocale"): Function(
-        symbol=Symbol(name="Py_DecodeLocale"),
+    Symbol(name="Py_DecodeLocale", visibility=None): Function(
+        symbol=Symbol(name="Py_DecodeLocale", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_EncodeLocale"): Function(
-        symbol=Symbol(name="Py_EncodeLocale"),
+    Symbol(name="Py_EncodeLocale", visibility=None): Function(
+        symbol=Symbol(name="Py_EncodeLocale", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_SetPath"): Function(
-        symbol=Symbol(name="Py_SetPath"),
+    Symbol(name="Py_SetPath", visibility=None): Function(
+        symbol=Symbol(name="Py_SetPath", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="PyErr_SetExcFromWindowsErr"): Function(
-        symbol=Symbol(name="PyErr_SetExcFromWindowsErr"),
+    Symbol(name="PyErr_SetExcFromWindowsErr", visibility=None): Function(
+        symbol=Symbol(name="PyErr_SetExcFromWindowsErr", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=FeatureMacro(name="MS_WINDOWS", doc="on Windows", windows=True),
         abi_only=False,
     ),
-    Symbol(name="PyErr_SetExcFromWindowsErrWithFilename"): Function(
-        symbol=Symbol(name="PyErr_SetExcFromWindowsErrWithFilename"),
+    Symbol(name="PyErr_SetExcFromWindowsErrWithFilename", visibility=None): Function(
+        symbol=Symbol(name="PyErr_SetExcFromWindowsErrWithFilename", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=FeatureMacro(name="MS_WINDOWS", doc="on Windows", windows=True),
         abi_only=False,
     ),
-    Symbol(name="PyErr_SetExcFromWindowsErrWithFilenameObject"): Function(
-        symbol=Symbol(name="PyErr_SetExcFromWindowsErrWithFilenameObject"),
+    Symbol(name="PyErr_SetExcFromWindowsErrWithFilenameObject", visibility=None): Function(
+        symbol=Symbol(name="PyErr_SetExcFromWindowsErrWithFilenameObject", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=FeatureMacro(name="MS_WINDOWS", doc="on Windows", windows=True),
         abi_only=False,
     ),
-    Symbol(name="PyErr_SetExcFromWindowsErrWithFilenameObjects"): Function(
-        symbol=Symbol(name="PyErr_SetExcFromWindowsErrWithFilenameObjects"),
+    Symbol(name="PyErr_SetExcFromWindowsErrWithFilenameObjects", visibility=None): Function(
+        symbol=Symbol(name="PyErr_SetExcFromWindowsErrWithFilenameObjects", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=FeatureMacro(name="MS_WINDOWS", doc="on Windows", windows=True),
         abi_only=False,
     ),
-    Symbol(name="PyErr_SetFromWindowsErr"): Function(
-        symbol=Symbol(name="PyErr_SetFromWindowsErr"),
+    Symbol(name="PyErr_SetFromWindowsErr", visibility=None): Function(
+        symbol=Symbol(name="PyErr_SetFromWindowsErr", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=FeatureMacro(name="MS_WINDOWS", doc="on Windows", windows=True),
         abi_only=False,
     ),
-    Symbol(name="PyErr_SetFromWindowsErrWithFilename"): Function(
-        symbol=Symbol(name="PyErr_SetFromWindowsErrWithFilename"),
+    Symbol(name="PyErr_SetFromWindowsErrWithFilename", visibility=None): Function(
+        symbol=Symbol(name="PyErr_SetFromWindowsErrWithFilename", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=FeatureMacro(name="MS_WINDOWS", doc="on Windows", windows=True),
         abi_only=False,
     ),
-    Symbol(name="PyOS_CheckStack"): Function(
-        symbol=Symbol(name="PyOS_CheckStack"),
+    Symbol(name="PyOS_CheckStack", visibility=None): Function(
+        symbol=Symbol(name="PyOS_CheckStack", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=FeatureMacro(
             name="USE_STACKCHECK", doc="on platforms with USE_STACKCHECK", windows="maybe"
         ),
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_AsMBCSString"): Function(
-        symbol=Symbol(name="PyUnicode_AsMBCSString"),
+    Symbol(name="PyUnicode_AsMBCSString", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_AsMBCSString", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=FeatureMacro(name="MS_WINDOWS", doc="on Windows", windows=True),
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_DecodeCodePageStateful"): Function(
-        symbol=Symbol(name="PyUnicode_DecodeCodePageStateful"),
+    Symbol(name="PyUnicode_DecodeCodePageStateful", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_DecodeCodePageStateful", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=FeatureMacro(name="MS_WINDOWS", doc="on Windows", windows=True),
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_DecodeMBCS"): Function(
-        symbol=Symbol(name="PyUnicode_DecodeMBCS"),
+    Symbol(name="PyUnicode_DecodeMBCS", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_DecodeMBCS", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=FeatureMacro(name="MS_WINDOWS", doc="on Windows", windows=True),
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_DecodeMBCSStateful"): Function(
-        symbol=Symbol(name="PyUnicode_DecodeMBCSStateful"),
+    Symbol(name="PyUnicode_DecodeMBCSStateful", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_DecodeMBCSStateful", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=FeatureMacro(name="MS_WINDOWS", doc="on Windows", windows=True),
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_EncodeCodePage"): Function(
-        symbol=Symbol(name="PyUnicode_EncodeCodePage"),
+    Symbol(name="PyUnicode_EncodeCodePage", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_EncodeCodePage", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=FeatureMacro(name="MS_WINDOWS", doc="on Windows", windows=True),
         abi_only=False,
     ),
-    Symbol(name="PySlice_AdjustIndices"): Function(
-        symbol=Symbol(name="PySlice_AdjustIndices"),
+    Symbol(name="PySlice_AdjustIndices", visibility=None): Function(
+        symbol=Symbol(name="PySlice_AdjustIndices", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySlice_Unpack"): Function(
-        symbol=Symbol(name="PySlice_Unpack"),
+    Symbol(name="PySlice_Unpack", visibility=None): Function(
+        symbol=Symbol(name="PySlice_Unpack", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyInterpreterState_GetID"): Function(
-        symbol=Symbol(name="PyInterpreterState_GetID"),
+    Symbol(name="PyInterpreterState_GetID", visibility=None): Function(
+        symbol=Symbol(name="PyInterpreterState_GetID", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThread_tss_alloc"): Function(
-        symbol=Symbol(name="PyThread_tss_alloc"),
+    Symbol(name="PyThread_tss_alloc", visibility=None): Function(
+        symbol=Symbol(name="PyThread_tss_alloc", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThread_tss_create"): Function(
-        symbol=Symbol(name="PyThread_tss_create"),
+    Symbol(name="PyThread_tss_create", visibility=None): Function(
+        symbol=Symbol(name="PyThread_tss_create", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThread_tss_delete"): Function(
-        symbol=Symbol(name="PyThread_tss_delete"),
+    Symbol(name="PyThread_tss_delete", visibility=None): Function(
+        symbol=Symbol(name="PyThread_tss_delete", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThread_tss_free"): Function(
-        symbol=Symbol(name="PyThread_tss_free"),
+    Symbol(name="PyThread_tss_free", visibility=None): Function(
+        symbol=Symbol(name="PyThread_tss_free", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThread_tss_get"): Function(
-        symbol=Symbol(name="PyThread_tss_get"),
+    Symbol(name="PyThread_tss_get", visibility=None): Function(
+        symbol=Symbol(name="PyThread_tss_get", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThread_tss_is_created"): Function(
-        symbol=Symbol(name="PyThread_tss_is_created"),
+    Symbol(name="PyThread_tss_is_created", visibility=None): Function(
+        symbol=Symbol(name="PyThread_tss_is_created", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThread_tss_set"): Function(
-        symbol=Symbol(name="PyThread_tss_set"),
+    Symbol(name="PyThread_tss_set", visibility=None): Function(
+        symbol=Symbol(name="PyThread_tss_set", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyOS_BeforeFork"): Function(
-        symbol=Symbol(name="PyOS_BeforeFork"),
+    Symbol(name="PyOS_BeforeFork", visibility=None): Function(
+        symbol=Symbol(name="PyOS_BeforeFork", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=FeatureMacro(name="HAVE_FORK", doc="on platforms with fork()", windows=False),
         abi_only=False,
     ),
-    Symbol(name="PyOS_AfterFork_Parent"): Function(
-        symbol=Symbol(name="PyOS_AfterFork_Parent"),
+    Symbol(name="PyOS_AfterFork_Parent", visibility=None): Function(
+        symbol=Symbol(name="PyOS_AfterFork_Parent", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=FeatureMacro(name="HAVE_FORK", doc="on platforms with fork()", windows=False),
         abi_only=False,
     ),
-    Symbol(name="PyOS_AfterFork_Child"): Function(
-        symbol=Symbol(name="PyOS_AfterFork_Child"),
+    Symbol(name="PyOS_AfterFork_Child", visibility=None): Function(
+        symbol=Symbol(name="PyOS_AfterFork_Child", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=FeatureMacro(name="HAVE_FORK", doc="on platforms with fork()", windows=False),
         abi_only=False,
     ),
-    Symbol(name="PyImport_GetModule"): Function(
-        symbol=Symbol(name="PyImport_GetModule"),
+    Symbol(name="PyImport_GetModule", visibility=None): Function(
+        symbol=Symbol(name="PyImport_GetModule", visibility=None),
         added=PyVersion(major=3, minor=8),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExceptionClass_Name"): Function(
-        symbol=Symbol(name="PyExceptionClass_Name"),
+    Symbol(name="PyExceptionClass_Name", visibility=None): Function(
+        symbol=Symbol(name="PyExceptionClass_Name", visibility=None),
         added=PyVersion(major=3, minor=8),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyIndex_Check"): Function(
-        symbol=Symbol(name="PyIndex_Check"),
+    Symbol(name="PyIndex_Check", visibility=None): Function(
+        symbol=Symbol(name="PyIndex_Check", visibility=None),
         added=PyVersion(major=3, minor=8),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyIter_Check"): Function(
-        symbol=Symbol(name="PyIter_Check"),
+    Symbol(name="PyIter_Check", visibility=None): Function(
+        symbol=Symbol(name="PyIter_Check", visibility=None),
         added=PyVersion(major=3, minor=8),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyInterpreterState_GetDict"): Function(
-        symbol=Symbol(name="PyInterpreterState_GetDict"),
+    Symbol(name="PyInterpreterState_GetDict", visibility=None): Function(
+        symbol=Symbol(name="PyInterpreterState_GetDict", visibility=None),
         added=PyVersion(major=3, minor=8),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_BytesMain"): Function(
-        symbol=Symbol(name="Py_BytesMain"),
+    Symbol(name="Py_BytesMain", visibility=None): Function(
+        symbol=Symbol(name="Py_BytesMain", visibility=None),
         added=PyVersion(major=3, minor=8),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_EnterRecursiveCall"): Function(
-        symbol=Symbol(name="Py_EnterRecursiveCall"),
+    Symbol(name="Py_EnterRecursiveCall", visibility=None): Function(
+        symbol=Symbol(name="Py_EnterRecursiveCall", visibility=None),
         added=PyVersion(major=3, minor=9),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_LeaveRecursiveCall"): Function(
-        symbol=Symbol(name="Py_LeaveRecursiveCall"),
+    Symbol(name="Py_LeaveRecursiveCall", visibility=None): Function(
+        symbol=Symbol(name="Py_LeaveRecursiveCall", visibility=None),
         added=PyVersion(major=3, minor=9),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_GenericAlias"): Function(
-        symbol=Symbol(name="Py_GenericAlias"),
+    Symbol(name="Py_GenericAlias", visibility=None): Function(
+        symbol=Symbol(name="Py_GenericAlias", visibility=None),
         added=PyVersion(major=3, minor=9),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCMethod_New"): Function(
-        symbol=Symbol(name="PyCMethod_New"),
+    Symbol(name="PyCMethod_New", visibility=None): Function(
+        symbol=Symbol(name="PyCMethod_New", visibility=None),
         added=PyVersion(major=3, minor=9),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyInterpreterState_Get"): Function(
-        symbol=Symbol(name="PyInterpreterState_Get"),
+    Symbol(name="PyInterpreterState_Get", visibility=None): Function(
+        symbol=Symbol(name="PyInterpreterState_Get", visibility=None),
         added=PyVersion(major=3, minor=9),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_GC_IsFinalized"): Function(
-        symbol=Symbol(name="PyObject_GC_IsFinalized"),
+    Symbol(name="PyObject_GC_IsFinalized", visibility=None): Function(
+        symbol=Symbol(name="PyObject_GC_IsFinalized", visibility=None),
         added=PyVersion(major=3, minor=9),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_GC_IsTracked"): Function(
-        symbol=Symbol(name="PyObject_GC_IsTracked"),
+    Symbol(name="PyObject_GC_IsTracked", visibility=None): Function(
+        symbol=Symbol(name="PyObject_GC_IsTracked", visibility=None),
         added=PyVersion(major=3, minor=9),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_GetArgcArgv"): Function(
-        symbol=Symbol(name="Py_GetArgcArgv"),
+    Symbol(name="Py_GetArgcArgv", visibility=None): Function(
+        symbol=Symbol(name="Py_GetArgcArgv", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="PyIter_Send"): Function(
-        symbol=Symbol(name="PyIter_Send"),
+    Symbol(name="PyIter_Send", visibility=None): Function(
+        symbol=Symbol(name="PyIter_Send", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_AsUTF8AndSize"): Function(
-        symbol=Symbol(name="PyUnicode_AsUTF8AndSize"),
+    Symbol(name="PyUnicode_AsUTF8AndSize", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_AsUTF8AndSize", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_GenericGetDict"): Function(
-        symbol=Symbol(name="PyObject_GenericGetDict"),
+    Symbol(name="PyObject_GenericGetDict", visibility=None): Function(
+        symbol=Symbol(name="PyObject_GenericGetDict", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_NewRef"): Function(
-        symbol=Symbol(name="Py_NewRef"),
+    Symbol(name="Py_NewRef", visibility=None): Function(
+        symbol=Symbol(name="Py_NewRef", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_XNewRef"): Function(
-        symbol=Symbol(name="Py_XNewRef"),
+    Symbol(name="Py_XNewRef", visibility=None): Function(
+        symbol=Symbol(name="Py_XNewRef", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyModule_AddType"): Function(
-        symbol=Symbol(name="PyModule_AddType"),
+    Symbol(name="PyModule_AddType", visibility=None): Function(
+        symbol=Symbol(name="PyModule_AddType", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyType_FromModuleAndSpec"): Function(
-        symbol=Symbol(name="PyType_FromModuleAndSpec"),
+    Symbol(name="PyType_FromModuleAndSpec", visibility=None): Function(
+        symbol=Symbol(name="PyType_FromModuleAndSpec", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyType_GetModule"): Function(
-        symbol=Symbol(name="PyType_GetModule"),
+    Symbol(name="PyType_GetModule", visibility=None): Function(
+        symbol=Symbol(name="PyType_GetModule", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyType_GetModuleState"): Function(
-        symbol=Symbol(name="PyType_GetModuleState"),
+    Symbol(name="PyType_GetModuleState", visibility=None): Function(
+        symbol=Symbol(name="PyType_GetModuleState", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyFrame_GetLineNumber"): Function(
-        symbol=Symbol(name="PyFrame_GetLineNumber"),
+    Symbol(name="PyFrame_GetLineNumber", visibility=None): Function(
+        symbol=Symbol(name="PyFrame_GetLineNumber", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyFrame_GetCode"): Function(
-        symbol=Symbol(name="PyFrame_GetCode"),
+    Symbol(name="PyFrame_GetCode", visibility=None): Function(
+        symbol=Symbol(name="PyFrame_GetCode", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_CallNoArgs"): Function(
-        symbol=Symbol(name="PyObject_CallNoArgs"),
+    Symbol(name="PyObject_CallNoArgs", visibility=None): Function(
+        symbol=Symbol(name="PyObject_CallNoArgs", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThreadState_GetFrame"): Function(
-        symbol=Symbol(name="PyThreadState_GetFrame"),
+    Symbol(name="PyThreadState_GetFrame", visibility=None): Function(
+        symbol=Symbol(name="PyThreadState_GetFrame", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThreadState_GetID"): Function(
-        symbol=Symbol(name="PyThreadState_GetID"),
+    Symbol(name="PyThreadState_GetID", visibility=None): Function(
+        symbol=Symbol(name="PyThreadState_GetID", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyThreadState_GetInterpreter"): Function(
-        symbol=Symbol(name="PyThreadState_GetInterpreter"),
+    Symbol(name="PyThreadState_GetInterpreter", visibility=None): Function(
+        symbol=Symbol(name="PyThreadState_GetInterpreter", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyModule_AddObjectRef"): Function(
-        symbol=Symbol(name="PyModule_AddObjectRef"),
+    Symbol(name="PyModule_AddObjectRef", visibility=None): Function(
+        symbol=Symbol(name="PyModule_AddObjectRef", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCodec_Unregister"): Function(
-        symbol=Symbol(name="PyCodec_Unregister"),
+    Symbol(name="PyCodec_Unregister", visibility=None): Function(
+        symbol=Symbol(name="PyCodec_Unregister", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_SetInterruptEx"): Function(
-        symbol=Symbol(name="PyErr_SetInterruptEx"),
+    Symbol(name="PyErr_SetInterruptEx", visibility=None): Function(
+        symbol=Symbol(name="PyErr_SetInterruptEx", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_Is"): Function(
-        symbol=Symbol(name="Py_Is"), added=PyVersion(major=3, minor=10), ifdef=None, abi_only=False
-    ),
-    Symbol(name="Py_IsTrue"): Function(
-        symbol=Symbol(name="Py_IsTrue"),
+    Symbol(name="Py_Is", visibility=None): Function(
+        symbol=Symbol(name="Py_Is", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_IsFalse"): Function(
-        symbol=Symbol(name="Py_IsFalse"),
+    Symbol(name="Py_IsTrue", visibility=None): Function(
+        symbol=Symbol(name="Py_IsTrue", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_IsNone"): Function(
-        symbol=Symbol(name="Py_IsNone"),
+    Symbol(name="Py_IsFalse", visibility=None): Function(
+        symbol=Symbol(name="Py_IsFalse", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="_Py_IncRef"): Function(
-        symbol=Symbol(name="_Py_IncRef"),
+    Symbol(name="Py_IsNone", visibility=None): Function(
+        symbol=Symbol(name="Py_IsNone", visibility=None),
+        added=PyVersion(major=3, minor=10),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="_Py_IncRef", visibility=None): Function(
+        symbol=Symbol(name="_Py_IncRef", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="_Py_DecRef"): Function(
-        symbol=Symbol(name="_Py_DecRef"),
+    Symbol(name="_Py_DecRef", visibility=None): Function(
+        symbol=Symbol(name="_Py_DecRef", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="PyAIter_Check"): Function(
-        symbol=Symbol(name="PyAIter_Check"),
+    Symbol(name="PyAIter_Check", visibility=None): Function(
+        symbol=Symbol(name="PyAIter_Check", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_GetAIter"): Function(
-        symbol=Symbol(name="PyObject_GetAIter"),
+    Symbol(name="PyObject_GetAIter", visibility=None): Function(
+        symbol=Symbol(name="PyObject_GetAIter", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="_Py_NegativeRefcount"): Function(
-        symbol=Symbol(name="_Py_NegativeRefcount"),
+    Symbol(name="_Py_NegativeRefcount", visibility=None): Function(
+        symbol=Symbol(name="_Py_NegativeRefcount", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=FeatureMacro(
             name="Py_REF_DEBUG",
@@ -4260,374 +4269,374 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         ),
         abi_only=True,
     ),
-    Symbol(name="PyGC_Disable"): Function(
-        symbol=Symbol(name="PyGC_Disable"),
+    Symbol(name="PyGC_Disable", visibility=None): Function(
+        symbol=Symbol(name="PyGC_Disable", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyGC_Enable"): Function(
-        symbol=Symbol(name="PyGC_Enable"),
+    Symbol(name="PyGC_Enable", visibility=None): Function(
+        symbol=Symbol(name="PyGC_Enable", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyGC_IsEnabled"): Function(
-        symbol=Symbol(name="PyGC_IsEnabled"),
+    Symbol(name="PyGC_IsEnabled", visibility=None): Function(
+        symbol=Symbol(name="PyGC_IsEnabled", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyType_GetName"): Function(
-        symbol=Symbol(name="PyType_GetName"),
+    Symbol(name="PyType_GetName", visibility=None): Function(
+        symbol=Symbol(name="PyType_GetName", visibility=None),
         added=PyVersion(major=3, minor=11),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyType_GetQualName"): Function(
-        symbol=Symbol(name="PyType_GetQualName"),
+    Symbol(name="PyType_GetQualName", visibility=None): Function(
+        symbol=Symbol(name="PyType_GetQualName", visibility=None),
         added=PyVersion(major=3, minor=11),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_CheckBuffer"): Function(
-        symbol=Symbol(name="PyObject_CheckBuffer"),
+    Symbol(name="PyObject_CheckBuffer", visibility=None): Function(
+        symbol=Symbol(name="PyObject_CheckBuffer", visibility=None),
         added=PyVersion(major=3, minor=11),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_GetBuffer"): Function(
-        symbol=Symbol(name="PyObject_GetBuffer"),
+    Symbol(name="PyObject_GetBuffer", visibility=None): Function(
+        symbol=Symbol(name="PyObject_GetBuffer", visibility=None),
         added=PyVersion(major=3, minor=11),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyBuffer_GetPointer"): Function(
-        symbol=Symbol(name="PyBuffer_GetPointer"),
+    Symbol(name="PyBuffer_GetPointer", visibility=None): Function(
+        symbol=Symbol(name="PyBuffer_GetPointer", visibility=None),
         added=PyVersion(major=3, minor=11),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyBuffer_SizeFromFormat"): Function(
-        symbol=Symbol(name="PyBuffer_SizeFromFormat"),
+    Symbol(name="PyBuffer_SizeFromFormat", visibility=None): Function(
+        symbol=Symbol(name="PyBuffer_SizeFromFormat", visibility=None),
         added=PyVersion(major=3, minor=11),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyBuffer_ToContiguous"): Function(
-        symbol=Symbol(name="PyBuffer_ToContiguous"),
+    Symbol(name="PyBuffer_ToContiguous", visibility=None): Function(
+        symbol=Symbol(name="PyBuffer_ToContiguous", visibility=None),
         added=PyVersion(major=3, minor=11),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyBuffer_FromContiguous"): Function(
-        symbol=Symbol(name="PyBuffer_FromContiguous"),
+    Symbol(name="PyBuffer_FromContiguous", visibility=None): Function(
+        symbol=Symbol(name="PyBuffer_FromContiguous", visibility=None),
         added=PyVersion(major=3, minor=11),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_CopyData"): Function(
-        symbol=Symbol(name="PyObject_CopyData"),
+    Symbol(name="PyObject_CopyData", visibility=None): Function(
+        symbol=Symbol(name="PyObject_CopyData", visibility=None),
         added=PyVersion(major=3, minor=11),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyBuffer_IsContiguous"): Function(
-        symbol=Symbol(name="PyBuffer_IsContiguous"),
+    Symbol(name="PyBuffer_IsContiguous", visibility=None): Function(
+        symbol=Symbol(name="PyBuffer_IsContiguous", visibility=None),
         added=PyVersion(major=3, minor=11),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyBuffer_FillContiguousStrides"): Function(
-        symbol=Symbol(name="PyBuffer_FillContiguousStrides"),
+    Symbol(name="PyBuffer_FillContiguousStrides", visibility=None): Function(
+        symbol=Symbol(name="PyBuffer_FillContiguousStrides", visibility=None),
         added=PyVersion(major=3, minor=11),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyBuffer_FillInfo"): Function(
-        symbol=Symbol(name="PyBuffer_FillInfo"),
+    Symbol(name="PyBuffer_FillInfo", visibility=None): Function(
+        symbol=Symbol(name="PyBuffer_FillInfo", visibility=None),
         added=PyVersion(major=3, minor=11),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyBuffer_Release"): Function(
-        symbol=Symbol(name="PyBuffer_Release"),
+    Symbol(name="PyBuffer_Release", visibility=None): Function(
+        symbol=Symbol(name="PyBuffer_Release", visibility=None),
         added=PyVersion(major=3, minor=11),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMemoryView_FromBuffer"): Function(
-        symbol=Symbol(name="PyMemoryView_FromBuffer"),
+    Symbol(name="PyMemoryView_FromBuffer", visibility=None): Function(
+        symbol=Symbol(name="PyMemoryView_FromBuffer", visibility=None),
         added=PyVersion(major=3, minor=11),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_GetHandledException"): Function(
-        symbol=Symbol(name="PyErr_GetHandledException"),
+    Symbol(name="PyErr_GetHandledException", visibility=None): Function(
+        symbol=Symbol(name="PyErr_GetHandledException", visibility=None),
         added=PyVersion(major=3, minor=11),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_SetHandledException"): Function(
-        symbol=Symbol(name="PyErr_SetHandledException"),
+    Symbol(name="PyErr_SetHandledException", visibility=None): Function(
+        symbol=Symbol(name="PyErr_SetHandledException", visibility=None),
         added=PyVersion(major=3, minor=11),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyType_FromMetaclass"): Function(
-        symbol=Symbol(name="PyType_FromMetaclass"),
+    Symbol(name="PyType_FromMetaclass", visibility=None): Function(
+        symbol=Symbol(name="PyType_FromMetaclass", visibility=None),
         added=PyVersion(major=3, minor=12),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyVectorcall_NARGS"): Function(
-        symbol=Symbol(name="PyVectorcall_NARGS"),
+    Symbol(name="PyVectorcall_NARGS", visibility=None): Function(
+        symbol=Symbol(name="PyVectorcall_NARGS", visibility=None),
         added=PyVersion(major=3, minor=12),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyVectorcall_Call"): Function(
-        symbol=Symbol(name="PyVectorcall_Call"),
+    Symbol(name="PyVectorcall_Call", visibility=None): Function(
+        symbol=Symbol(name="PyVectorcall_Call", visibility=None),
         added=PyVersion(major=3, minor=12),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_GetRaisedException"): Function(
-        symbol=Symbol(name="PyErr_GetRaisedException"),
+    Symbol(name="PyErr_GetRaisedException", visibility=None): Function(
+        symbol=Symbol(name="PyErr_GetRaisedException", visibility=None),
         added=PyVersion(major=3, minor=12),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_SetRaisedException"): Function(
-        symbol=Symbol(name="PyErr_SetRaisedException"),
+    Symbol(name="PyErr_SetRaisedException", visibility=None): Function(
+        symbol=Symbol(name="PyErr_SetRaisedException", visibility=None),
         added=PyVersion(major=3, minor=12),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyException_GetArgs"): Function(
-        symbol=Symbol(name="PyException_GetArgs"),
+    Symbol(name="PyException_GetArgs", visibility=None): Function(
+        symbol=Symbol(name="PyException_GetArgs", visibility=None),
         added=PyVersion(major=3, minor=12),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyException_SetArgs"): Function(
-        symbol=Symbol(name="PyException_SetArgs"),
+    Symbol(name="PyException_SetArgs", visibility=None): Function(
+        symbol=Symbol(name="PyException_SetArgs", visibility=None),
         added=PyVersion(major=3, minor=12),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_Vectorcall"): Function(
-        symbol=Symbol(name="PyObject_Vectorcall"),
+    Symbol(name="PyObject_Vectorcall", visibility=None): Function(
+        symbol=Symbol(name="PyObject_Vectorcall", visibility=None),
         added=PyVersion(major=3, minor=12),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_VectorcallMethod"): Function(
-        symbol=Symbol(name="PyObject_VectorcallMethod"),
+    Symbol(name="PyObject_VectorcallMethod", visibility=None): Function(
+        symbol=Symbol(name="PyObject_VectorcallMethod", visibility=None),
         added=PyVersion(major=3, minor=12),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_GetTypeData"): Function(
-        symbol=Symbol(name="PyObject_GetTypeData"),
+    Symbol(name="PyObject_GetTypeData", visibility=None): Function(
+        symbol=Symbol(name="PyObject_GetTypeData", visibility=None),
         added=PyVersion(major=3, minor=12),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyType_GetTypeDataSize"): Function(
-        symbol=Symbol(name="PyType_GetTypeDataSize"),
+    Symbol(name="PyType_GetTypeDataSize", visibility=None): Function(
+        symbol=Symbol(name="PyType_GetTypeDataSize", visibility=None),
         added=PyVersion(major=3, minor=12),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyImport_AddModuleRef"): Function(
-        symbol=Symbol(name="PyImport_AddModuleRef"),
+    Symbol(name="PyImport_AddModuleRef", visibility=None): Function(
+        symbol=Symbol(name="PyImport_AddModuleRef", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyWeakref_GetRef"): Function(
-        symbol=Symbol(name="PyWeakref_GetRef"),
+    Symbol(name="PyWeakref_GetRef", visibility=None): Function(
+        symbol=Symbol(name="PyWeakref_GetRef", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_DelAttr"): Function(
-        symbol=Symbol(name="PyObject_DelAttr"),
+    Symbol(name="PyObject_DelAttr", visibility=None): Function(
+        symbol=Symbol(name="PyObject_DelAttr", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_DelAttrString"): Function(
-        symbol=Symbol(name="PyObject_DelAttrString"),
+    Symbol(name="PyObject_DelAttrString", visibility=None): Function(
+        symbol=Symbol(name="PyObject_DelAttrString", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_GetOptionalAttr"): Function(
-        symbol=Symbol(name="PyObject_GetOptionalAttr"),
+    Symbol(name="PyObject_GetOptionalAttr", visibility=None): Function(
+        symbol=Symbol(name="PyObject_GetOptionalAttr", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_GetOptionalAttrString"): Function(
-        symbol=Symbol(name="PyObject_GetOptionalAttrString"),
+    Symbol(name="PyObject_GetOptionalAttrString", visibility=None): Function(
+        symbol=Symbol(name="PyObject_GetOptionalAttrString", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMapping_GetOptionalItem"): Function(
-        symbol=Symbol(name="PyMapping_GetOptionalItem"),
+    Symbol(name="PyMapping_GetOptionalItem", visibility=None): Function(
+        symbol=Symbol(name="PyMapping_GetOptionalItem", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMapping_GetOptionalItemString"): Function(
-        symbol=Symbol(name="PyMapping_GetOptionalItemString"),
+    Symbol(name="PyMapping_GetOptionalItemString", visibility=None): Function(
+        symbol=Symbol(name="PyMapping_GetOptionalItemString", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyModule_Add"): Function(
-        symbol=Symbol(name="PyModule_Add"),
+    Symbol(name="PyModule_Add", visibility=None): Function(
+        symbol=Symbol(name="PyModule_Add", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDict_GetItemRef"): Function(
-        symbol=Symbol(name="PyDict_GetItemRef"),
+    Symbol(name="PyDict_GetItemRef", visibility=None): Function(
+        symbol=Symbol(name="PyDict_GetItemRef", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDict_GetItemStringRef"): Function(
-        symbol=Symbol(name="PyDict_GetItemStringRef"),
+    Symbol(name="PyDict_GetItemStringRef", visibility=None): Function(
+        symbol=Symbol(name="PyDict_GetItemStringRef", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyLong_AsInt"): Function(
-        symbol=Symbol(name="PyLong_AsInt"),
+    Symbol(name="PyLong_AsInt", visibility=None): Function(
+        symbol=Symbol(name="PyLong_AsInt", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_HasAttrWithError"): Function(
-        symbol=Symbol(name="PyObject_HasAttrWithError"),
+    Symbol(name="PyObject_HasAttrWithError", visibility=None): Function(
+        symbol=Symbol(name="PyObject_HasAttrWithError", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyObject_HasAttrStringWithError"): Function(
-        symbol=Symbol(name="PyObject_HasAttrStringWithError"),
+    Symbol(name="PyObject_HasAttrStringWithError", visibility=None): Function(
+        symbol=Symbol(name="PyObject_HasAttrStringWithError", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMapping_HasKeyWithError"): Function(
-        symbol=Symbol(name="PyMapping_HasKeyWithError"),
+    Symbol(name="PyMapping_HasKeyWithError", visibility=None): Function(
+        symbol=Symbol(name="PyMapping_HasKeyWithError", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMapping_HasKeyStringWithError"): Function(
-        symbol=Symbol(name="PyMapping_HasKeyStringWithError"),
+    Symbol(name="PyMapping_HasKeyStringWithError", visibility=None): Function(
+        symbol=Symbol(name="PyMapping_HasKeyStringWithError", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_IsFinalizing"): Function(
-        symbol=Symbol(name="Py_IsFinalizing"),
+    Symbol(name="Py_IsFinalizing", visibility=None): Function(
+        symbol=Symbol(name="Py_IsFinalizing", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_EqualToUTF8"): Function(
-        symbol=Symbol(name="PyUnicode_EqualToUTF8"),
+    Symbol(name="PyUnicode_EqualToUTF8", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_EqualToUTF8", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_EqualToUTF8AndSize"): Function(
-        symbol=Symbol(name="PyUnicode_EqualToUTF8AndSize"),
+    Symbol(name="PyUnicode_EqualToUTF8AndSize", visibility=None): Function(
+        symbol=Symbol(name="PyUnicode_EqualToUTF8AndSize", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMem_RawMalloc"): Function(
-        symbol=Symbol(name="PyMem_RawMalloc"),
+    Symbol(name="PyMem_RawMalloc", visibility=None): Function(
+        symbol=Symbol(name="PyMem_RawMalloc", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMem_RawCalloc"): Function(
-        symbol=Symbol(name="PyMem_RawCalloc"),
+    Symbol(name="PyMem_RawCalloc", visibility=None): Function(
+        symbol=Symbol(name="PyMem_RawCalloc", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMem_RawRealloc"): Function(
-        symbol=Symbol(name="PyMem_RawRealloc"),
+    Symbol(name="PyMem_RawRealloc", visibility=None): Function(
+        symbol=Symbol(name="PyMem_RawRealloc", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMem_RawFree"): Function(
-        symbol=Symbol(name="PyMem_RawFree"),
+    Symbol(name="PyMem_RawFree", visibility=None): Function(
+        symbol=Symbol(name="PyMem_RawFree", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySys_Audit"): Function(
-        symbol=Symbol(name="PySys_Audit"),
+    Symbol(name="PySys_Audit", visibility=None): Function(
+        symbol=Symbol(name="PySys_Audit", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySys_AuditTuple"): Function(
-        symbol=Symbol(name="PySys_AuditTuple"),
+    Symbol(name="PySys_AuditTuple", visibility=None): Function(
+        symbol=Symbol(name="PySys_AuditTuple", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="_Py_SetRefcnt"): Function(
-        symbol=Symbol(name="_Py_SetRefcnt"),
+    Symbol(name="_Py_SetRefcnt", visibility=None): Function(
+        symbol=Symbol(name="_Py_SetRefcnt", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="PyList_GetItemRef"): Function(
-        symbol=Symbol(name="PyList_GetItemRef"),
+    Symbol(name="PyList_GetItemRef", visibility=None): Function(
+        symbol=Symbol(name="PyList_GetItemRef", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyType_GetFullyQualifiedName"): Function(
-        symbol=Symbol(name="PyType_GetFullyQualifiedName"),
+    Symbol(name="PyType_GetFullyQualifiedName", visibility=None): Function(
+        symbol=Symbol(name="PyType_GetFullyQualifiedName", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyType_GetModuleName"): Function(
-        symbol=Symbol(name="PyType_GetModuleName"),
+    Symbol(name="PyType_GetModuleName", visibility=None): Function(
+        symbol=Symbol(name="PyType_GetModuleName", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_GetConstant"): Function(
-        symbol=Symbol(name="Py_GetConstant"),
+    Symbol(name="Py_GetConstant", visibility=None): Function(
+        symbol=Symbol(name="Py_GetConstant", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_GetConstantBorrowed"): Function(
-        symbol=Symbol(name="Py_GetConstantBorrowed"),
+    Symbol(name="Py_GetConstantBorrowed", visibility=None): Function(
+        symbol=Symbol(name="Py_GetConstantBorrowed", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyType_GetModuleByDef"): Function(
-        symbol=Symbol(name="PyType_GetModuleByDef"),
+    Symbol(name="PyType_GetModuleByDef", visibility=None): Function(
+        symbol=Symbol(name="PyType_GetModuleByDef", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
@@ -4797,848 +4806,848 @@ _MACROS: Final[dict[str, Macro]] = {
     ),
 }
 _DATAS: Final[dict[Symbol, Data]] = {
-    Symbol(name="PyBaseObject_Type"): Data(
-        symbol=Symbol(name="PyBaseObject_Type"),
+    Symbol(name="PyBaseObject_Type", visibility=None): Data(
+        symbol=Symbol(name="PyBaseObject_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyBool_Type"): Data(
-        symbol=Symbol(name="PyBool_Type"),
+    Symbol(name="PyBool_Type", visibility=None): Data(
+        symbol=Symbol(name="PyBool_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyByteArrayIter_Type"): Data(
-        symbol=Symbol(name="PyByteArrayIter_Type"),
+    Symbol(name="PyByteArrayIter_Type", visibility=None): Data(
+        symbol=Symbol(name="PyByteArrayIter_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyByteArray_Type"): Data(
-        symbol=Symbol(name="PyByteArray_Type"),
+    Symbol(name="PyByteArray_Type", visibility=None): Data(
+        symbol=Symbol(name="PyByteArray_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyBytesIter_Type"): Data(
-        symbol=Symbol(name="PyBytesIter_Type"),
+    Symbol(name="PyBytesIter_Type", visibility=None): Data(
+        symbol=Symbol(name="PyBytesIter_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyBytes_Type"): Data(
-        symbol=Symbol(name="PyBytes_Type"),
+    Symbol(name="PyBytes_Type", visibility=None): Data(
+        symbol=Symbol(name="PyBytes_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCFunction_Type"): Data(
-        symbol=Symbol(name="PyCFunction_Type"),
+    Symbol(name="PyCFunction_Type", visibility=None): Data(
+        symbol=Symbol(name="PyCFunction_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCallIter_Type"): Data(
-        symbol=Symbol(name="PyCallIter_Type"),
+    Symbol(name="PyCallIter_Type", visibility=None): Data(
+        symbol=Symbol(name="PyCallIter_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyCapsule_Type"): Data(
-        symbol=Symbol(name="PyCapsule_Type"),
+    Symbol(name="PyCapsule_Type", visibility=None): Data(
+        symbol=Symbol(name="PyCapsule_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyClassMethodDescr_Type"): Data(
-        symbol=Symbol(name="PyClassMethodDescr_Type"),
+    Symbol(name="PyClassMethodDescr_Type", visibility=None): Data(
+        symbol=Symbol(name="PyClassMethodDescr_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyComplex_Type"): Data(
-        symbol=Symbol(name="PyComplex_Type"),
+    Symbol(name="PyComplex_Type", visibility=None): Data(
+        symbol=Symbol(name="PyComplex_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDictItems_Type"): Data(
-        symbol=Symbol(name="PyDictItems_Type"),
+    Symbol(name="PyDictItems_Type", visibility=None): Data(
+        symbol=Symbol(name="PyDictItems_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDictIterItem_Type"): Data(
-        symbol=Symbol(name="PyDictIterItem_Type"),
+    Symbol(name="PyDictIterItem_Type", visibility=None): Data(
+        symbol=Symbol(name="PyDictIterItem_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDictIterKey_Type"): Data(
-        symbol=Symbol(name="PyDictIterKey_Type"),
+    Symbol(name="PyDictIterKey_Type", visibility=None): Data(
+        symbol=Symbol(name="PyDictIterKey_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDictIterValue_Type"): Data(
-        symbol=Symbol(name="PyDictIterValue_Type"),
+    Symbol(name="PyDictIterValue_Type", visibility=None): Data(
+        symbol=Symbol(name="PyDictIterValue_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDictKeys_Type"): Data(
-        symbol=Symbol(name="PyDictKeys_Type"),
+    Symbol(name="PyDictKeys_Type", visibility=None): Data(
+        symbol=Symbol(name="PyDictKeys_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDictProxy_Type"): Data(
-        symbol=Symbol(name="PyDictProxy_Type"),
+    Symbol(name="PyDictProxy_Type", visibility=None): Data(
+        symbol=Symbol(name="PyDictProxy_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDictValues_Type"): Data(
-        symbol=Symbol(name="PyDictValues_Type"),
+    Symbol(name="PyDictValues_Type", visibility=None): Data(
+        symbol=Symbol(name="PyDictValues_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDict_Type"): Data(
-        symbol=Symbol(name="PyDict_Type"),
+    Symbol(name="PyDict_Type", visibility=None): Data(
+        symbol=Symbol(name="PyDict_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyEllipsis_Type"): Data(
-        symbol=Symbol(name="PyEllipsis_Type"),
+    Symbol(name="PyEllipsis_Type", visibility=None): Data(
+        symbol=Symbol(name="PyEllipsis_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyEnum_Type"): Data(
-        symbol=Symbol(name="PyEnum_Type"),
+    Symbol(name="PyEnum_Type", visibility=None): Data(
+        symbol=Symbol(name="PyEnum_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_ArithmeticError"): Data(
-        symbol=Symbol(name="PyExc_ArithmeticError"),
+    Symbol(name="PyExc_ArithmeticError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_ArithmeticError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_AssertionError"): Data(
-        symbol=Symbol(name="PyExc_AssertionError"),
+    Symbol(name="PyExc_AssertionError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_AssertionError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_AttributeError"): Data(
-        symbol=Symbol(name="PyExc_AttributeError"),
+    Symbol(name="PyExc_AttributeError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_AttributeError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_BaseException"): Data(
-        symbol=Symbol(name="PyExc_BaseException"),
+    Symbol(name="PyExc_BaseException", visibility=None): Data(
+        symbol=Symbol(name="PyExc_BaseException", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_BaseExceptionGroup"): Data(
-        symbol=Symbol(name="PyExc_BaseExceptionGroup"),
+    Symbol(name="PyExc_BaseExceptionGroup", visibility=None): Data(
+        symbol=Symbol(name="PyExc_BaseExceptionGroup", visibility=None),
         added=PyVersion(major=3, minor=11),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_BufferError"): Data(
-        symbol=Symbol(name="PyExc_BufferError"),
+    Symbol(name="PyExc_BufferError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_BufferError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_BytesWarning"): Data(
-        symbol=Symbol(name="PyExc_BytesWarning"),
+    Symbol(name="PyExc_BytesWarning", visibility=None): Data(
+        symbol=Symbol(name="PyExc_BytesWarning", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_DeprecationWarning"): Data(
-        symbol=Symbol(name="PyExc_DeprecationWarning"),
+    Symbol(name="PyExc_DeprecationWarning", visibility=None): Data(
+        symbol=Symbol(name="PyExc_DeprecationWarning", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_EOFError"): Data(
-        symbol=Symbol(name="PyExc_EOFError"),
+    Symbol(name="PyExc_EOFError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_EOFError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_EnvironmentError"): Data(
-        symbol=Symbol(name="PyExc_EnvironmentError"),
+    Symbol(name="PyExc_EnvironmentError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_EnvironmentError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_Exception"): Data(
-        symbol=Symbol(name="PyExc_Exception"),
+    Symbol(name="PyExc_Exception", visibility=None): Data(
+        symbol=Symbol(name="PyExc_Exception", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_FloatingPointError"): Data(
-        symbol=Symbol(name="PyExc_FloatingPointError"),
+    Symbol(name="PyExc_FloatingPointError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_FloatingPointError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_FutureWarning"): Data(
-        symbol=Symbol(name="PyExc_FutureWarning"),
+    Symbol(name="PyExc_FutureWarning", visibility=None): Data(
+        symbol=Symbol(name="PyExc_FutureWarning", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_GeneratorExit"): Data(
-        symbol=Symbol(name="PyExc_GeneratorExit"),
+    Symbol(name="PyExc_GeneratorExit", visibility=None): Data(
+        symbol=Symbol(name="PyExc_GeneratorExit", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_IOError"): Data(
-        symbol=Symbol(name="PyExc_IOError"),
+    Symbol(name="PyExc_IOError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_IOError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_ImportError"): Data(
-        symbol=Symbol(name="PyExc_ImportError"),
+    Symbol(name="PyExc_ImportError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_ImportError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_ImportWarning"): Data(
-        symbol=Symbol(name="PyExc_ImportWarning"),
+    Symbol(name="PyExc_ImportWarning", visibility=None): Data(
+        symbol=Symbol(name="PyExc_ImportWarning", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_IndentationError"): Data(
-        symbol=Symbol(name="PyExc_IndentationError"),
+    Symbol(name="PyExc_IndentationError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_IndentationError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_IndexError"): Data(
-        symbol=Symbol(name="PyExc_IndexError"),
+    Symbol(name="PyExc_IndexError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_IndexError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_KeyError"): Data(
-        symbol=Symbol(name="PyExc_KeyError"),
+    Symbol(name="PyExc_KeyError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_KeyError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_KeyboardInterrupt"): Data(
-        symbol=Symbol(name="PyExc_KeyboardInterrupt"),
+    Symbol(name="PyExc_KeyboardInterrupt", visibility=None): Data(
+        symbol=Symbol(name="PyExc_KeyboardInterrupt", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_LookupError"): Data(
-        symbol=Symbol(name="PyExc_LookupError"),
+    Symbol(name="PyExc_LookupError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_LookupError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_MemoryError"): Data(
-        symbol=Symbol(name="PyExc_MemoryError"),
+    Symbol(name="PyExc_MemoryError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_MemoryError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_NameError"): Data(
-        symbol=Symbol(name="PyExc_NameError"),
+    Symbol(name="PyExc_NameError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_NameError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_NotImplementedError"): Data(
-        symbol=Symbol(name="PyExc_NotImplementedError"),
+    Symbol(name="PyExc_NotImplementedError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_NotImplementedError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_OSError"): Data(
-        symbol=Symbol(name="PyExc_OSError"),
+    Symbol(name="PyExc_OSError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_OSError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_OverflowError"): Data(
-        symbol=Symbol(name="PyExc_OverflowError"),
+    Symbol(name="PyExc_OverflowError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_OverflowError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_PendingDeprecationWarning"): Data(
-        symbol=Symbol(name="PyExc_PendingDeprecationWarning"),
+    Symbol(name="PyExc_PendingDeprecationWarning", visibility=None): Data(
+        symbol=Symbol(name="PyExc_PendingDeprecationWarning", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_ReferenceError"): Data(
-        symbol=Symbol(name="PyExc_ReferenceError"),
+    Symbol(name="PyExc_ReferenceError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_ReferenceError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_RuntimeError"): Data(
-        symbol=Symbol(name="PyExc_RuntimeError"),
+    Symbol(name="PyExc_RuntimeError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_RuntimeError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_RuntimeWarning"): Data(
-        symbol=Symbol(name="PyExc_RuntimeWarning"),
+    Symbol(name="PyExc_RuntimeWarning", visibility=None): Data(
+        symbol=Symbol(name="PyExc_RuntimeWarning", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_StopIteration"): Data(
-        symbol=Symbol(name="PyExc_StopIteration"),
+    Symbol(name="PyExc_StopIteration", visibility=None): Data(
+        symbol=Symbol(name="PyExc_StopIteration", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_SyntaxError"): Data(
-        symbol=Symbol(name="PyExc_SyntaxError"),
+    Symbol(name="PyExc_SyntaxError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_SyntaxError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_SyntaxWarning"): Data(
-        symbol=Symbol(name="PyExc_SyntaxWarning"),
+    Symbol(name="PyExc_SyntaxWarning", visibility=None): Data(
+        symbol=Symbol(name="PyExc_SyntaxWarning", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_SystemError"): Data(
-        symbol=Symbol(name="PyExc_SystemError"),
+    Symbol(name="PyExc_SystemError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_SystemError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_SystemExit"): Data(
-        symbol=Symbol(name="PyExc_SystemExit"),
+    Symbol(name="PyExc_SystemExit", visibility=None): Data(
+        symbol=Symbol(name="PyExc_SystemExit", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_TabError"): Data(
-        symbol=Symbol(name="PyExc_TabError"),
+    Symbol(name="PyExc_TabError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_TabError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_TypeError"): Data(
-        symbol=Symbol(name="PyExc_TypeError"),
+    Symbol(name="PyExc_TypeError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_TypeError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_UnboundLocalError"): Data(
-        symbol=Symbol(name="PyExc_UnboundLocalError"),
+    Symbol(name="PyExc_UnboundLocalError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_UnboundLocalError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_UnicodeDecodeError"): Data(
-        symbol=Symbol(name="PyExc_UnicodeDecodeError"),
+    Symbol(name="PyExc_UnicodeDecodeError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_UnicodeDecodeError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_UnicodeEncodeError"): Data(
-        symbol=Symbol(name="PyExc_UnicodeEncodeError"),
+    Symbol(name="PyExc_UnicodeEncodeError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_UnicodeEncodeError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_UnicodeError"): Data(
-        symbol=Symbol(name="PyExc_UnicodeError"),
+    Symbol(name="PyExc_UnicodeError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_UnicodeError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_UnicodeTranslateError"): Data(
-        symbol=Symbol(name="PyExc_UnicodeTranslateError"),
+    Symbol(name="PyExc_UnicodeTranslateError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_UnicodeTranslateError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_UnicodeWarning"): Data(
-        symbol=Symbol(name="PyExc_UnicodeWarning"),
+    Symbol(name="PyExc_UnicodeWarning", visibility=None): Data(
+        symbol=Symbol(name="PyExc_UnicodeWarning", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_UserWarning"): Data(
-        symbol=Symbol(name="PyExc_UserWarning"),
+    Symbol(name="PyExc_UserWarning", visibility=None): Data(
+        symbol=Symbol(name="PyExc_UserWarning", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_ValueError"): Data(
-        symbol=Symbol(name="PyExc_ValueError"),
+    Symbol(name="PyExc_ValueError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_ValueError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_Warning"): Data(
-        symbol=Symbol(name="PyExc_Warning"),
+    Symbol(name="PyExc_Warning", visibility=None): Data(
+        symbol=Symbol(name="PyExc_Warning", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_ZeroDivisionError"): Data(
-        symbol=Symbol(name="PyExc_ZeroDivisionError"),
+    Symbol(name="PyExc_ZeroDivisionError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_ZeroDivisionError", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyFilter_Type"): Data(
-        symbol=Symbol(name="PyFilter_Type"),
+    Symbol(name="PyFilter_Type", visibility=None): Data(
+        symbol=Symbol(name="PyFilter_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyFloat_Type"): Data(
-        symbol=Symbol(name="PyFloat_Type"),
+    Symbol(name="PyFloat_Type", visibility=None): Data(
+        symbol=Symbol(name="PyFloat_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyFrozenSet_Type"): Data(
-        symbol=Symbol(name="PyFrozenSet_Type"),
+    Symbol(name="PyFrozenSet_Type", visibility=None): Data(
+        symbol=Symbol(name="PyFrozenSet_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyGetSetDescr_Type"): Data(
-        symbol=Symbol(name="PyGetSetDescr_Type"),
+    Symbol(name="PyGetSetDescr_Type", visibility=None): Data(
+        symbol=Symbol(name="PyGetSetDescr_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyListIter_Type"): Data(
-        symbol=Symbol(name="PyListIter_Type"),
+    Symbol(name="PyListIter_Type", visibility=None): Data(
+        symbol=Symbol(name="PyListIter_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyListRevIter_Type"): Data(
-        symbol=Symbol(name="PyListRevIter_Type"),
+    Symbol(name="PyListRevIter_Type", visibility=None): Data(
+        symbol=Symbol(name="PyListRevIter_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyList_Type"): Data(
-        symbol=Symbol(name="PyList_Type"),
+    Symbol(name="PyList_Type", visibility=None): Data(
+        symbol=Symbol(name="PyList_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyLongRangeIter_Type"): Data(
-        symbol=Symbol(name="PyLongRangeIter_Type"),
+    Symbol(name="PyLongRangeIter_Type", visibility=None): Data(
+        symbol=Symbol(name="PyLongRangeIter_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyLong_Type"): Data(
-        symbol=Symbol(name="PyLong_Type"),
+    Symbol(name="PyLong_Type", visibility=None): Data(
+        symbol=Symbol(name="PyLong_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMap_Type"): Data(
-        symbol=Symbol(name="PyMap_Type"),
+    Symbol(name="PyMap_Type", visibility=None): Data(
+        symbol=Symbol(name="PyMap_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMemberDescr_Type"): Data(
-        symbol=Symbol(name="PyMemberDescr_Type"),
+    Symbol(name="PyMemberDescr_Type", visibility=None): Data(
+        symbol=Symbol(name="PyMemberDescr_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMemoryView_Type"): Data(
-        symbol=Symbol(name="PyMemoryView_Type"),
+    Symbol(name="PyMemoryView_Type", visibility=None): Data(
+        symbol=Symbol(name="PyMemoryView_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyMethodDescr_Type"): Data(
-        symbol=Symbol(name="PyMethodDescr_Type"),
+    Symbol(name="PyMethodDescr_Type", visibility=None): Data(
+        symbol=Symbol(name="PyMethodDescr_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyModule_Type"): Data(
-        symbol=Symbol(name="PyModule_Type"),
+    Symbol(name="PyModule_Type", visibility=None): Data(
+        symbol=Symbol(name="PyModule_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyOS_InputHook"): Data(
-        symbol=Symbol(name="PyOS_InputHook"),
+    Symbol(name="PyOS_InputHook", visibility=None): Data(
+        symbol=Symbol(name="PyOS_InputHook", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyProperty_Type"): Data(
-        symbol=Symbol(name="PyProperty_Type"),
+    Symbol(name="PyProperty_Type", visibility=None): Data(
+        symbol=Symbol(name="PyProperty_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyRangeIter_Type"): Data(
-        symbol=Symbol(name="PyRangeIter_Type"),
+    Symbol(name="PyRangeIter_Type", visibility=None): Data(
+        symbol=Symbol(name="PyRangeIter_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyRange_Type"): Data(
-        symbol=Symbol(name="PyRange_Type"),
+    Symbol(name="PyRange_Type", visibility=None): Data(
+        symbol=Symbol(name="PyRange_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyReversed_Type"): Data(
-        symbol=Symbol(name="PyReversed_Type"),
+    Symbol(name="PyReversed_Type", visibility=None): Data(
+        symbol=Symbol(name="PyReversed_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySeqIter_Type"): Data(
-        symbol=Symbol(name="PySeqIter_Type"),
+    Symbol(name="PySeqIter_Type", visibility=None): Data(
+        symbol=Symbol(name="PySeqIter_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySetIter_Type"): Data(
-        symbol=Symbol(name="PySetIter_Type"),
+    Symbol(name="PySetIter_Type", visibility=None): Data(
+        symbol=Symbol(name="PySetIter_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySet_Type"): Data(
-        symbol=Symbol(name="PySet_Type"),
+    Symbol(name="PySet_Type", visibility=None): Data(
+        symbol=Symbol(name="PySet_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySlice_Type"): Data(
-        symbol=Symbol(name="PySlice_Type"),
+    Symbol(name="PySlice_Type", visibility=None): Data(
+        symbol=Symbol(name="PySlice_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PySuper_Type"): Data(
-        symbol=Symbol(name="PySuper_Type"),
+    Symbol(name="PySuper_Type", visibility=None): Data(
+        symbol=Symbol(name="PySuper_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyTraceBack_Type"): Data(
-        symbol=Symbol(name="PyTraceBack_Type"),
+    Symbol(name="PyTraceBack_Type", visibility=None): Data(
+        symbol=Symbol(name="PyTraceBack_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyTupleIter_Type"): Data(
-        symbol=Symbol(name="PyTupleIter_Type"),
+    Symbol(name="PyTupleIter_Type", visibility=None): Data(
+        symbol=Symbol(name="PyTupleIter_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyTuple_Type"): Data(
-        symbol=Symbol(name="PyTuple_Type"),
+    Symbol(name="PyTuple_Type", visibility=None): Data(
+        symbol=Symbol(name="PyTuple_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyType_Type"): Data(
-        symbol=Symbol(name="PyType_Type"),
+    Symbol(name="PyType_Type", visibility=None): Data(
+        symbol=Symbol(name="PyType_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicodeIter_Type"): Data(
-        symbol=Symbol(name="PyUnicodeIter_Type"),
+    Symbol(name="PyUnicodeIter_Type", visibility=None): Data(
+        symbol=Symbol(name="PyUnicodeIter_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyUnicode_Type"): Data(
-        symbol=Symbol(name="PyUnicode_Type"),
+    Symbol(name="PyUnicode_Type", visibility=None): Data(
+        symbol=Symbol(name="PyUnicode_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyWrapperDescr_Type"): Data(
-        symbol=Symbol(name="PyWrapperDescr_Type"),
+    Symbol(name="PyWrapperDescr_Type", visibility=None): Data(
+        symbol=Symbol(name="PyWrapperDescr_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyZip_Type"): Data(
-        symbol=Symbol(name="PyZip_Type"),
+    Symbol(name="PyZip_Type", visibility=None): Data(
+        symbol=Symbol(name="PyZip_Type", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_FileSystemDefaultEncoding"): Data(
-        symbol=Symbol(name="Py_FileSystemDefaultEncoding"),
+    Symbol(name="Py_FileSystemDefaultEncoding", visibility=None): Data(
+        symbol=Symbol(name="Py_FileSystemDefaultEncoding", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_HasFileSystemDefaultEncoding"): Data(
-        symbol=Symbol(name="Py_HasFileSystemDefaultEncoding"),
+    Symbol(name="Py_HasFileSystemDefaultEncoding", visibility=None): Data(
+        symbol=Symbol(name="Py_HasFileSystemDefaultEncoding", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="_PyWeakref_CallableProxyType"): Data(
-        symbol=Symbol(name="_PyWeakref_CallableProxyType"),
+    Symbol(name="_PyWeakref_CallableProxyType", visibility=None): Data(
+        symbol=Symbol(name="_PyWeakref_CallableProxyType", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="_PyWeakref_ProxyType"): Data(
-        symbol=Symbol(name="_PyWeakref_ProxyType"),
+    Symbol(name="_PyWeakref_ProxyType", visibility=None): Data(
+        symbol=Symbol(name="_PyWeakref_ProxyType", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="_PyWeakref_RefType"): Data(
-        symbol=Symbol(name="_PyWeakref_RefType"),
+    Symbol(name="_PyWeakref_RefType", visibility=None): Data(
+        symbol=Symbol(name="_PyWeakref_RefType", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="_Py_EllipsisObject"): Data(
-        symbol=Symbol(name="_Py_EllipsisObject"),
+    Symbol(name="_Py_EllipsisObject", visibility=None): Data(
+        symbol=Symbol(name="_Py_EllipsisObject", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="_Py_FalseStruct"): Data(
-        symbol=Symbol(name="_Py_FalseStruct"),
+    Symbol(name="_Py_FalseStruct", visibility=None): Data(
+        symbol=Symbol(name="_Py_FalseStruct", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="_Py_NoneStruct"): Data(
-        symbol=Symbol(name="_Py_NoneStruct"),
+    Symbol(name="_Py_NoneStruct", visibility=None): Data(
+        symbol=Symbol(name="_Py_NoneStruct", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="_Py_NotImplementedStruct"): Data(
-        symbol=Symbol(name="_Py_NotImplementedStruct"),
+    Symbol(name="_Py_NotImplementedStruct", visibility=None): Data(
+        symbol=Symbol(name="_Py_NotImplementedStruct", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="_Py_SwappedOp"): Data(
-        symbol=Symbol(name="_Py_SwappedOp"),
+    Symbol(name="_Py_SwappedOp", visibility=None): Data(
+        symbol=Symbol(name="_Py_SwappedOp", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="_Py_TrueStruct"): Data(
-        symbol=Symbol(name="_Py_TrueStruct"),
+    Symbol(name="_Py_TrueStruct", visibility=None): Data(
+        symbol=Symbol(name="_Py_TrueStruct", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
         abi_only=True,
     ),
-    Symbol(name="PyModuleDef_Type"): Data(
-        symbol=Symbol(name="PyModuleDef_Type"),
+    Symbol(name="PyModuleDef_Type", visibility=None): Data(
+        symbol=Symbol(name="PyModuleDef_Type", visibility=None),
         added=PyVersion(major=3, minor=5),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_ModuleNotFoundError"): Data(
-        symbol=Symbol(name="PyExc_ModuleNotFoundError"),
+    Symbol(name="PyExc_ModuleNotFoundError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_ModuleNotFoundError", visibility=None),
         added=PyVersion(major=3, minor=6),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_BlockingIOError"): Data(
-        symbol=Symbol(name="PyExc_BlockingIOError"),
+    Symbol(name="PyExc_BlockingIOError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_BlockingIOError", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_BrokenPipeError"): Data(
-        symbol=Symbol(name="PyExc_BrokenPipeError"),
+    Symbol(name="PyExc_BrokenPipeError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_BrokenPipeError", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_ChildProcessError"): Data(
-        symbol=Symbol(name="PyExc_ChildProcessError"),
+    Symbol(name="PyExc_ChildProcessError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_ChildProcessError", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_ConnectionAbortedError"): Data(
-        symbol=Symbol(name="PyExc_ConnectionAbortedError"),
+    Symbol(name="PyExc_ConnectionAbortedError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_ConnectionAbortedError", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_ConnectionError"): Data(
-        symbol=Symbol(name="PyExc_ConnectionError"),
+    Symbol(name="PyExc_ConnectionError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_ConnectionError", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_ConnectionRefusedError"): Data(
-        symbol=Symbol(name="PyExc_ConnectionRefusedError"),
+    Symbol(name="PyExc_ConnectionRefusedError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_ConnectionRefusedError", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_ConnectionResetError"): Data(
-        symbol=Symbol(name="PyExc_ConnectionResetError"),
+    Symbol(name="PyExc_ConnectionResetError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_ConnectionResetError", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_FileExistsError"): Data(
-        symbol=Symbol(name="PyExc_FileExistsError"),
+    Symbol(name="PyExc_FileExistsError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_FileExistsError", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_FileNotFoundError"): Data(
-        symbol=Symbol(name="PyExc_FileNotFoundError"),
+    Symbol(name="PyExc_FileNotFoundError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_FileNotFoundError", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_InterruptedError"): Data(
-        symbol=Symbol(name="PyExc_InterruptedError"),
+    Symbol(name="PyExc_InterruptedError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_InterruptedError", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_IsADirectoryError"): Data(
-        symbol=Symbol(name="PyExc_IsADirectoryError"),
+    Symbol(name="PyExc_IsADirectoryError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_IsADirectoryError", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_NotADirectoryError"): Data(
-        symbol=Symbol(name="PyExc_NotADirectoryError"),
+    Symbol(name="PyExc_NotADirectoryError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_NotADirectoryError", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_PermissionError"): Data(
-        symbol=Symbol(name="PyExc_PermissionError"),
+    Symbol(name="PyExc_PermissionError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_PermissionError", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_ProcessLookupError"): Data(
-        symbol=Symbol(name="PyExc_ProcessLookupError"),
+    Symbol(name="PyExc_ProcessLookupError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_ProcessLookupError", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_RecursionError"): Data(
-        symbol=Symbol(name="PyExc_RecursionError"),
+    Symbol(name="PyExc_RecursionError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_RecursionError", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_ResourceWarning"): Data(
-        symbol=Symbol(name="PyExc_ResourceWarning"),
+    Symbol(name="PyExc_ResourceWarning", visibility=None): Data(
+        symbol=Symbol(name="PyExc_ResourceWarning", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_StopAsyncIteration"): Data(
-        symbol=Symbol(name="PyExc_StopAsyncIteration"),
+    Symbol(name="PyExc_StopAsyncIteration", visibility=None): Data(
+        symbol=Symbol(name="PyExc_StopAsyncIteration", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_TimeoutError"): Data(
-        symbol=Symbol(name="PyExc_TimeoutError"),
+    Symbol(name="PyExc_TimeoutError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_TimeoutError", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_WindowsError"): Data(
-        symbol=Symbol(name="PyExc_WindowsError"),
+    Symbol(name="PyExc_WindowsError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_WindowsError", visibility=None),
         added=PyVersion(major=3, minor=7),
         ifdef=FeatureMacro(name="MS_WINDOWS", doc="on Windows", windows=True),
         abi_only=False,
     ),
-    Symbol(name="Py_UTF8Mode"): Data(
-        symbol=Symbol(name="Py_UTF8Mode"),
+    Symbol(name="Py_UTF8Mode", visibility=None): Data(
+        symbol=Symbol(name="Py_UTF8Mode", visibility=None),
         added=PyVersion(major=3, minor=8),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDictRevIterItem_Type"): Data(
-        symbol=Symbol(name="PyDictRevIterItem_Type"),
+    Symbol(name="PyDictRevIterItem_Type", visibility=None): Data(
+        symbol=Symbol(name="PyDictRevIterItem_Type", visibility=None),
         added=PyVersion(major=3, minor=8),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDictRevIterKey_Type"): Data(
-        symbol=Symbol(name="PyDictRevIterKey_Type"),
+    Symbol(name="PyDictRevIterKey_Type", visibility=None): Data(
+        symbol=Symbol(name="PyDictRevIterKey_Type", visibility=None),
         added=PyVersion(major=3, minor=8),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyDictRevIterValue_Type"): Data(
-        symbol=Symbol(name="PyDictRevIterValue_Type"),
+    Symbol(name="PyDictRevIterValue_Type", visibility=None): Data(
+        symbol=Symbol(name="PyDictRevIterValue_Type", visibility=None),
         added=PyVersion(major=3, minor=8),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_GenericAliasType"): Data(
-        symbol=Symbol(name="Py_GenericAliasType"),
+    Symbol(name="Py_GenericAliasType", visibility=None): Data(
+        symbol=Symbol(name="Py_GenericAliasType", visibility=None),
         added=PyVersion(major=3, minor=9),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_FileSystemDefaultEncodeErrors"): Data(
-        symbol=Symbol(name="Py_FileSystemDefaultEncodeErrors"),
+    Symbol(name="Py_FileSystemDefaultEncodeErrors", visibility=None): Data(
+        symbol=Symbol(name="Py_FileSystemDefaultEncodeErrors", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_EncodingWarning"): Data(
-        symbol=Symbol(name="PyExc_EncodingWarning"),
+    Symbol(name="PyExc_EncodingWarning", visibility=None): Data(
+        symbol=Symbol(name="PyExc_EncodingWarning", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="_Py_RefTotal"): Data(
-        symbol=Symbol(name="_Py_RefTotal"),
+    Symbol(name="_Py_RefTotal", visibility=None): Data(
+        symbol=Symbol(name="_Py_RefTotal", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=FeatureMacro(
             name="Py_REF_DEBUG",
@@ -5647,20 +5656,20 @@ _DATAS: Final[dict[Symbol, Data]] = {
         ),
         abi_only=True,
     ),
-    Symbol(name="PyStructSequence_UnnamedField"): Data(
-        symbol=Symbol(name="PyStructSequence_UnnamedField"),
+    Symbol(name="PyStructSequence_UnnamedField", visibility=None): Data(
+        symbol=Symbol(name="PyStructSequence_UnnamedField", visibility=None),
         added=PyVersion(major=3, minor=11),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="Py_Version"): Data(
-        symbol=Symbol(name="Py_Version"),
+    Symbol(name="Py_Version", visibility=None): Data(
+        symbol=Symbol(name="Py_Version", visibility=None),
         added=PyVersion(major=3, minor=11),
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_IncompleteInputError"): Data(
-        symbol=Symbol(name="PyExc_IncompleteInputError"),
+    Symbol(name="PyExc_IncompleteInputError", visibility=None): Data(
+        symbol=Symbol(name="PyExc_IncompleteInputError", visibility=None),
         added=PyVersion(major=3, minor=13),
         ifdef=None,
         abi_only=False,
