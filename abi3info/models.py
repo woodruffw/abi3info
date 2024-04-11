@@ -7,8 +7,8 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Literal, Union
 
-# values taken from the GCC/Clang manual.
-Visibility = Literal["default", "hidden", "internal", "protected"]
+# a best-effort taxonomy for shared object file symbols across all platforms.
+Visibility = Literal["local", "global", "weak"]
 
 
 @dataclass(frozen=True, eq=False, unsafe_hash=True)
