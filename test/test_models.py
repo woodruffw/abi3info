@@ -37,6 +37,11 @@ class TestSymbol:
         with pytest.raises(TypeError):
             assert foo1 == "foo"
 
+    def test_symbol_hashing_visibility_invariance(self):
+        sym1 = Symbol("foo")
+        sym2 = Symbol("foo", visibility="hidden")
+        assert hash(sym1) == hash(sym2)
+
 
 class TestPyVersion:
     def test_homoiconic(self):

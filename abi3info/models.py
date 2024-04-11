@@ -4,7 +4,7 @@ Data models for the CPython limited API and stable ABI.
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Literal, Union
 
 # values taken from the GCC/Clang manual.
@@ -27,7 +27,7 @@ class Symbol:
     The symbol's underlying name. This may not correspond to an actual symbol
     in a binary without platform-specific normalization.
     """
-    visibility: Visibility | None = None
+    visibility: Visibility | None = field(default=None, hash=False)
     """
     The symbol's visibility in the shared object file, or None if it could not
     be determined.
