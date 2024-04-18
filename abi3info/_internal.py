@@ -887,7 +887,7 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         symbol=Symbol(name="PyEval_InitThreads", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=True,
+        abi_only=False,
     ),
     Symbol(name="PyEval_ReleaseLock", visibility=None): Function(
         symbol=Symbol(name="PyEval_ReleaseLock", visibility=None),
