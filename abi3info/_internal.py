@@ -2339,13 +2339,13 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         symbol=Symbol(name="PySys_SetArgv", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=True,
+        abi_only=False,
     ),
     Symbol(name="PySys_SetArgvEx", visibility=None): Function(
         symbol=Symbol(name="PySys_SetArgvEx", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=True,
+        abi_only=False,
     ),
     Symbol(name="PySys_SetObject", visibility=None): Function(
         symbol=Symbol(name="PySys_SetObject", visibility=None),
@@ -3269,13 +3269,13 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         symbol=Symbol(name="Py_SetProgramName", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=True,
+        abi_only=False,
     ),
     Symbol(name="Py_SetPythonHome", visibility=None): Function(
         symbol=Symbol(name="Py_SetPythonHome", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=True,
+        abi_only=False,
     ),
     Symbol(name="Py_SetRecursionLimit", visibility=None): Function(
         symbol=Symbol(name="Py_SetRecursionLimit", visibility=None),
