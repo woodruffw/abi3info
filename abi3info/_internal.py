@@ -5692,12 +5692,6 @@ _DATAS: Final[dict[Symbol, Data]] = {
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyExc_IncompleteInputError", visibility=None): Data(
-        symbol=Symbol(name="PyExc_IncompleteInputError", visibility=None),
-        added=PyVersion(major=3, minor=13),
-        ifdef=None,
-        abi_only=False,
-    ),
 }
 _TYPEDEFS: Final[dict[str, Typedef]] = {
     "Py_uintptr_t": Typedef(name="Py_uintptr_t", added=PyVersion(major=3, minor=2)),
