@@ -4671,6 +4671,54 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         ifdef=None,
         abi_only=False,
     ),
+    Symbol(name="PyLong_FromInt32", visibility=None): Function(
+        symbol=Symbol(name="PyLong_FromInt32", visibility=None),
+        added=PyVersion(major=3, minor=14),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyLong_FromUInt32", visibility=None): Function(
+        symbol=Symbol(name="PyLong_FromUInt32", visibility=None),
+        added=PyVersion(major=3, minor=14),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyLong_AsInt32", visibility=None): Function(
+        symbol=Symbol(name="PyLong_AsInt32", visibility=None),
+        added=PyVersion(major=3, minor=14),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyLong_AsUInt32", visibility=None): Function(
+        symbol=Symbol(name="PyLong_AsUInt32", visibility=None),
+        added=PyVersion(major=3, minor=14),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyLong_FromInt64", visibility=None): Function(
+        symbol=Symbol(name="PyLong_FromInt64", visibility=None),
+        added=PyVersion(major=3, minor=14),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyLong_FromUInt64", visibility=None): Function(
+        symbol=Symbol(name="PyLong_FromUInt64", visibility=None),
+        added=PyVersion(major=3, minor=14),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyLong_AsInt64", visibility=None): Function(
+        symbol=Symbol(name="PyLong_AsInt64", visibility=None),
+        added=PyVersion(major=3, minor=14),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyLong_AsUInt64", visibility=None): Function(
+        symbol=Symbol(name="PyLong_AsUInt64", visibility=None),
+        added=PyVersion(major=3, minor=14),
+        ifdef=None,
+        abi_only=False,
+    ),
 }
 _MACROS: Final[dict[str, Macro]] = {
     "Py_tp_dealloc": Macro(name="Py_tp_dealloc", added=PyVersion(major=3, minor=2)),
