@@ -4873,6 +4873,7 @@ _MACROS: Final[dict[str, Macro]] = {
     "Py_TPFLAGS_ITEMS_AT_END": Macro(
         name="Py_TPFLAGS_ITEMS_AT_END", added=PyVersion(major=3, minor=12)
     ),
+    "Py_tp_vectorcall": Macro(name="Py_tp_vectorcall", added=PyVersion(major=3, minor=14)),
     "Py_BEGIN_ALLOW_THREADS": Macro(
         name="Py_BEGIN_ALLOW_THREADS", added=PyVersion(major=3, minor=2)
     ),
