@@ -4719,6 +4719,12 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         ifdef=None,
         abi_only=False,
     ),
+    Symbol(name="PyType_GetBaseByToken", visibility=None): Function(
+        symbol=Symbol(name="PyType_GetBaseByToken", visibility=None),
+        added=PyVersion(major=3, minor=14),
+        ifdef=None,
+        abi_only=False,
+    ),
 }
 _MACROS: Final[dict[str, Macro]] = {
     "Py_tp_dealloc": Macro(name="Py_tp_dealloc", added=PyVersion(major=3, minor=2)),
@@ -4874,6 +4880,8 @@ _MACROS: Final[dict[str, Macro]] = {
         name="Py_TPFLAGS_ITEMS_AT_END", added=PyVersion(major=3, minor=12)
     ),
     "Py_tp_vectorcall": Macro(name="Py_tp_vectorcall", added=PyVersion(major=3, minor=14)),
+    "Py_tp_token": Macro(name="Py_tp_token", added=PyVersion(major=3, minor=14)),
+    "Py_TP_USE_SPEC": Macro(name="Py_TP_USE_SPEC", added=PyVersion(major=3, minor=14)),
     "Py_BEGIN_ALLOW_THREADS": Macro(
         name="Py_BEGIN_ALLOW_THREADS", added=PyVersion(major=3, minor=2)
     ),
