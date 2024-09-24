@@ -4665,6 +4665,12 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         ifdef=None,
         abi_only=False,
     ),
+    Symbol(name="Py_REFCNT", visibility=None): Function(
+        symbol=Symbol(name="Py_REFCNT", visibility=None),
+        added=PyVersion(major=3, minor=14),
+        ifdef=None,
+        abi_only=False,
+    ),
     Symbol(name="PyIter_NextItem", visibility=None): Function(
         symbol=Symbol(name="PyIter_NextItem", visibility=None),
         added=PyVersion(major=3, minor=14),
