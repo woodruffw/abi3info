@@ -24,7 +24,7 @@ from abi3info.models import (
     Typedef,
 )
 
-__version__ = "2024.10.08"
+__version__ = "2024.10.26"
 """
 The current version of abi3info.
 """
