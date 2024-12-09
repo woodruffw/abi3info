@@ -8,11 +8,11 @@ jobs:
   check-stable-abi:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
         with:
           persist-credentials: false
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5
         with:
           python-version: "3.x"
 
@@ -22,7 +22,7 @@ jobs:
           make codegen
 
       - name: create PR
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@5e914681df9dc83aa4e4905692ca88beb2f9e91f # v7
         with:
           commit-message: "[BOT] update stable_abi.toml"
           branch: update-stable-abi
