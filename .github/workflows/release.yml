@@ -33,6 +33,6 @@ jobs:
       run: python -m build
 
     - name: publish
-      uses: pypa/gh-action-pypi-publish@ecb4c3dfd4790f14e30aaeac04855c7413ee9368 # v1.12.2
+      uses: pypa/gh-action-pypi-publish@15c56dba361d8335944d31a2ecd17d700fc7bcbc # v1.12.2
       with:
         attestations: true
