@@ -4743,6 +4743,18 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         ifdef=None,
         abi_only=False,
     ),
+    Symbol(name="Py_PACK_FULL_VERSION", visibility=None): Function(
+        symbol=Symbol(name="Py_PACK_FULL_VERSION", visibility=None),
+        added=PyVersion(major=3, minor=14),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="Py_PACK_VERSION", visibility=None): Function(
+        symbol=Symbol(name="Py_PACK_VERSION", visibility=None),
+        added=PyVersion(major=3, minor=14),
+        ifdef=None,
+        abi_only=False,
+    ),
 }
 _MACROS: Final[dict[str, Macro]] = {
     "Py_tp_dealloc": Macro(name="Py_tp_dealloc", added=PyVersion(major=3, minor=2)),
