@@ -2123,7 +2123,7 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         symbol=Symbol(name="PySequence_Fast", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=True,
+        abi_only=False,
     ),
     Symbol(name="PySequence_GetItem", visibility=None): Function(
         symbol=Symbol(name="PySequence_GetItem", visibility=None),
