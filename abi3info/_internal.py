@@ -4725,6 +4725,24 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         ifdef=None,
         abi_only=False,
     ),
+    Symbol(name="PyLong_AsNativeBytes", visibility=None): Function(
+        symbol=Symbol(name="PyLong_AsNativeBytes", visibility=None),
+        added=PyVersion(major=3, minor=14),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyLong_FromNativeBytes", visibility=None): Function(
+        symbol=Symbol(name="PyLong_FromNativeBytes", visibility=None),
+        added=PyVersion(major=3, minor=14),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyLong_FromUnsignedNativeBytes", visibility=None): Function(
+        symbol=Symbol(name="PyLong_FromUnsignedNativeBytes", visibility=None),
+        added=PyVersion(major=3, minor=14),
+        ifdef=None,
+        abi_only=False,
+    ),
     Symbol(name="PyType_GetBaseByToken", visibility=None): Function(
         symbol=Symbol(name="PyType_GetBaseByToken", visibility=None),
         added=PyVersion(major=3, minor=14),
@@ -4908,6 +4926,27 @@ _MACROS: Final[dict[str, Macro]] = {
     "Py_RELATIVE_OFFSET": Macro(name="Py_RELATIVE_OFFSET", added=PyVersion(major=3, minor=12)),
     "Py_TPFLAGS_ITEMS_AT_END": Macro(
         name="Py_TPFLAGS_ITEMS_AT_END", added=PyVersion(major=3, minor=12)
+    ),
+    "Py_ASNATIVEBYTES_DEFAULTS": Macro(
+        name="Py_ASNATIVEBYTES_DEFAULTS", added=PyVersion(major=3, minor=14)
+    ),
+    "Py_ASNATIVEBYTES_BIG_ENDIAN": Macro(
+        name="Py_ASNATIVEBYTES_BIG_ENDIAN", added=PyVersion(major=3, minor=14)
+    ),
+    "Py_ASNATIVEBYTES_LITTLE_ENDIAN": Macro(
+        name="Py_ASNATIVEBYTES_LITTLE_ENDIAN", added=PyVersion(major=3, minor=14)
+    ),
+    "Py_ASNATIVEBYTES_NATIVE_ENDIAN": Macro(
+        name="Py_ASNATIVEBYTES_NATIVE_ENDIAN", added=PyVersion(major=3, minor=14)
+    ),
+    "Py_ASNATIVEBYTES_UNSIGNED_BUFFER": Macro(
+        name="Py_ASNATIVEBYTES_UNSIGNED_BUFFER", added=PyVersion(major=3, minor=14)
+    ),
+    "Py_ASNATIVEBYTES_REJECT_NEGATIVE": Macro(
+        name="Py_ASNATIVEBYTES_REJECT_NEGATIVE", added=PyVersion(major=3, minor=14)
+    ),
+    "Py_ASNATIVEBYTES_ALLOW_INDEX": Macro(
+        name="Py_ASNATIVEBYTES_ALLOW_INDEX", added=PyVersion(major=3, minor=14)
     ),
     "Py_tp_vectorcall": Macro(name="Py_tp_vectorcall", added=PyVersion(major=3, minor=14)),
     "Py_tp_token": Macro(name="Py_tp_token", added=PyVersion(major=3, minor=14)),
