@@ -2681,19 +2681,19 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         symbol=Symbol(name="PyUnicode_AsDecodedObject", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="PyUnicode_AsDecodedUnicode", visibility=None): Function(
         symbol=Symbol(name="PyUnicode_AsDecodedUnicode", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="PyUnicode_AsEncodedObject", visibility=None): Function(
         symbol=Symbol(name="PyUnicode_AsEncodedObject", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="PyUnicode_AsEncodedString", visibility=None): Function(
         symbol=Symbol(name="PyUnicode_AsEncodedString", visibility=None),
@@ -2705,7 +2705,7 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         symbol=Symbol(name="PyUnicode_AsEncodedUnicode", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="PyUnicode_AsLatin1String", visibility=None): Function(
         symbol=Symbol(name="PyUnicode_AsLatin1String", visibility=None),
