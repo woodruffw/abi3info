@@ -4773,6 +4773,30 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         ifdef=None,
         abi_only=False,
     ),
+    Symbol(name="PySys_GetAttr", visibility=None): Function(
+        symbol=Symbol(name="PySys_GetAttr", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PySys_GetAttrString", visibility=None): Function(
+        symbol=Symbol(name="PySys_GetAttrString", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PySys_GetOptionalAttr", visibility=None): Function(
+        symbol=Symbol(name="PySys_GetOptionalAttr", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PySys_GetOptionalAttrString", visibility=None): Function(
+        symbol=Symbol(name="PySys_GetOptionalAttrString", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
 }
 _MACROS: Final[dict[str, Macro]] = {
     "Py_tp_dealloc": Macro(name="Py_tp_dealloc", added=PyVersion(major=3, minor=2)),
