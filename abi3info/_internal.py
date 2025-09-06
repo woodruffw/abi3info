@@ -71,6 +71,7 @@ _STRUCTS: Final[dict[str, Struct]] = {
     "PyLongObject": OpaqueStruct(name="PyLongObject", added=PyVersion(major=3, minor=2)),
     "PyTypeObject": OpaqueStruct(name="PyTypeObject", added=PyVersion(major=3, minor=2)),
     "Py_buffer": FullStruct(name="Py_buffer", added=PyVersion(major=3, minor=11)),
+    "PyABIInfo": FullStruct(name="PyABIInfo", added=PyVersion(major=3, minor=15)),
 }
 _FUNCTIONS: Final[dict[Symbol, Function]] = {
     Symbol(name="PyType_FromSpec", visibility=None): Function(
@@ -4797,6 +4798,12 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         ifdef=None,
         abi_only=False,
     ),
+    Symbol(name="PyABIInfo_Check", visibility=None): Function(
+        symbol=Symbol(name="PyABIInfo_Check", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
 }
 _MACROS: Final[dict[str, Macro]] = {
     "Py_tp_dealloc": Macro(name="Py_tp_dealloc", added=PyVersion(major=3, minor=2)),
@@ -4975,6 +4982,21 @@ _MACROS: Final[dict[str, Macro]] = {
     "Py_tp_vectorcall": Macro(name="Py_tp_vectorcall", added=PyVersion(major=3, minor=14)),
     "Py_tp_token": Macro(name="Py_tp_token", added=PyVersion(major=3, minor=14)),
     "Py_TP_USE_SPEC": Macro(name="Py_TP_USE_SPEC", added=PyVersion(major=3, minor=14)),
+    "Py_mod_abi": Macro(name="Py_mod_abi", added=PyVersion(major=3, minor=15)),
+    "PyABIInfo_DEFAULT_ABI_VERSION": Macro(
+        name="PyABIInfo_DEFAULT_ABI_VERSION", added=PyVersion(major=3, minor=15)
+    ),
+    "PyABIInfo_DEFAULT_FLAGS": Macro(
+        name="PyABIInfo_DEFAULT_FLAGS", added=PyVersion(major=3, minor=15)
+    ),
+    "PyABIInfo_STABLE": Macro(name="PyABIInfo_STABLE", added=PyVersion(major=3, minor=15)),
+    "PyABIInfo_FREETHREADED": Macro(
+        name="PyABIInfo_FREETHREADED", added=PyVersion(major=3, minor=15)
+    ),
+    "PyABIInfo_GIL": Macro(name="PyABIInfo_GIL", added=PyVersion(major=3, minor=15)),
+    "PyABIInfo_FREETHREADING_AGNOSTIC": Macro(
+        name="PyABIInfo_FREETHREADING_AGNOSTIC", added=PyVersion(major=3, minor=15)
+    ),
     "Py_BEGIN_ALLOW_THREADS": Macro(
         name="Py_BEGIN_ALLOW_THREADS", added=PyVersion(major=3, minor=2)
     ),
@@ -4984,6 +5006,7 @@ _MACROS: Final[dict[str, Macro]] = {
     "PY_VECTORCALL_ARGUMENTS_OFFSET": Macro(
         name="PY_VECTORCALL_ARGUMENTS_OFFSET", added=PyVersion(major=3, minor=12)
     ),
+    "PyABIInfo_VAR": Macro(name="PyABIInfo_VAR", added=PyVersion(major=3, minor=15)),
 }
 _DATAS: Final[dict[Symbol, Data]] = {
     Symbol(name="PyBaseObject_Type", visibility=None): Data(
