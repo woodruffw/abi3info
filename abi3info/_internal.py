@@ -2334,7 +2334,7 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         symbol=Symbol(name="PySys_ResetWarnOptions", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="PySys_SetArgv", visibility=None): Function(
         symbol=Symbol(name="PySys_SetArgv", visibility=None),
