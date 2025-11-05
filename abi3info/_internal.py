@@ -4804,6 +4804,36 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         ifdef=None,
         abi_only=False,
     ),
+    Symbol(name="PyModule_FromSlotsAndSpec", visibility=None): Function(
+        symbol=Symbol(name="PyModule_FromSlotsAndSpec", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyModule_Exec", visibility=None): Function(
+        symbol=Symbol(name="PyModule_Exec", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyModule_GetToken", visibility=None): Function(
+        symbol=Symbol(name="PyModule_GetToken", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyType_GetModuleByToken", visibility=None): Function(
+        symbol=Symbol(name="PyType_GetModuleByToken", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyModule_GetStateSize", visibility=None): Function(
+        symbol=Symbol(name="PyModule_GetStateSize", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
 }
 _MACROS: Final[dict[str, Macro]] = {
     "Py_tp_dealloc": Macro(name="Py_tp_dealloc", added=PyVersion(major=3, minor=2)),
@@ -4911,6 +4941,8 @@ _MACROS: Final[dict[str, Macro]] = {
         name="Py_TPFLAGS_METHOD_DESCRIPTOR", added=PyVersion(major=3, minor=8)
     ),
     "Py_am_send": Macro(name="Py_am_send", added=PyVersion(major=3, minor=10)),
+    "Py_bf_getbuffer": Macro(name="Py_bf_getbuffer", added=PyVersion(major=3, minor=11)),
+    "Py_bf_releasebuffer": Macro(name="Py_bf_releasebuffer", added=PyVersion(major=3, minor=11)),
     "PyBUF_MAX_NDIM": Macro(name="PyBUF_MAX_NDIM", added=PyVersion(major=3, minor=11)),
     "PyBUF_SIMPLE": Macro(name="PyBUF_SIMPLE", added=PyVersion(major=3, minor=11)),
     "PyBUF_WRITABLE": Macro(name="PyBUF_WRITABLE", added=PyVersion(major=3, minor=11)),
@@ -4997,6 +5029,16 @@ _MACROS: Final[dict[str, Macro]] = {
     "PyABIInfo_FREETHREADING_AGNOSTIC": Macro(
         name="PyABIInfo_FREETHREADING_AGNOSTIC", added=PyVersion(major=3, minor=15)
     ),
+    "Py_mod_name": Macro(name="Py_mod_name", added=PyVersion(major=3, minor=15)),
+    "Py_mod_doc": Macro(name="Py_mod_doc", added=PyVersion(major=3, minor=15)),
+    "Py_mod_state_size": Macro(name="Py_mod_state_size", added=PyVersion(major=3, minor=15)),
+    "Py_mod_methods": Macro(name="Py_mod_methods", added=PyVersion(major=3, minor=15)),
+    "Py_mod_state_traverse": Macro(
+        name="Py_mod_state_traverse", added=PyVersion(major=3, minor=15)
+    ),
+    "Py_mod_state_clear": Macro(name="Py_mod_state_clear", added=PyVersion(major=3, minor=15)),
+    "Py_mod_state_free": Macro(name="Py_mod_state_free", added=PyVersion(major=3, minor=15)),
+    "Py_mod_token": Macro(name="Py_mod_token", added=PyVersion(major=3, minor=15)),
     "Py_BEGIN_ALLOW_THREADS": Macro(
         name="Py_BEGIN_ALLOW_THREADS", added=PyVersion(major=3, minor=2)
     ),
@@ -5007,6 +5049,7 @@ _MACROS: Final[dict[str, Macro]] = {
         name="PY_VECTORCALL_ARGUMENTS_OFFSET", added=PyVersion(major=3, minor=12)
     ),
     "PyABIInfo_VAR": Macro(name="PyABIInfo_VAR", added=PyVersion(major=3, minor=15)),
+    "PyMODEXPORT_FUNC": Macro(name="PyMODEXPORT_FUNC", added=PyVersion(major=3, minor=15)),
 }
 _DATAS: Final[dict[Symbol, Data]] = {
     Symbol(name="PyBaseObject_Type", visibility=None): Data(
