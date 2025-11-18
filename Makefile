@@ -48,7 +48,7 @@ test tests:
 doc:
 	uv run --dev pdoc $(PY_MODULE) -o html
 
-.PHONY: package
-package:
+.PHONY: dist
+dist:
 	uv build
 
