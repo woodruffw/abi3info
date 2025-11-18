@@ -2,7 +2,7 @@ name: check for updates to stable_abi.toml
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 12 * * *'
+    - cron: "0 12 * * *"
 
 permissions: {}
 
@@ -18,9 +18,7 @@ jobs:
         with:
           persist-credentials: false
 
-      - uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c # v6.0.0
-        with:
-          python-version: "3.x"
+      - uses: astral-sh/setup-uv@5a7eac68fb9809dea845d802897dc5c723910fa3 # v7.1.3
 
       - name: try to update stable_abi.toml
         run: |
@@ -40,3 +38,4 @@ jobs:
             Please review manually before merging.
           assignees: "woodruffw"
           reviewers: "woodruffw"
+          draft: true

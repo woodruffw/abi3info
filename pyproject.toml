@@ -18,7 +18,7 @@ classifiers = [
   "Topic :: Security",
 ]
 dependencies = []
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 
 [project.urls]
 Homepage = "https://pypi.org/project/abi3info/"
@@ -26,11 +26,17 @@ Issues = "https://github.com/woodruffw/abi3info/issues"
 Source = "https://github.com/woodruffw/abi3info"
 Documentation = "https://woodruffw.github.io/abi3info/"
 
-[project.optional-dependencies]
+[dependency-groups]
 test = ["pytest", "pytest-cov", "pretend", "coverage[toml]"]
 lint = ["bandit", "interrogate", "mypy", "ruff"]
 doc = ["pdoc >= 13.0.0"]
-dev = ["build", "toml", "abi3info[test,lint,doc]"]
+dev = [
+  "toml",
+  { include-group = "test" },
+  { include-group = "lint" },
+  { include-group = "doc" },
+]
+
 
 [tool.interrogate]
 exclude = ["env", "test", "codegen"]
