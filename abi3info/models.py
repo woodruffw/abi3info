@@ -5,7 +5,7 @@ Data models for the CPython limited API and stable ABI.
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from typing import Literal, Union
+from typing import Literal
 
 # a best-effort taxonomy for shared object file symbols across all platforms.
 Visibility = Literal["local", "global", "weak"]
@@ -199,7 +199,7 @@ class FullStruct:
     added: PyVersion
 
 
-Struct = Union[OpaqueStruct, PartialStruct, FullStruct]
+Struct = OpaqueStruct | PartialStruct | FullStruct
 
 
 @dataclass(frozen=True)
