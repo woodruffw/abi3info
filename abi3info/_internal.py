@@ -4834,6 +4834,12 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         ifdef=None,
         abi_only=False,
     ),
+    Symbol(name="PyDict_SetDefaultRef", visibility=None): Function(
+        symbol=Symbol(name="PyDict_SetDefaultRef", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
 }
 _MACROS: Final[dict[str, Macro]] = {
     "Py_tp_dealloc": Macro(name="Py_tp_dealloc", added=PyVersion(major=3, minor=2)),
