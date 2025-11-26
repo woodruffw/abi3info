@@ -70,6 +70,7 @@ _STRUCTS: Final[dict[str, Struct]] = {
     "PyWeakReference": OpaqueStruct(name="PyWeakReference", added=PyVersion(major=3, minor=2)),
     "PyLongObject": OpaqueStruct(name="PyLongObject", added=PyVersion(major=3, minor=2)),
     "PyTypeObject": OpaqueStruct(name="PyTypeObject", added=PyVersion(major=3, minor=2)),
+    "PyModuleDef_Slot": FullStruct(name="PyModuleDef_Slot", added=PyVersion(major=3, minor=5)),
     "Py_buffer": FullStruct(name="Py_buffer", added=PyVersion(major=3, minor=11)),
     "PyABIInfo": FullStruct(name="PyABIInfo", added=PyVersion(major=3, minor=15)),
 }
@@ -4840,6 +4841,24 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         ifdef=None,
         abi_only=False,
     ),
+    Symbol(name="Py_SIZE", visibility=None): Function(
+        symbol=Symbol(name="Py_SIZE", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="Py_IS_TYPE", visibility=None): Function(
+        symbol=Symbol(name="Py_IS_TYPE", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="Py_SET_SIZE", visibility=None): Function(
+        symbol=Symbol(name="Py_SET_SIZE", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
 }
 _MACROS: Final[dict[str, Macro]] = {
     "Py_tp_dealloc": Macro(name="Py_tp_dealloc", added=PyVersion(major=3, minor=2)),
@@ -4933,6 +4952,8 @@ _MACROS: Final[dict[str, Macro]] = {
     "METH_CLASS": Macro(name="METH_CLASS", added=PyVersion(major=3, minor=2)),
     "METH_STATIC": Macro(name="METH_STATIC", added=PyVersion(major=3, minor=2)),
     "METH_COEXIST": Macro(name="METH_COEXIST", added=PyVersion(major=3, minor=2)),
+    "Py_mod_create": Macro(name="Py_mod_create", added=PyVersion(major=3, minor=5)),
+    "Py_mod_exec": Macro(name="Py_mod_exec", added=PyVersion(major=3, minor=5)),
     "Py_nb_matrix_multiply": Macro(name="Py_nb_matrix_multiply", added=PyVersion(major=3, minor=5)),
     "Py_nb_inplace_matrix_multiply": Macro(
         name="Py_nb_inplace_matrix_multiply", added=PyVersion(major=3, minor=5)
@@ -4996,6 +5017,10 @@ _MACROS: Final[dict[str, Macro]] = {
     "Py_TPFLAGS_ITEMS_AT_END": Macro(
         name="Py_TPFLAGS_ITEMS_AT_END", added=PyVersion(major=3, minor=12)
     ),
+    "Py_mod_multiple_interpreters": Macro(
+        name="Py_mod_multiple_interpreters", added=PyVersion(major=3, minor=12)
+    ),
+    "Py_mod_gil": Macro(name="Py_mod_gil", added=PyVersion(major=3, minor=12)),
     "Py_ASNATIVEBYTES_DEFAULTS": Macro(
         name="Py_ASNATIVEBYTES_DEFAULTS", added=PyVersion(major=3, minor=14)
     ),
