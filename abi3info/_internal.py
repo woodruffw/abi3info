@@ -5020,7 +5020,7 @@ _MACROS: Final[dict[str, Macro]] = {
     "Py_mod_multiple_interpreters": Macro(
         name="Py_mod_multiple_interpreters", added=PyVersion(major=3, minor=12)
     ),
-    "Py_mod_gil": Macro(name="Py_mod_gil", added=PyVersion(major=3, minor=12)),
+    "Py_mod_gil": Macro(name="Py_mod_gil", added=PyVersion(major=3, minor=13)),
     "Py_ASNATIVEBYTES_DEFAULTS": Macro(
         name="Py_ASNATIVEBYTES_DEFAULTS", added=PyVersion(major=3, minor=14)
     ),
