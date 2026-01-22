@@ -73,6 +73,9 @@ _STRUCTS: Final[dict[str, Struct]] = {
     "PyModuleDef_Slot": FullStruct(name="PyModuleDef_Slot", added=PyVersion(major=3, minor=5)),
     "Py_buffer": FullStruct(name="Py_buffer", added=PyVersion(major=3, minor=11)),
     "PyABIInfo": FullStruct(name="PyABIInfo", added=PyVersion(major=3, minor=15)),
+    "PyLongWriter": OpaqueStruct(name="PyLongWriter", added=PyVersion(major=3, minor=15)),
+    "PyLongLayout": FullStruct(name="PyLongLayout", added=PyVersion(major=3, minor=15)),
+    "PyLongExport": FullStruct(name="PyLongExport", added=PyVersion(major=3, minor=15)),
 }
 _FUNCTIONS: Final[dict[Symbol, Function]] = {
     Symbol(name="PyType_FromSpec", visibility=None): Function(
@@ -4855,6 +4858,42 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
     ),
     Symbol(name="Py_SET_SIZE", visibility=None): Function(
         symbol=Symbol(name="Py_SET_SIZE", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyLong_GetNativeLayout", visibility=None): Function(
+        symbol=Symbol(name="PyLong_GetNativeLayout", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyLong_Export", visibility=None): Function(
+        symbol=Symbol(name="PyLong_Export", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyLong_FreeExport", visibility=None): Function(
+        symbol=Symbol(name="PyLong_FreeExport", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyLongWriter_Create", visibility=None): Function(
+        symbol=Symbol(name="PyLongWriter_Create", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyLongWriter_Finish", visibility=None): Function(
+        symbol=Symbol(name="PyLongWriter_Finish", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyLongWriter_Discard", visibility=None): Function(
+        symbol=Symbol(name="PyLongWriter_Discard", visibility=None),
         added=PyVersion(major=3, minor=15),
         ifdef=None,
         abi_only=False,
