@@ -58,7 +58,7 @@ Get information about the feature macros that control the limited API:
 ```python
 from abi3info import FEATURE_MACROS
 
-print(fm for fm in FEATURE_MACROS.values())
+print([fm for fm in FEATURE_MACROS.values()])
 ```
 
 ## Licensing
