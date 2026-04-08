@@ -4862,6 +4862,48 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         ifdef=None,
         abi_only=False,
     ),
+    Symbol(name="PyObject_GetTypeData_DuringGC", visibility=None): Function(
+        symbol=Symbol(name="PyObject_GetTypeData_DuringGC", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyType_GetModuleState_DuringGC", visibility=None): Function(
+        symbol=Symbol(name="PyType_GetModuleState_DuringGC", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyModule_GetState_DuringGC", visibility=None): Function(
+        symbol=Symbol(name="PyModule_GetState_DuringGC", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyModule_GetToken_DuringGC", visibility=None): Function(
+        symbol=Symbol(name="PyModule_GetToken_DuringGC", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyType_GetBaseByToken_DuringGC", visibility=None): Function(
+        symbol=Symbol(name="PyType_GetBaseByToken_DuringGC", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyType_GetModule_DuringGC", visibility=None): Function(
+        symbol=Symbol(name="PyType_GetModule_DuringGC", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyType_GetModuleByToken_DuringGC", visibility=None): Function(
+        symbol=Symbol(name="PyType_GetModuleByToken_DuringGC", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
     Symbol(name="PyLong_GetNativeLayout", visibility=None): Function(
         symbol=Symbol(name="PyLong_GetNativeLayout", visibility=None),
         added=PyVersion(major=3, minor=15),
