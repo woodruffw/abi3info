@@ -4,7 +4,7 @@ requires-python = ">=3.10"
 
 [[package]]
 name = "abi3info"
-version = "2025.11.29"
+version = "2026.9.25"
 source = { editable = "." }
 
 [package.dev-dependencies]
