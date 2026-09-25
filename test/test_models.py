@@ -141,9 +141,15 @@ class TestPartialStruct:
 
 
 class TestFullStruct:
-    def test_homoiconic(self):
-        assert eval(repr(FullStruct("foo", PyVersion(3, 10)))) == FullStruct(
-            "foo", PyVersion(3, 10)
+    @pytest.mark.parametrize("abi3t_opaque", [False, True])
+    def test_homoiconic(self, abi3t_opaque):
+        assert eval(
+            repr(FullStruct("foo", PyVersion(3, 10), abi3t_opaque=abi3t_opaque))
+        ) == FullStruct("foo", PyVersion(3, 10), abi3t_opaque=abi3t_opaque)
+
+    def test_default_abi3t_layout(self):
+        assert FullStruct("foo", PyVersion(3, 10)) == FullStruct(
+            "foo", PyVersion(3, 10), abi3t_opaque=False
         )
 
 
