@@ -24,11 +24,6 @@ from abi3info.models import (
     Typedef,
 )
 
-__version__ = "2025.11.29"
-"""
-The current version of abi3info.
-"""
-
 DATAS: Final[dict[Symbol, Data]] = _DATAS
 """
 Data object members of the limited API and stable ABI.

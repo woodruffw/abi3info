@@ -31,7 +31,7 @@ codegen:
 lint:
 	uv run --dev ruff format --check
 	uv run --dev ruff check
-	uv run --dev mypy $(PY_MODULE)
+	uv run --dev ty check
 	uv run --dev interrogate -c pyproject.toml .
 
 .PHONY: reformat
@@ -51,4 +51,3 @@ doc:
 .PHONY: dist
 dist:
 	uv build
-

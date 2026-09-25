@@ -1,66 +1,54 @@
-[build-system]
-requires = ["flit_core >=3.11,<4"]
-build-backend = "flit_core.buildapi"
-
 [project]
 name = "abi3info"
-dynamic = ["version"]
+version = "2025.11.29"
 description = "A library for abi3 and other CPython API information"
 readme = "README.md"
+requires-python = ">=3.10"
 license = "MIT"
 license-files = ["LICENSE"]
 authors = [{ name = "William Woodruff", email = "william@yossarian.net" }]
 classifiers = [
-  "Programming Language :: Python :: 3 :: Only",
-  "Programming Language :: Python :: 3",
   "Development Status :: 5 - Production/Stable",
   "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
   "Topic :: Security",
 ]
 dependencies = []
-requires-python = ">=3.10"
 
 [project.urls]
+Documentation = "https://woodruffw.github.io/abi3info/"
 Homepage = "https://pypi.org/project/abi3info/"
 Issues = "https://github.com/woodruffw/abi3info/issues"
 Source = "https://github.com/woodruffw/abi3info"
-Documentation = "https://woodruffw.github.io/abi3info/"
 
 [dependency-groups]
-test = ["pytest", "pytest-cov", "pretend", "coverage[toml]"]
-lint = ["bandit", "interrogate", "mypy", "ruff"]
-doc = ["pdoc >= 13.0.0"]
 dev = [
   "toml",
-  { include-group = "test" },
-  { include-group = "lint" },
   { include-group = "doc" },
+  { include-group = "lint" },
+  { include-group = "test" },
 ]
+doc = ["pdoc >= 13.0.0"]
+lint = [
+    "bandit",
+    "interrogate",
+    "ruff",
+    "ty>=0.0.84",
+]
+test = ["coverage[toml]", "pretend", "pytest", "pytest-cov"]
 
+[build-system]
+requires = ["flit_core >=3.11,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.bandit]
+exclude_dirs = ["./test"]
 
 [tool.interrogate]
 exclude = ["env", "test", "codegen"]
 ignore-semiprivate = true
 fail-under = 100
-
-[tool.mypy]
-allow_redefinition = true
-check_untyped_defs = true
-disallow_incomplete_defs = true
-disallow_untyped_defs = true
-ignore_missing_imports = true
-no_implicit_optional = true
-show_error_codes = true
-strict_equality = true
-warn_no_return = true
-warn_redundant_casts = true
-warn_return_any = true
-warn_unreachable = true
-warn_unused_configs = true
-warn_unused_ignores = true
-
-[tool.bandit]
-exclude_dirs = ["./test"]
 
 [tool.ruff]
 line-length = 100
