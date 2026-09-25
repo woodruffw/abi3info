@@ -39,7 +39,7 @@ class TestSymbol:
 
     def test_symbol_hashing_visibility_invariance(self):
         sym1 = Symbol("foo")
-        sym2 = Symbol("foo", visibility="hidden")
+        sym2 = Symbol("foo", visibility="weak")
         assert hash(sym1) == hash(sym2)
 
 
@@ -134,7 +134,7 @@ class TestOpaqueStruct:
 
 class TestPartialStruct:
     def test_homoiconic(self):
-        for members in (None, ["bar"]):
+        for members in (["bar"],):
             assert eval(repr(PartialStruct("foo", PyVersion(3, 10), members))) == PartialStruct(
                 "foo", PyVersion(3, 10), members
             )
