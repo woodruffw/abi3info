@@ -48,19 +48,33 @@ _STRUCTS: Final[dict[str, Struct]] = {
     "PyVarObject": PartialStruct(
         name="PyVarObject", added=PyVersion(major=3, minor=2), members=["ob_base", "ob_size"]
     ),
-    "PyMethodDef": FullStruct(name="PyMethodDef", added=PyVersion(major=3, minor=2)),
-    "PyMemberDef": FullStruct(name="PyMemberDef", added=PyVersion(major=3, minor=2)),
-    "PyGetSetDef": FullStruct(name="PyGetSetDef", added=PyVersion(major=3, minor=2)),
-    "PyModuleDef_Base": FullStruct(name="PyModuleDef_Base", added=PyVersion(major=3, minor=2)),
-    "PyModuleDef": FullStruct(name="PyModuleDef", added=PyVersion(major=3, minor=2)),
+    "PyMethodDef": FullStruct(
+        name="PyMethodDef", added=PyVersion(major=3, minor=2), abi3t_opaque=False
+    ),
+    "PyMemberDef": FullStruct(
+        name="PyMemberDef", added=PyVersion(major=3, minor=2), abi3t_opaque=False
+    ),
+    "PyGetSetDef": FullStruct(
+        name="PyGetSetDef", added=PyVersion(major=3, minor=2), abi3t_opaque=False
+    ),
+    "PyModuleDef_Base": FullStruct(
+        name="PyModuleDef_Base", added=PyVersion(major=3, minor=2), abi3t_opaque=True
+    ),
+    "PyModuleDef": FullStruct(
+        name="PyModuleDef", added=PyVersion(major=3, minor=2), abi3t_opaque=True
+    ),
     "PyStructSequence_Field": FullStruct(
-        name="PyStructSequence_Field", added=PyVersion(major=3, minor=2)
+        name="PyStructSequence_Field", added=PyVersion(major=3, minor=2), abi3t_opaque=False
     ),
     "PyStructSequence_Desc": FullStruct(
-        name="PyStructSequence_Desc", added=PyVersion(major=3, minor=2)
+        name="PyStructSequence_Desc", added=PyVersion(major=3, minor=2), abi3t_opaque=False
     ),
-    "PyType_Slot": FullStruct(name="PyType_Slot", added=PyVersion(major=3, minor=2)),
-    "PyType_Spec": FullStruct(name="PyType_Spec", added=PyVersion(major=3, minor=2)),
+    "PyType_Slot": FullStruct(
+        name="PyType_Slot", added=PyVersion(major=3, minor=2), abi3t_opaque=False
+    ),
+    "PyType_Spec": FullStruct(
+        name="PyType_Spec", added=PyVersion(major=3, minor=2), abi3t_opaque=False
+    ),
     "PyThreadState": OpaqueStruct(name="PyThreadState", added=PyVersion(major=3, minor=2)),
     "PyInterpreterState": OpaqueStruct(
         name="PyInterpreterState", added=PyVersion(major=3, minor=2)
@@ -70,12 +84,36 @@ _STRUCTS: Final[dict[str, Struct]] = {
     "PyWeakReference": OpaqueStruct(name="PyWeakReference", added=PyVersion(major=3, minor=2)),
     "PyLongObject": OpaqueStruct(name="PyLongObject", added=PyVersion(major=3, minor=2)),
     "PyTypeObject": OpaqueStruct(name="PyTypeObject", added=PyVersion(major=3, minor=2)),
-    "PyModuleDef_Slot": FullStruct(name="PyModuleDef_Slot", added=PyVersion(major=3, minor=5)),
-    "Py_buffer": FullStruct(name="Py_buffer", added=PyVersion(major=3, minor=11)),
-    "PyABIInfo": FullStruct(name="PyABIInfo", added=PyVersion(major=3, minor=15)),
+    "PyModuleDef_Slot": FullStruct(
+        name="PyModuleDef_Slot", added=PyVersion(major=3, minor=5), abi3t_opaque=False
+    ),
+    "Py_buffer": FullStruct(
+        name="Py_buffer", added=PyVersion(major=3, minor=11), abi3t_opaque=False
+    ),
+    "PyABIInfo": FullStruct(
+        name="PyABIInfo", added=PyVersion(major=3, minor=15), abi3t_opaque=False
+    ),
+    "PyCriticalSection": FullStruct(
+        name="PyCriticalSection", added=PyVersion(major=3, minor=15), abi3t_opaque=False
+    ),
+    "PyCriticalSection2": FullStruct(
+        name="PyCriticalSection2", added=PyVersion(major=3, minor=15), abi3t_opaque=False
+    ),
+    "PySlot": FullStruct(name="PySlot", added=PyVersion(major=3, minor=15), abi3t_opaque=False),
     "PyLongWriter": OpaqueStruct(name="PyLongWriter", added=PyVersion(major=3, minor=15)),
-    "PyLongLayout": FullStruct(name="PyLongLayout", added=PyVersion(major=3, minor=15)),
-    "PyLongExport": FullStruct(name="PyLongExport", added=PyVersion(major=3, minor=15)),
+    "PyLongLayout": FullStruct(
+        name="PyLongLayout", added=PyVersion(major=3, minor=15), abi3t_opaque=False
+    ),
+    "PyLongExport": FullStruct(
+        name="PyLongExport", added=PyVersion(major=3, minor=15), abi3t_opaque=False
+    ),
+    "PyInterpreterGuard": OpaqueStruct(
+        name="PyInterpreterGuard", added=PyVersion(major=3, minor=15)
+    ),
+    "PyInterpreterView": OpaqueStruct(name="PyInterpreterView", added=PyVersion(major=3, minor=15)),
+    "PyThreadStateToken": OpaqueStruct(
+        name="PyThreadStateToken", added=PyVersion(major=3, minor=15)
+    ),
 }
 _FUNCTIONS: Final[dict[Symbol, Function]] = {
     Symbol(name="PyType_FromSpec", visibility=None): Function(
@@ -642,12 +680,6 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         ifdef=None,
         abi_only=False,
     ),
-    Symbol(name="PyErr_DisplayException", visibility=None): Function(
-        symbol=Symbol(name="PyErr_DisplayException", visibility=None),
-        added=PyVersion(major=3, minor=12),
-        ifdef=None,
-        abi_only=False,
-    ),
     Symbol(name="PyErr_ExceptionMatches", visibility=None): Function(
         symbol=Symbol(name="PyErr_ExceptionMatches", visibility=None),
         added=PyVersion(major=3, minor=2),
@@ -892,7 +924,7 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         symbol=Symbol(name="PyEval_InitThreads", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="PyEval_ReleaseLock", visibility=None): Function(
         symbol=Symbol(name="PyEval_ReleaseLock", visibility=None),
@@ -2344,13 +2376,13 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         symbol=Symbol(name="PySys_SetArgv", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="PySys_SetArgvEx", visibility=None): Function(
         symbol=Symbol(name="PySys_SetArgvEx", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="PySys_SetObject", visibility=None): Function(
         symbol=Symbol(name="PySys_SetObject", visibility=None),
@@ -3274,13 +3306,13 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         symbol=Symbol(name="Py_SetProgramName", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="Py_SetPythonHome", visibility=None): Function(
         symbol=Symbol(name="Py_SetPythonHome", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="Py_SetRecursionLimit", visibility=None): Function(
         symbol=Symbol(name="Py_SetRecursionLimit", visibility=None),
@@ -4388,6 +4420,12 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         ifdef=None,
         abi_only=False,
     ),
+    Symbol(name="PyErr_DisplayException", visibility=None): Function(
+        symbol=Symbol(name="PyErr_DisplayException", visibility=None),
+        added=PyVersion(major=3, minor=12),
+        ifdef=None,
+        abi_only=False,
+    ),
     Symbol(name="PyType_FromMetaclass", visibility=None): Function(
         symbol=Symbol(name="PyType_FromMetaclass", visibility=None),
         added=PyVersion(major=3, minor=12),
@@ -4904,6 +4942,42 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
         ifdef=None,
         abi_only=False,
     ),
+    Symbol(name="PyCriticalSection_Begin", visibility=None): Function(
+        symbol=Symbol(name="PyCriticalSection_Begin", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyCriticalSection_End", visibility=None): Function(
+        symbol=Symbol(name="PyCriticalSection_End", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyCriticalSection2_Begin", visibility=None): Function(
+        symbol=Symbol(name="PyCriticalSection2_Begin", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyCriticalSection2_End", visibility=None): Function(
+        symbol=Symbol(name="PyCriticalSection2_End", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyType_FromSlots", visibility=None): Function(
+        symbol=Symbol(name="PyType_FromSlots", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyObject_CallFinalizerFromDealloc", visibility=None): Function(
+        symbol=Symbol(name="PyObject_CallFinalizerFromDealloc", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
     Symbol(name="PyLong_GetNativeLayout", visibility=None): Function(
         symbol=Symbol(name="PyLong_GetNativeLayout", visibility=None),
         added=PyVersion(major=3, minor=15),
@@ -4937,6 +5011,66 @@ _FUNCTIONS: Final[dict[Symbol, Function]] = {
     Symbol(name="PyLongWriter_Discard", visibility=None): Function(
         symbol=Symbol(name="PyLongWriter_Discard", visibility=None),
         added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyInterpreterGuard_FromCurrent", visibility=None): Function(
+        symbol=Symbol(name="PyInterpreterGuard_FromCurrent", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyInterpreterGuard_FromView", visibility=None): Function(
+        symbol=Symbol(name="PyInterpreterGuard_FromView", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyInterpreterGuard_Close", visibility=None): Function(
+        symbol=Symbol(name="PyInterpreterGuard_Close", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyInterpreterView_FromCurrent", visibility=None): Function(
+        symbol=Symbol(name="PyInterpreterView_FromCurrent", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyInterpreterView_FromMain", visibility=None): Function(
+        symbol=Symbol(name="PyInterpreterView_FromMain", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyInterpreterView_Close", visibility=None): Function(
+        symbol=Symbol(name="PyInterpreterView_Close", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyThreadState_Ensure", visibility=None): Function(
+        symbol=Symbol(name="PyThreadState_Ensure", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyThreadState_EnsureFromView", visibility=None): Function(
+        symbol=Symbol(name="PyThreadState_EnsureFromView", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="PyThreadState_Release", visibility=None): Function(
+        symbol=Symbol(name="PyThreadState_Release", visibility=None),
+        added=PyVersion(major=3, minor=15),
+        ifdef=None,
+        abi_only=False,
+    ),
+    Symbol(name="Py_HashBuffer", visibility=None): Function(
+        symbol=Symbol(name="Py_HashBuffer", visibility=None),
+        added=PyVersion(major=3, minor=16),
         ifdef=None,
         abi_only=False,
     ),
@@ -5043,11 +5177,11 @@ _MACROS: Final[dict[str, Macro]] = {
     "Py_am_aiter": Macro(name="Py_am_aiter", added=PyVersion(major=3, minor=5)),
     "Py_am_anext": Macro(name="Py_am_anext", added=PyVersion(major=3, minor=5)),
     "Py_tp_finalize": Macro(name="Py_tp_finalize", added=PyVersion(major=3, minor=5)),
-    "METH_FASTCALL": Macro(name="METH_FASTCALL", added=PyVersion(major=3, minor=7)),
     "METH_METHOD": Macro(name="METH_METHOD", added=PyVersion(major=3, minor=7)),
     "Py_TPFLAGS_METHOD_DESCRIPTOR": Macro(
         name="Py_TPFLAGS_METHOD_DESCRIPTOR", added=PyVersion(major=3, minor=8)
     ),
+    "METH_FASTCALL": Macro(name="METH_FASTCALL", added=PyVersion(major=3, minor=10)),
     "Py_am_send": Macro(name="Py_am_send", added=PyVersion(major=3, minor=10)),
     "Py_bf_getbuffer": Macro(name="Py_bf_getbuffer", added=PyVersion(major=3, minor=11)),
     "Py_bf_releasebuffer": Macro(name="Py_bf_releasebuffer", added=PyVersion(major=3, minor=11)),
@@ -5151,6 +5285,23 @@ _MACROS: Final[dict[str, Macro]] = {
     "Py_mod_state_clear": Macro(name="Py_mod_state_clear", added=PyVersion(major=3, minor=15)),
     "Py_mod_state_free": Macro(name="Py_mod_state_free", added=PyVersion(major=3, minor=15)),
     "Py_mod_token": Macro(name="Py_mod_token", added=PyVersion(major=3, minor=15)),
+    "PySlot_OPTIONAL": Macro(name="PySlot_OPTIONAL", added=PyVersion(major=3, minor=15)),
+    "PySlot_STATIC": Macro(name="PySlot_STATIC", added=PyVersion(major=3, minor=15)),
+    "PySlot_INTPTR": Macro(name="PySlot_INTPTR", added=PyVersion(major=3, minor=15)),
+    "Py_slot_end": Macro(name="Py_slot_end", added=PyVersion(major=3, minor=15)),
+    "Py_slot_invalid": Macro(name="Py_slot_invalid", added=PyVersion(major=3, minor=15)),
+    "Py_slot_subslots": Macro(name="Py_slot_subslots", added=PyVersion(major=3, minor=15)),
+    "Py_tp_slots": Macro(name="Py_tp_slots", added=PyVersion(major=3, minor=15)),
+    "Py_mod_slots": Macro(name="Py_mod_slots", added=PyVersion(major=3, minor=15)),
+    "Py_tp_name": Macro(name="Py_tp_name", added=PyVersion(major=3, minor=15)),
+    "Py_tp_basicsize": Macro(name="Py_tp_basicsize", added=PyVersion(major=3, minor=15)),
+    "Py_tp_extra_basicsize": Macro(
+        name="Py_tp_extra_basicsize", added=PyVersion(major=3, minor=15)
+    ),
+    "Py_tp_itemsize": Macro(name="Py_tp_itemsize", added=PyVersion(major=3, minor=15)),
+    "Py_tp_flags": Macro(name="Py_tp_flags", added=PyVersion(major=3, minor=15)),
+    "Py_tp_metaclass": Macro(name="Py_tp_metaclass", added=PyVersion(major=3, minor=15)),
+    "Py_tp_module": Macro(name="Py_tp_module", added=PyVersion(major=3, minor=15)),
     "Py_BEGIN_ALLOW_THREADS": Macro(
         name="Py_BEGIN_ALLOW_THREADS", added=PyVersion(major=3, minor=2)
     ),
@@ -5162,6 +5313,27 @@ _MACROS: Final[dict[str, Macro]] = {
     ),
     "PyABIInfo_VAR": Macro(name="PyABIInfo_VAR", added=PyVersion(major=3, minor=15)),
     "PyMODEXPORT_FUNC": Macro(name="PyMODEXPORT_FUNC", added=PyVersion(major=3, minor=15)),
+    "Py_BEGIN_CRITICAL_SECTION": Macro(
+        name="Py_BEGIN_CRITICAL_SECTION", added=PyVersion(major=3, minor=15)
+    ),
+    "Py_END_CRITICAL_SECTION": Macro(
+        name="Py_END_CRITICAL_SECTION", added=PyVersion(major=3, minor=15)
+    ),
+    "Py_BEGIN_CRITICAL_SECTION2": Macro(
+        name="Py_BEGIN_CRITICAL_SECTION2", added=PyVersion(major=3, minor=15)
+    ),
+    "Py_END_CRITICAL_SECTION2": Macro(
+        name="Py_END_CRITICAL_SECTION2", added=PyVersion(major=3, minor=15)
+    ),
+    "PySlot_DATA": Macro(name="PySlot_DATA", added=PyVersion(major=3, minor=15)),
+    "PySlot_FUNC": Macro(name="PySlot_FUNC", added=PyVersion(major=3, minor=15)),
+    "PySlot_SIZE": Macro(name="PySlot_SIZE", added=PyVersion(major=3, minor=15)),
+    "PySlot_INT64": Macro(name="PySlot_INT64", added=PyVersion(major=3, minor=15)),
+    "PySlot_UINT64": Macro(name="PySlot_UINT64", added=PyVersion(major=3, minor=15)),
+    "PySlot_STATIC_DATA": Macro(name="PySlot_STATIC_DATA", added=PyVersion(major=3, minor=15)),
+    "PySlot_END": Macro(name="PySlot_END", added=PyVersion(major=3, minor=15)),
+    "PySlot_PTR": Macro(name="PySlot_PTR", added=PyVersion(major=3, minor=15)),
+    "PySlot_PTR_STATIC": Macro(name="PySlot_PTR_STATIC", added=PyVersion(major=3, minor=15)),
 }
 _DATAS: Final[dict[Symbol, Data]] = {
     Symbol(name="PyBaseObject_Type", visibility=None): Data(
@@ -5311,12 +5483,6 @@ _DATAS: Final[dict[Symbol, Data]] = {
     Symbol(name="PyExc_BaseException", visibility=None): Data(
         symbol=Symbol(name="PyExc_BaseException", visibility=None),
         added=PyVersion(major=3, minor=2),
-        ifdef=None,
-        abi_only=False,
-    ),
-    Symbol(name="PyExc_BaseExceptionGroup", visibility=None): Data(
-        symbol=Symbol(name="PyExc_BaseExceptionGroup", visibility=None),
-        added=PyVersion(major=3, minor=11),
         ifdef=None,
         abi_only=False,
     ),
@@ -5774,13 +5940,13 @@ _DATAS: Final[dict[Symbol, Data]] = {
         symbol=Symbol(name="Py_FileSystemDefaultEncoding", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="Py_HasFileSystemDefaultEncoding", visibility=None): Data(
         symbol=Symbol(name="Py_HasFileSystemDefaultEncoding", visibility=None),
         added=PyVersion(major=3, minor=2),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="_PyWeakref_CallableProxyType", visibility=None): Data(
         symbol=Symbol(name="_PyWeakref_CallableProxyType", visibility=None),
@@ -5966,7 +6132,7 @@ _DATAS: Final[dict[Symbol, Data]] = {
         symbol=Symbol(name="Py_UTF8Mode", visibility=None),
         added=PyVersion(major=3, minor=8),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="PyDictRevIterItem_Type", visibility=None): Data(
         symbol=Symbol(name="PyDictRevIterItem_Type", visibility=None),
@@ -5996,7 +6162,7 @@ _DATAS: Final[dict[Symbol, Data]] = {
         symbol=Symbol(name="Py_FileSystemDefaultEncodeErrors", visibility=None),
         added=PyVersion(major=3, minor=10),
         ifdef=None,
-        abi_only=False,
+        abi_only=True,
     ),
     Symbol(name="PyExc_EncodingWarning", visibility=None): Data(
         symbol=Symbol(name="PyExc_EncodingWarning", visibility=None),
@@ -6013,6 +6179,12 @@ _DATAS: Final[dict[Symbol, Data]] = {
             windows="maybe",
         ),
         abi_only=True,
+    ),
+    Symbol(name="PyExc_BaseExceptionGroup", visibility=None): Data(
+        symbol=Symbol(name="PyExc_BaseExceptionGroup", visibility=None),
+        added=PyVersion(major=3, minor=11),
+        ifdef=None,
+        abi_only=False,
     ),
     Symbol(name="PyStructSequence_UnnamedField", visibility=None): Data(
         symbol=Symbol(name="PyStructSequence_UnnamedField", visibility=None),

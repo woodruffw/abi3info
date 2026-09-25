@@ -117,6 +117,8 @@ for name, body in _STABLE_ABI_DATA["struct"].items():
         struct = OpaqueStruct(name, PyVersion.parse_dotted(body["added"]))
     elif body_abi_kind == "full-abi":
         struct = FullStruct(name, PyVersion.parse_dotted(body["added"]))
+    elif body_abi_kind == "abi3t-opaque":
+        struct = FullStruct(name, PyVersion.parse_dotted(body["added"]), abi3t_opaque=True)
     elif body_abi_kind == "members":
         struct = PartialStruct(name, PyVersion.parse_dotted(body["added"]), body["members"])
     else:

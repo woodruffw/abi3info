@@ -178,8 +178,8 @@ class OpaqueStruct:
 class PartialStruct:
     """
     Represents a struct defined by the limited API but considered "partial"
-    in the stable ABI, meaning that only the members listed are guaranteed
-    not to change.
+    in abi3, meaning that only the members listed are guaranteed not to change.
+    In abi3t, these structs are opaque.
     """
 
     name: str
@@ -191,12 +191,17 @@ class PartialStruct:
 class FullStruct:
     """
     Represents a struct defined by the limited API that is considered "full"
-    in the stable ABI, meaning that its members and layout are guaranteed
-    not to change.
+    in abi3, meaning that its members and layout are guaranteed not to change.
+    In abi3t, this also holds unless `abi3t_opaque` is true.
     """
 
     name: str
     added: PyVersion
+
+    abi3t_opaque: bool = False
+    """
+    Whether this struct is opaque in abi3t despite having a stable layout in abi3.
+    """
 
 
 Struct = OpaqueStruct | PartialStruct | FullStruct
