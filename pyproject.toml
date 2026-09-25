@@ -1,6 +1,6 @@
 [project]
 name = "abi3info"
-version = "2025.11.29"
+version = "2026.09.25"
 description = "A library for abi3 and other CPython API information"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -31,10 +31,10 @@ dev = [
 ]
 doc = ["pdoc >= 13.0.0"]
 lint = [
-    "bandit",
-    "interrogate",
-    "ruff",
-    "ty>=0.0.84",
+  "bandit",
+  "interrogate",
+  "ruff",
+  "ty>=0.0.84",
 ]
 test = ["coverage[toml]", "pretend", "pytest", "pytest-cov"]
 
