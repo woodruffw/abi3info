@@ -6,8 +6,7 @@ updates:
       interval: "weekly"
     groups:
       github-actions:
-        patterns:
-          - "*"
+        patterns: ["*"]
     cooldown:
       default-days: 7
   - package-ecosystem: "pip"
@@ -16,7 +15,6 @@ updates:
       interval: "weekly"
     groups:
       pip:
-        patterns:
-          - "*"
+        patterns: ["*"]
     cooldown:
       default-days: 7
