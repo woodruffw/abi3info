@@ -5208,6 +5208,9 @@ _MACROS: Final[dict[str, Macro]] = {
     "Py_TPFLAGS_HAVE_VECTORCALL": Macro(
         name="Py_TPFLAGS_HAVE_VECTORCALL", added=PyVersion(major=3, minor=12)
     ),
+    "PY_VECTORCALL_ARGUMENTS_OFFSET": Macro(
+        name="PY_VECTORCALL_ARGUMENTS_OFFSET", added=PyVersion(major=3, minor=12)
+    ),
     "Py_T_BYTE": Macro(name="Py_T_BYTE", added=PyVersion(major=3, minor=12)),
     "Py_T_SHORT": Macro(name="Py_T_SHORT", added=PyVersion(major=3, minor=12)),
     "Py_T_INT": Macro(name="Py_T_INT", added=PyVersion(major=3, minor=12)),
@@ -5308,9 +5311,13 @@ _MACROS: Final[dict[str, Macro]] = {
     "Py_BLOCK_THREADS": Macro(name="Py_BLOCK_THREADS", added=PyVersion(major=3, minor=2)),
     "Py_UNBLOCK_THREADS": Macro(name="Py_UNBLOCK_THREADS", added=PyVersion(major=3, minor=2)),
     "Py_END_ALLOW_THREADS": Macro(name="Py_END_ALLOW_THREADS", added=PyVersion(major=3, minor=2)),
-    "PY_VECTORCALL_ARGUMENTS_OFFSET": Macro(
-        name="PY_VECTORCALL_ARGUMENTS_OFFSET", added=PyVersion(major=3, minor=12)
-    ),
+    "Py_CLEAR": Macro(name="Py_CLEAR", added=PyVersion(major=3, minor=2)),
+    "Py_DECREF": Macro(name="Py_DECREF", added=PyVersion(major=3, minor=2)),
+    "Py_INCREF": Macro(name="Py_INCREF", added=PyVersion(major=3, minor=2)),
+    "Py_XDECREF": Macro(name="Py_XDECREF", added=PyVersion(major=3, minor=2)),
+    "Py_XINCREF": Macro(name="Py_XINCREF", added=PyVersion(major=3, minor=2)),
+    "Py_SET_REFCNT": Macro(name="Py_SET_REFCNT", added=PyVersion(major=3, minor=9)),
+    "Py_SET_TYPE": Macro(name="Py_SET_TYPE", added=PyVersion(major=3, minor=9)),
     "PyABIInfo_VAR": Macro(name="PyABIInfo_VAR", added=PyVersion(major=3, minor=15)),
     "PyMODEXPORT_FUNC": Macro(name="PyMODEXPORT_FUNC", added=PyVersion(major=3, minor=15)),
     "Py_BEGIN_CRITICAL_SECTION": Macro(
@@ -5334,6 +5341,8 @@ _MACROS: Final[dict[str, Macro]] = {
     "PySlot_END": Macro(name="PySlot_END", added=PyVersion(major=3, minor=15)),
     "PySlot_PTR": Macro(name="PySlot_PTR", added=PyVersion(major=3, minor=15)),
     "PySlot_PTR_STATIC": Macro(name="PySlot_PTR_STATIC", added=PyVersion(major=3, minor=15)),
+    "Py_SETREF": Macro(name="Py_SETREF", added=PyVersion(major=3, minor=16)),
+    "Py_XSETREF": Macro(name="Py_XSETREF", added=PyVersion(major=3, minor=16)),
 }
 _DATAS: Final[dict[Symbol, Data]] = {
     Symbol(name="PyBaseObject_Type", visibility=None): Data(
